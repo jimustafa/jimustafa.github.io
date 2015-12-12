@@ -1,0 +1,101 @@
+Input Files
+===========
+
+The input files are formatted according to rules dictated by Python's
+:py:mod:`ConfigParser`. Briefly, the format is similar to Microsoft Windows INI
+files, being composed of sections starting with a ``[section]`` header and
+followed by ``option: value`` entries.
+
+OPFm.py makes use of two input files, the first contains runtime parameters for
+setting up and running the calculations, while the second provides the necessary
+crystal information.
+
+
+opfm.cfg
+--------
+
+This file provides the runtime parameters. It is composed of a single section
+``[Input]`` with some required ``option: value`` entries, while others are
+optional.
+
+.. autodoc
+
+``[Input]`` options
+"""""""""""""""""""
+
+crystal_info_src
+   Specify where OPFm.py will retrieve crystallographic information about the
+   system. Possible values are 'CFG' and 'QE'.
+crystal_cfg
+   Path of the crystal.cfg file. Required if ``crystal_info_src == 'CFG'``
+qe_outdir
+   The QuantumESPRESSO output directory. Required if ``crystal_info_src == 'QE'``
+qe_outdir
+   The QuantumESPRESSO run prefix. Required if ``crystal_info_src == 'QE'``
+kgrid
+   Dimensions of the k point grid. Must be consistent with the k points
+   specified in crystal.cfg
+
+Example:
+
+::
+
+   [Input]
+   crystal_info_src: {'QE', 'CFG'}  # specify source for reading crystal information
+   crystal_cfg:  path         # path to "crystal.cfg"
+   qe_outdir:  path           # path to QE output directory
+   qe_prefix:  str            # prefix used in QE calculations
+   kgrid:  nk1  nk2  nk3      # dimensions of the k point grid
+
+
+crystal.cfg
+-----------
+
+This file provides the necessary crystal information. The file contains two
+sections, labeled ``[Crystal]`` and ``[Kpoints]``. The ``[Crystal]`` section
+specifies the lattice vectors with the options ``a1``, ``a2``, and ``a3`` and
+the basis vectors with the ``basis`` option. The ``[Kpoints]`` section specifies
+the **k** points using the ``kpoints`` option.
+
+The format of these options can best be understood by examining the example
+below. The ellipses for the ``basis`` and ``kpoints`` options indicate that
+these options must have ``natms`` and ``nkpts`` lines, respectively.
+
+``[Crystal]`` options
+"""""""""""""""""""""
+
+a1, a2, a3
+   Bravais lattice vectors in atomic units.
+basis
+   List of atomic species and positions.
+
+``[Kpoints]`` options
+"""""""""""""""""""""
+
+kpoints
+   An integer specifying the number of **k** points, followed by a line for each
+   **k** point giving the crystal coordinates of the **k** point
+
+Example:
+
+::
+
+   [Crystal]
+   a1:  a1_x  a1_y  a1_z      # x, y, and z components of a1
+   a2:  a2_x  a2_y  a2_z      # x, y, and z components of a2
+   a3:  a3_x  a3_y  a3_z      # x, y, and z components of a3
+   basis:  natms              # natms is the number of atoms in the basis
+      symbol_1  tau_1_x  tau_1_y  tau_1_z
+      symbol_2  tau_2_x  tau_2_y  tau_2_z
+         .         .        .        .
+         .         .        .        .
+         .         .        .        .
+
+
+   [Kpoints]
+   kpoints:  nkpts                  # nkpts is the number of k points in the grid
+      kpt1_b1  kpt1_b2  kpt1_b3     # crystal coordinates of k point #1
+      kpt2_b1  kpt2_b2  kpt2_b3     # crystal coordinates of k point #2
+         .        .        .
+         .        .        .
+         .        .        .

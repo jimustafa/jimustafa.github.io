@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Input Files &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to OPFm’s documentation!" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="input-files">
+<h1>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h1>
+<p>The input files are formatted according to rules dictated by Python&#8217;s
+<a class="reference external" href="https://docs.python.org/library/configparser.html#module-ConfigParser" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">ConfigParser</span></code></a>. Briefly, the format is similar to Microsoft Windows INI
+files, being composed of sections starting with a <code class="docutils literal"><span class="pre">[section]</span></code> header and
+followed by <code class="docutils literal"><span class="pre">option:</span> <span class="pre">value</span></code> entries.</p>
+<p>OPFm.py makes use of two input files, the first contains runtime parameters for
+setting up and running the calculations, while the second provides the necessary
+crystal information.</p>
+<div class="section" id="opfm-cfg">
+<h2>opfm.cfg<a class="headerlink" href="#opfm-cfg" title="Permalink to this headline">¶</a></h2>
+<p>This file provides the runtime parameters. It is composed of a single section
+<code class="docutils literal"><span class="pre">[Input]</span></code> with some required <code class="docutils literal"><span class="pre">option:</span> <span class="pre">value</span></code> entries, while others are
+optional.</p>
+<div class="section" id="input-options">
+<h3><code class="docutils literal"><span class="pre">[Input]</span></code> options<a class="headerlink" href="#input-options" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>crystal_info_src</dt>
+<dd>Specify where OPFm.py will retrieve crystallographic information about the
+system. Possible values are &#8216;CFG&#8217; and &#8216;QE&#8217;.</dd>
+<dt>crystal_cfg</dt>
+<dd>Path of the crystal.cfg file. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'CFG'</span></code></dd>
+<dt>qe_outdir</dt>
+<dd>The QuantumESPRESSO output directory. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'QE'</span></code></dd>
+<dt>qe_outdir</dt>
+<dd>The QuantumESPRESSO run prefix. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'QE'</span></code></dd>
+<dt>kgrid</dt>
+<dd>Dimensions of the k point grid. Must be consistent with the k points
+specified in crystal.cfg</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>[Input]
+crystal_info_src: {&#39;QE&#39;, &#39;CFG&#39;}  # specify source for reading crystal information
+crystal_cfg:  path         # path to &quot;crystal.cfg&quot;
+qe_outdir:  path           # path to QE output directory
+qe_prefix:  str            # prefix used in QE calculations
+kgrid:  nk1  nk2  nk3      # dimensions of the k point grid
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="crystal-cfg">
+<h2>crystal.cfg<a class="headerlink" href="#crystal-cfg" title="Permalink to this headline">¶</a></h2>
+<p>This file provides the necessary crystal information. The file contains two
+sections, labeled <code class="docutils literal"><span class="pre">[Crystal]</span></code> and <code class="docutils literal"><span class="pre">[Kpoints]</span></code>. The <code class="docutils literal"><span class="pre">[Crystal]</span></code> section
+specifies the lattice vectors with the options <code class="docutils literal"><span class="pre">a1</span></code>, <code class="docutils literal"><span class="pre">a2</span></code>, and <code class="docutils literal"><span class="pre">a3</span></code> and
+the basis vectors with the <code class="docutils literal"><span class="pre">basis</span></code> option. The <code class="docutils literal"><span class="pre">[Kpoints]</span></code> section specifies
+the <strong>k</strong> points using the <code class="docutils literal"><span class="pre">kpoints</span></code> option.</p>
+<p>The format of these options can best be understood by examining the example
+below. The ellipses for the <code class="docutils literal"><span class="pre">basis</span></code> and <code class="docutils literal"><span class="pre">kpoints</span></code> options indicate that
+these options must have <code class="docutils literal"><span class="pre">natms</span></code> and <code class="docutils literal"><span class="pre">nkpts</span></code> lines, respectively.</p>
+<div class="section" id="crystal-options">
+<h3><code class="docutils literal"><span class="pre">[Crystal]</span></code> options<a class="headerlink" href="#crystal-options" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>a1, a2, a3</dt>
+<dd>Bravais lattice vectors in atomic units.</dd>
+<dt>basis</dt>
+<dd>List of atomic species and positions.</dd>
+</dl>
+</div>
+<div class="section" id="kpoints-options">
+<h3><code class="docutils literal"><span class="pre">[Kpoints]</span></code> options<a class="headerlink" href="#kpoints-options" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>kpoints</dt>
+<dd>An integer specifying the number of <strong>k</strong> points, followed by a line for each
+<strong>k</strong> point giving the crystal coordinates of the <strong>k</strong> point</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>[Crystal]
+a1:  a1_x  a1_y  a1_z      # x, y, and z components of a1
+a2:  a2_x  a2_y  a2_z      # x, y, and z components of a2
+a3:  a3_x  a3_y  a3_z      # x, y, and z components of a3
+basis:  natms              # natms is the number of atoms in the basis
+   symbol_1  tau_1_x  tau_1_y  tau_1_z
+   symbol_2  tau_2_x  tau_2_y  tau_2_z
+      .         .        .        .
+      .         .        .        .
+      .         .        .        .
+
+
+[Kpoints]
+kpoints:  nkpts                  # nkpts is the number of k points in the grid
+   kpt1_b1  kpt1_b2  kpt1_b3     # crystal coordinates of k point #1
+   kpt2_b1  kpt2_b2  kpt2_b3     # crystal coordinates of k point #2
+      .        .        .
+      .        .        .
+      .        .        .
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Input Files</a><ul>
+<li><a class="reference internal" href="#opfm-cfg">opfm.cfg</a><ul>
+<li><a class="reference internal" href="#input-options"><code class="docutils literal"><span class="pre">[Input]</span></code> options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#crystal-cfg">crystal.cfg</a><ul>
+<li><a class="reference internal" href="#crystal-options"><code class="docutils literal"><span class="pre">[Crystal]</span></code> options</a></li>
+<li><a class="reference internal" href="#kpoints-options"><code class="docutils literal"><span class="pre">[Kpoints]</span></code> options</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to OPFm&#8217;s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/input.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, Jamal I. Mustafa.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/input.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
