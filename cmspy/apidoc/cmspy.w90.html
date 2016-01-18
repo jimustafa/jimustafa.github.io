@@ -1,0 +1,643 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.w90 package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.w90.flib package" href="cmspy.w90.flib.html"/>
+        <link rel="prev" title="cmspy.test package" href="cmspy.test.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.w90 package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.amn">cmspy.w90.amn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.ct">cmspy.w90.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.dis">cmspy.w90.dis module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.eig">cmspy.w90.eig module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.mmn">cmspy.w90.mmn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.nnkp">cmspy.w90.nnkp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.orbitals">cmspy.w90.orbitals module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.setup">cmspy.w90.setup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.utils">cmspy.w90.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90.vme">cmspy.w90.vme module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.w90">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.w90 package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.w90.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-w90-package">
+<h1>cmspy.w90 package<a class="headerlink" href="#cmspy-w90-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.w90.flib.html">cmspy.w90.flib package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.flib.html#module-cmspy.w90.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.w90.io.html">cmspy.w90.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.io.html#module-cmspy.w90.io.utils">cmspy.w90.io.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.io.html#module-cmspy.w90.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.w90.test.html">cmspy.w90.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#module-cmspy.w90.test.copper">cmspy.w90.test.copper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-dis-module">cmspy.w90.test.dis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-flib-module">cmspy.w90.test.flib module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-io-module">cmspy.w90.test.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-opf-module">cmspy.w90.test.opf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-utils-module">cmspy.w90.test.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.test.html#module-cmspy.w90.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.w90.amn">
+<span id="cmspy-w90-amn-module"></span><h2>cmspy.w90.amn module<a class="headerlink" href="#module-cmspy.w90.amn" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.amn.expand">
+<code class="descclassname">cmspy.w90.amn.</code><code class="descname">expand</code><span class="sig-paren">(</span><em>a</em>, <em>kpoints</em>, <em>idx</em>, <em>Rvectors</em>, <em>nproj_atom=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.amn.expand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand the projections matrix by translations of the orbitals</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (nkpts, nbnds, nproj)</p>
+<p><strong>kpoints</strong> : ndarray, shape (nkpts, 3)</p>
+<p><strong>idx</strong> : ndarray</p>
+<blockquote>
+<div><p>indices of translated orbitals</p>
+</div></blockquote>
+<p><strong>Rvectors: ndarray</strong></p>
+<blockquote>
+<div><p>translations of the orbitals</p>
+</div></blockquote>
+<p><strong>nproj_atom: ndarray, optional</strong></p>
+<blockquote class="last">
+<div><p>number of projections on each atom, with idx and Rvectors now describing
+atoms instead of orbitals</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.ct">
+<span id="cmspy-w90-ct-module"></span><h2>cmspy.w90.ct module<a class="headerlink" href="#module-cmspy.w90.ct" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.w90.ct.BoltzWannConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.w90.ct.</code><code class="descname">BoltzWannConvergenceTest</code><span class="sig-paren">(</span><em>test_files</em>, <em>xvals</em>, <em>ref_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.ct.BoltzWannConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="cmspy.common.html#cmspy.common.ct.ConvergenceTest" title="cmspy.common.ct.ConvergenceTest"><code class="xref py py-class docutils literal"><span class="pre">cmspy.common.ct.ConvergenceTest</span></code></a></p>
+<dl class="classmethod">
+<dt id="cmspy.w90.ct.BoltzWannConvergenceTest.from_kwargs">
+<em class="property">classmethod </em><code class="descname">from_kwargs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.ct.BoltzWannConvergenceTest.from_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.ct.BoltzWannConvergenceTest.get_conv_test_data">
+<code class="descname">get_conv_test_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.ct.BoltzWannConvergenceTest.get_conv_test_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.ct.BoltzWannConvergenceTest.get_gnuplot_data_objs">
+<code class="descname">get_gnuplot_data_objs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.ct.BoltzWannConvergenceTest.get_gnuplot_data_objs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.ct.BoltzWannConvergenceTest.plot_conv">
+<code class="descname">plot_conv</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.ct.BoltzWannConvergenceTest.plot_conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.dis">
+<span id="cmspy-w90-dis-module"></span><h2>cmspy.w90.dis module<a class="headerlink" href="#module-cmspy.w90.dis" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.dis.project">
+<code class="descclassname">cmspy.w90.dis.</code><code class="descname">project</code><span class="sig-paren">(</span><em>a</em>, <em>outer_window</em>, <em>inner_window=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.dis.project" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.eig">
+<span id="cmspy-w90-eig-module"></span><h2>cmspy.w90.eig module<a class="headerlink" href="#module-cmspy.w90.eig" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.eig.hamiltonian_xyz">
+<code class="descclassname">cmspy.w90.eig.</code><code class="descname">hamiltonian_xyz</code><span class="sig-paren">(</span><em>Hmn_W_R</em>, <em>kpoints</em>, <em>Rvectors</em>, <em>Rweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.eig.hamiltonian_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Hmn_W_R: ndarray</strong></p>
+<blockquote>
+<div><p>Hamiltonian in the Wannier representation</p>
+</div></blockquote>
+<p><strong>kpoints: ndarray, shape (nkpts, 3)</strong></p>
+<p><strong>Rvectors: ndarray, shape (nrpts, 3)</strong></p>
+<p class="last"><strong>Rweights: ndarray, shape (nrpts,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.mmn">
+<span id="cmspy-w90-mmn-module"></span><h2>cmspy.w90.mmn module<a class="headerlink" href="#module-cmspy.w90.mmn" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.mmn.calc_wannier_centers_1D">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">calc_wannier_centers_1D</code><span class="sig-paren">(</span><em>m</em>, <em>mp_grid</em>, <em>kpb</em>, <em>bvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.calc_wannier_centers_1D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.calc_wannier_centers_1D_1">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">calc_wannier_centers_1D_1</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.calc_wannier_centers_1D_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.change_gauge">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">change_gauge</code><span class="sig-paren">(</span><em>mmn</em>, <em>umn</em>, <em>kpb_kidx</em>, <em>inside_window=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.change_gauge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change of the gauge of the overlaps matrix according to
+<img class="math" src="../_images/math/f4da0d0e8c5bd628b3c5bfe627a71b7f24042582.png" alt="U^{(\mathbf{k})\dagger}M^{(\mathbf{k},\mathbf{b})}U^{(\mathbf{k}+\mathbf{b})}"/></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.change_gauge_k">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">change_gauge_k</code><span class="sig-paren">(</span><em>m</em>, <em>u</em>, <em>setup_file</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.change_gauge_k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.change_gauge_kpb">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">change_gauge_kpb</code><span class="sig-paren">(</span><em>m</em>, <em>u</em>, <em>setup_file</em>, <em>kpb_kidx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.change_gauge_kpb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega_d">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega_d</code><span class="sig-paren">(</span><em>m</em>, <em>bvectors</em>, <em>bweights</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega_d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>m: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega_d_od">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega_d_od</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega_d_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega_i">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega_i</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the invariant and off-diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega_i_od">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega_i_od</code><span class="sig-paren">(</span><em>m</em>, <em>bweights</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega_i_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the invariant and off-diagonal contribution to the spread
+functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>m: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.compute_omega_od">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">compute_omega_od</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.compute_omega_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the off-diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.project_overlaps">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">project_overlaps</code><span class="sig-paren">(</span><em>m</em>, <em>a</em>, <em>kpb_kidx</em>, <em>return_Uproj=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.project_overlaps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.mmn.wannier_centers">
+<code class="descclassname">cmspy.w90.mmn.</code><code class="descname">wannier_centers</code><span class="sig-paren">(</span><em>m</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.mmn.wannier_centers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.nnkp">
+<span id="cmspy-w90-nnkp-module"></span><h2>cmspy.w90.nnkp module<a class="headerlink" href="#module-cmspy.w90.nnkp" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.nnkp.bweights">
+<code class="descclassname">cmspy.w90.nnkp.</code><code class="descname">bweights</code><span class="sig-paren">(</span><em>bvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.nnkp.bweights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.orbitals">
+<span id="cmspy-w90-orbitals-module"></span><h2>cmspy.w90.orbitals module<a class="headerlink" href="#module-cmspy.w90.orbitals" title="Permalink to this headline">¶</a></h2>
+<p>Predefined trial orbitals</p>
+</div>
+<div class="section" id="module-cmspy.w90.setup">
+<span id="cmspy-w90-setup-module"></span><h2>cmspy.w90.setup module<a class="headerlink" href="#module-cmspy.w90.setup" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.w90.setup.SetupFile">
+<em class="property">class </em><code class="descclassname">cmspy.w90.setup.</code><code class="descname">SetupFile</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.setup.SetupFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.w90.setup.SetupFile.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.setup.SetupFile.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.setup.SetupFile.get_bvectors">
+<code class="descname">get_bvectors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.setup.SetupFile.get_bvectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.utils">
+<span id="cmspy-w90-utils-module"></span><h2>cmspy.w90.utils module<a class="headerlink" href="#module-cmspy.w90.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.utils.bloch2wannier">
+<code class="descclassname">cmspy.w90.utils.</code><code class="descname">bloch2wannier</code><span class="sig-paren">(</span><em>Omn_H_k</em>, <em>kpoints</em>, <em>Rvectors</em>, <em>Rweights</em>, <em>Umn</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.utils.bloch2wannier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change gauge from the Hamiltonian gauge to the Wannier gauge</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Omn_H_k: ndarray, shape (nkpts, nwann, nwann)</strong></p>
+<blockquote>
+<div><p>Operator matrix elements, Hamiltonian gauge, Bloch representation</p>
+</div></blockquote>
+<p><strong>Umn: ndarray, shape (nkpts, nwann, nwann)</strong></p>
+<blockquote>
+<div><p>Hamiltonian gauge to Wannier gauge transformation matrix</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Omn_W_R: ndarray, shape (nrvec, nwann, nwann)</p>
+<blockquote class="last">
+<div><p>Operator matrix elements, Wannier gauge, Wannier representation</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.utils.change_gauge">
+<code class="descclassname">cmspy.w90.utils.</code><code class="descname">change_gauge</code><span class="sig-paren">(</span><em>X</em>, <em>Umn</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.utils.change_gauge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.utils.wannier2bloch">
+<code class="descclassname">cmspy.w90.utils.</code><code class="descname">wannier2bloch</code><span class="sig-paren">(</span><em>Omn_W_R</em>, <em>kpoints</em>, <em>Rvectors</em>, <em>Rweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.utils.wannier2bloch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change gauge from the Hamiltonian gauge to the Wannier gauge</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Omn_W_R</strong> : ndarray, shape (nrvec, nwann, nwann)</p>
+<blockquote>
+<div><p>Operator matrix elements, Wannier gauge, Wannier representation</p>
+</div></blockquote>
+<p><strong>kpoints</strong> : ndarray, shape (nkpts, 3)</p>
+<blockquote>
+<div><p>k-points (crystal coordinates) at which operator matrix elements are interpolated</p>
+</div></blockquote>
+<p><strong>Rvectors</strong> : ndarray, shape (nrvec, 3)</p>
+<blockquote>
+<div><p>R-vectors (crystal coordinates) of Wannier representation</p>
+</div></blockquote>
+<p><strong>Rweights</strong> : ndarray, shape (nrvec,)</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Omn_W_k: ndarray, shape (nkpts, nwann, nwann)</p>
+<blockquote class="last">
+<div><p>Operator matrix elements, Wannier gauge, Bloch representation</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.vme">
+<span id="cmspy-w90-vme-module"></span><h2>cmspy.w90.vme module<a class="headerlink" href="#module-cmspy.w90.vme" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.vme.Amn2vme">
+<code class="descclassname">cmspy.w90.vme.</code><code class="descname">Amn2vme</code><span class="sig-paren">(</span><em>Amn_W_k</em>, <em>Hmn_alpha_W_k</em>, <em>Hmn_W_k</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.vme.Amn2vme" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.vme.construct_Amn_xyz">
+<code class="descclassname">cmspy.w90.vme.</code><code class="descname">construct_Amn_xyz</code><span class="sig-paren">(</span><em>Mmn_W</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.vme.construct_Amn_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the Amn matrix in the Wannier gauge</p>
+<p>Mmn_W   overlap matrix in the Wannier gauge</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.w90" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.w90.flib.html" class="btn btn-neutral float-right" title="cmspy.w90.flib package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.test.html" class="btn btn-neutral" title="cmspy.test package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

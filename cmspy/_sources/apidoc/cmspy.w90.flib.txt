@@ -1,0 +1,10 @@
+cmspy.w90.flib package
+======================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.w90.flib
+    :members:
+    :undoc-members:
+    :show-inheritance:

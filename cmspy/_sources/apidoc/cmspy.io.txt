@@ -1,0 +1,17 @@
+cmspy.io package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.io.test
+
+Module contents
+---------------
+
+.. automodule:: cmspy.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

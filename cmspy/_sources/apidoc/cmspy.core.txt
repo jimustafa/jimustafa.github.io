@@ -1,0 +1,22 @@
+cmspy.core package
+==================
+
+Submodules
+----------
+
+cmspy.core.pw module
+--------------------
+
+.. automodule:: cmspy.core.pw
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.core
+    :members:
+    :undoc-members:
+    :show-inheritance:

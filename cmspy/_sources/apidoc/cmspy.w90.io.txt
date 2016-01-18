@@ -1,0 +1,23 @@
+cmspy.w90.io package
+====================
+
+Submodules
+----------
+
+cmspy.w90.io.utils module
+-------------------------
+
+.. automodule:: cmspy.w90.io.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.w90.io
+    :members:
+    :undoc-members:
+    :show-inheritance:
+    :imported-members:

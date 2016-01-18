@@ -1,0 +1,24 @@
+APE Notes
+=========
+
+Radial Grid
+-----------
+
+There are three different kinds of grids available in APE.
+
+log1
+
+.. math::
+
+   r_{i} = be^{ai}
+
+The determination of :math:`a` and :math:`b` given :math:`r_{\textrm{min}}` and
+:math:`r_{\textrm{max}}` and the number of points :math:`N` is as follows:
+
+.. math::
+
+   \frac{r^{N}}{r_{1}} = e^{a(N-1)} \implies a=\frac{\log(\frac{r^{N}}{r_{1}})}{N-1}
+
+   b = \frac{r_{1}}{e^{a}}
+
+Note that :math:`b` is defined using :math:`r_{1}` in particular.

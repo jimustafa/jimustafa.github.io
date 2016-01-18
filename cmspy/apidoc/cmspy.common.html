@@ -1,0 +1,708 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.common package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.common.test package" href="cmspy.common.test.html"/>
+        <link rel="prev" title="cmspy.bgw.utils package" href="cmspy.bgw.utils.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.common package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.cli">cmspy.common.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.constants">cmspy.common.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.ct">cmspy.common.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.fftutils">cmspy.common.fftutils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.fns">cmspy.common.fns module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.regex">cmspy.common.regex module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common.utils">cmspy.common.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.common">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.common package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.common.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-common-package">
+<h1>cmspy.common package<a class="headerlink" href="#cmspy-common-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.common.test.html">cmspy.common.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.test.html#module-cmspy.common.test.fftutils">cmspy.common.test.fftutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.test.html#module-cmspy.common.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.common.cli">
+<span id="cmspy-common-cli-module"></span><h2>cmspy.common.cli module<a class="headerlink" href="#module-cmspy.common.cli" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.common.cli.band_pair_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">band_pair_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.band_pair_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.band_range_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">band_range_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.band_range_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.extant_file">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">extant_file</code><span class="sig-paren">(</span><em>f</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.extant_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.extant_path">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">extant_path</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.extant_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.group_namespace">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">group_namespace</code><span class="sig-paren">(</span><em>namespace</em>, <em>parser</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.group_namespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.mpl_style_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">mpl_style_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.mpl_style_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.nonnegative_int_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">nonnegative_int_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.nonnegative_int_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.positive_int_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">positive_int_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.positive_int_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.print_header">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">print_header</code><span class="sig-paren">(</span><em>stream=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.print_header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.cli.spin_arg">
+<code class="descclassname">cmspy.common.cli.</code><code class="descname">spin_arg</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.cli.spin_arg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common.constants">
+<span id="cmspy-common-constants-module"></span><h2>cmspy.common.constants module<a class="headerlink" href="#module-cmspy.common.constants" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.common.ct">
+<span id="cmspy-common-ct-module"></span><h2>cmspy.common.ct module<a class="headerlink" href="#module-cmspy.common.ct" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.common.ct.ConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.common.ct.</code><code class="descname">ConvergenceTest</code><span class="sig-paren">(</span><em>test_files</em>, <em>xvals</em>, <em>ref_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.ConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="classmethod">
+<dt id="cmspy.common.ct.ConvergenceTest.from_kwargs">
+<em class="property">classmethod </em><code class="descname">from_kwargs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.ConvergenceTest.from_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.common.ct.ScalarDatasetConvergenceTestPlotter">
+<em class="property">class </em><code class="descclassname">cmspy.common.ct.</code><code class="descname">ScalarDatasetConvergenceTestPlotter</code><span class="sig-paren">(</span><em>data</em>, <em>xvals</em>, <em>data_ref=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.ScalarDatasetConvergenceTestPlotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.common.ct.ScalarDatasetConvergenceTestPlotter.get_gnuplot_data_objs">
+<code class="descname">get_gnuplot_data_objs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.ScalarDatasetConvergenceTestPlotter.get_gnuplot_data_objs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.common.ct.ScalarDatasetConvergenceTestPlotter.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.ScalarDatasetConvergenceTestPlotter.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.ct.read_config">
+<code class="descclassname">cmspy.common.ct.</code><code class="descname">read_config</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.ct.read_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common.fftutils">
+<span id="cmspy-common-fftutils-module"></span><h2>cmspy.common.fftutils module<a class="headerlink" href="#module-cmspy.common.fftutils" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.common.fftutils.FFTGrid">
+<em class="property">class </em><code class="descclassname">cmspy.common.fftutils.</code><code class="descname">FFTGrid</code><span class="sig-paren">(</span><em>n1</em>, <em>n2</em>, <em>n3</em>, <em>basis=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>An object representing a Fast Fourier Transform (FFT) grid</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>n1: int</strong></p>
+<blockquote>
+<div><p>first FFT box dimension</p>
+</div></blockquote>
+<p><strong>n2: int</strong></p>
+<blockquote>
+<div><p>second FFT box dimension</p>
+</div></blockquote>
+<p><strong>n3: int</strong></p>
+<blockquote>
+<div><p>third FFT box dimension</p>
+</div></blockquote>
+<p><strong>basis: ndarray, shape (3,3), optional</strong></p>
+<blockquote class="last">
+<div><p>the reciprocal lattice vectors</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="cmspy.common.fftutils.FFTGrid.create_box_sphere_map">
+<code class="descname">create_box_sphere_map</code><span class="sig-paren">(</span><em>G_sphere</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.create_box_sphere_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the indices in the FFT box of a set of G-vectors</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>G_sphere: ndarray, shape (ngvec, 3)</strong></p>
+<blockquote>
+<div><p>G-vectors in crystal coordinates</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">idx: ndarray, shape (ngvec,)</p>
+<blockquote class="last">
+<div><p>the indices, in the FFT box, of the G-vectors in G_sphere</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>G_box[idx[i]] = G_sphere[i] or G_box[idx] = G_sphere</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="cmspy.common.fftutils.FFTGrid.get_acceptable_grid">
+<em class="property">static </em><code class="descname">get_acceptable_grid</code><span class="sig-paren">(</span><em>lattice_vectors, ecut, kpoints=None, prime_factors=[2, 3, 5]</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.get_acceptable_grid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>kpoints: ndarray, shape (nkpts,3) or (3,), optional</strong></p>
+<blockquote class="last">
+<div><p>k-points in crystal coordinates</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.common.fftutils.FFTGrid.get_gvectors_box">
+<code class="descname">get_gvectors_box</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.get_gvectors_box" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the G-vectors in the FFT box</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>units: {&#8216;crystal&#8217;, &#8216;cartesian&#8217;}, optional</strong></p>
+<blockquote>
+<div><p>output units of the G-vectors</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">G: ndarray, shape (n1*n2*n3, 3)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.common.fftutils.FFTGrid.get_gvectors_sphere">
+<code class="descname">get_gvectors_sphere</code><span class="sig-paren">(</span><em>units='crystal'</em>, <em>ecut=None</em>, <em>kpoint=None</em>, <em>sort=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.get_gvectors_sphere" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the sphere of G-vectors from an FFT box</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>units: {&#8216;crystal&#8217;, &#8216;cartesian&#8217;}, optional</strong></p>
+<blockquote>
+<div><p>output units of the G-vectors</p>
+</div></blockquote>
+<p><strong>ecut: optional</strong></p>
+<blockquote>
+<div><p>plane wave cutoff in Rydberg</p>
+</div></blockquote>
+<p><strong>basis: ndarray, shape (3, 3), optional</strong></p>
+<blockquote>
+<div><p>the reciprocal lattice vectors, required if units=&#8217;cartesian&#8217; or ecut is specified</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">G: ndarray, shape (ngvec,3)</p>
+<blockquote class="last">
+<div><p>ngvec depends on ecut, when ecut is not specified ngvec=n1*n2*n3</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="cmspy.common.fftutils.FFTGrid.get_minimal_grid">
+<em class="property">static </em><code class="descname">get_minimal_grid</code><span class="sig-paren">(</span><em>lattice_vectors, ecut, kpoints=None, prime_factors=[2, 3, 5]</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.get_minimal_grid" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>kpoints</strong> : ndarray, shape (nkpts,3) or (3,), optional</p>
+<blockquote>
+<div><p>k-points in crystal coordinates</p>
+</div></blockquote>
+<p><strong>ecut</strong> : float</p>
+<blockquote class="last">
+<div><p>energy cutoff in Rydberg</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.common.fftutils.FFTGrid.gvectors_box">
+<code class="descname">gvectors_box</code><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.gvectors_box" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.common.fftutils.FFTGrid.gvectors_sphere">
+<code class="descname">gvectors_sphere</code><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.gvectors_sphere" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.common.fftutils.FFTGrid.put_data_in_box">
+<code class="descname">put_data_in_box</code><span class="sig-paren">(</span><em>G_sphere</em>, <em>data_sphere</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.put_data_in_box" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put data defined on a G-vector sphere into an FFT box</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>G_sphere: ndarray, shape (ngvec, 3)</strong></p>
+<blockquote>
+<div><p>G-vectors in crystal coordinates</p>
+</div></blockquote>
+<p><strong>data_sphere: ndarray, shape (ngvec,)</strong></p>
+<blockquote>
+<div><p>the data</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">data_box: ndarray, shape (n1*n2*n3,)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.common.fftutils.FFTGrid.shape">
+<code class="descname">shape</code><a class="headerlink" href="#cmspy.common.fftutils.FFTGrid.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fftutils.acceptable_prime_factors">
+<code class="descclassname">cmspy.common.fftutils.</code><code class="descname">acceptable_prime_factors</code><span class="sig-paren">(</span><em>prime_factors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.acceptable_prime_factors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fftutils.prime_sieve">
+<code class="descclassname">cmspy.common.fftutils.</code><code class="descname">prime_sieve</code><span class="sig-paren">(</span><em>limit</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.prime_sieve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fftutils.primes_upto2">
+<code class="descclassname">cmspy.common.fftutils.</code><code class="descname">primes_upto2</code><span class="sig-paren">(</span><em>limit</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.primes_upto2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fftutils.trial_division">
+<code class="descclassname">cmspy.common.fftutils.</code><code class="descname">trial_division</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fftutils.trial_division" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of the prime factors for a natural number.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common.fns">
+<span id="cmspy-common-fns-module"></span><h2>cmspy.common.fns module<a class="headerlink" href="#module-cmspy.common.fns" title="Permalink to this headline">¶</a></h2>
+<p>Common functions</p>
+<dl class="function">
+<dt id="cmspy.common.fns.dfdde">
+<code class="descclassname">cmspy.common.fns.</code><code class="descname">dfdde</code><span class="sig-paren">(</span><em>mu</em>, <em>beta</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fns.dfdde" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derivative of Fermi-Dirac distribution function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>mu</strong> : float</p>
+<blockquote>
+<div><p>chemical potential</p>
+</div></blockquote>
+<p><strong>beta: float</strong></p>
+<blockquote>
+<div><p>temperature <img class="math" src="../_images/math/4c355e71b3924975f7978a2b6a898615770e3ed9.png" alt="\beta=k_{\textrm{B}}T"/></p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">lambda</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fns.fd">
+<code class="descclassname">cmspy.common.fns.</code><code class="descname">fd</code><span class="sig-paren">(</span><em>mu</em>, <em>beta</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fns.fd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fermi-Dirac distribution function :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>f_{textrm{FD}}(E) = frac{1}{1*e^{beta}}</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>mu</strong> : float</p>
+<blockquote>
+<div><p>chemical potential</p>
+</div></blockquote>
+<p><strong>beta: float</strong></p>
+<blockquote>
+<div><p>temperature <img class="math" src="../_images/math/4c355e71b3924975f7978a2b6a898615770e3ed9.png" alt="\beta=k_{\textrm{B}}T"/></p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">lambda</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fns.gaussian">
+<code class="descclassname">cmspy.common.fns.</code><code class="descname">gaussian</code><span class="sig-paren">(</span><em>sigma</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fns.gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gaussian function <img class="math" src="../_images/math/b18c6af1e91b8b68ac65cd1c23c2927eea666d93.png" alt="f(x) = \beta e^{-\alpha x^{2}}"/></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sigma</strong> : float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">lambda</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.common.fns.lorentzian">
+<code class="descclassname">cmspy.common.fns.</code><code class="descname">lorentzian</code><span class="sig-paren">(</span><em>eta</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.fns.lorentzian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lorentzian function <img class="math" src="../_images/math/765ada60aa82ea4654609dd313ae238a774db288.png" alt="f(x) = \frac{1}{\pi} \left[ \frac{\eta}{x^{2} + \eta^{2}} \right]"/></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>eta</strong> : float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">lambda</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common.regex">
+<span id="cmspy-common-regex-module"></span><h2>cmspy.common.regex module<a class="headerlink" href="#module-cmspy.common.regex" title="Permalink to this headline">¶</a></h2>
+<p>Common regular expressions</p>
+<dl class="data">
+<dt id="cmspy.common.regex.regex_bool">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_bool</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_bool" title="Permalink to this definition">¶</a></dt>
+<dd><p>boolean</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_bool_fortran">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_bool_fortran</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_bool_fortran" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fortran logical</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_float">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_float</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>floats</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_float_exp">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_float_exp</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_float_exp" title="Permalink to this definition">¶</a></dt>
+<dd><p>floats with exponent</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_float_exp_fortran">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_float_exp_fortran</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_float_exp_fortran" title="Permalink to this definition">¶</a></dt>
+<dd><p>floats with exponent</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_int">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_int</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>integers</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="cmspy.common.regex.regex_tuple3">
+<code class="descclassname">cmspy.common.regex.</code><code class="descname">regex_tuple3</code><em class="property"> = &lt;_sre.SRE_Pattern object at 0x1649070&gt;</em><a class="headerlink" href="#cmspy.common.regex.regex_tuple3" title="Permalink to this definition">¶</a></dt>
+<dd><p>3-tuple</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common.utils">
+<span id="cmspy-common-utils-module"></span><h2>cmspy.common.utils module<a class="headerlink" href="#module-cmspy.common.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.common.utils.convert_units">
+<code class="descclassname">cmspy.common.utils.</code><code class="descname">convert_units</code><span class="sig-paren">(</span><em>a</em>, <em>units</em>, <em>cf</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.common.utils.convert_units" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.common">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.common" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.common.Timer">
+<em class="property">class </em><code class="descclassname">cmspy.common.</code><code class="descname">Timer</code><a class="headerlink" href="#cmspy.common.Timer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.common.test.html" class="btn btn-neutral float-right" title="cmspy.common.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.bgw.utils.html" class="btn btn-neutral" title="cmspy.bgw.utils package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

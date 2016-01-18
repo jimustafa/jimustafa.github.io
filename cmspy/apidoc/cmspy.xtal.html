@@ -1,0 +1,1005 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.xtal package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.xtal.core package" href="cmspy.xtal.core.html"/>
+        <link rel="prev" title="cmspy.xcrysden.io package" href="cmspy.xcrysden.io.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.xtal package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.bands">cmspy.xtal.bands module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.calc">cmspy.xtal.calc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.common">cmspy.xtal.common module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.crystal">cmspy.xtal.crystal module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.ct">cmspy.xtal.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.kptutils">cmspy.xtal.kptutils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.structure">cmspy.xtal.structure module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal.utils">cmspy.xtal.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.xtal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.xtal package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.xtal.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-xtal-package">
+<h1>cmspy.xtal package<a class="headerlink" href="#cmspy-xtal-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.core.html">cmspy.xtal.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.core.html#module-cmspy.xtal.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.flib.html">cmspy.xtal.flib package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.flib.html#module-cmspy.xtal.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.lattice.html">cmspy.xtal.lattice package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.lattice.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.lattice.html#module-cmspy.xtal.lattice.utils">cmspy.xtal.lattice.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.lattice.html#module-cmspy.xtal.lattice">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.test.html">cmspy.xtal.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.bz">cmspy.xtal.test.bz module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.kptutils">cmspy.xtal.test.kptutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#cmspy-xtal-test-tet-module">cmspy.xtal.test.tet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.wfn">cmspy.xtal.test.wfn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.tet.html">cmspy.xtal.tet package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.tet.html#module-cmspy.xtal.tet">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.xtal.bands">
+<span id="cmspy-xtal-bands-module"></span><h2>cmspy.xtal.bands module<a class="headerlink" href="#module-cmspy.xtal.bands" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.xtal.bands.multiplets">
+<code class="descclassname">cmspy.xtal.bands.</code><code class="descname">multiplets</code><span class="sig-paren">(</span><em>bands</em>, <em>kpoints_idx=None</em>, <em>emin=None</em>, <em>emax=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.bands.multiplets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine the multiplets for a set of bands</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<p><strong>kpoints_idx: ndarray</strong></p>
+<blockquote>
+<div><p>indices of k-points at which to determine multiplets</p>
+</div></blockquote>
+<p><strong>emin: float, optional</strong></p>
+<p><strong>emax: float, optional</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">list:</p>
+<blockquote class="last">
+<div><p>list of lists of tuples, one list each k-point, each k-point list is a
+list of tuples, each tuple is a tuple of band indices and the energy</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.calc">
+<span id="cmspy-xtal-calc-module"></span><h2>cmspy.xtal.calc module<a class="headerlink" href="#module-cmspy.xtal.calc" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.xtal.calc.calc_dos">
+<code class="descclassname">cmspy.xtal.calc.</code><code class="descname">calc_dos</code><span class="sig-paren">(</span><em>bands</em>, <em>e</em>, <em>sigma=0.1</em>, <em>spin_factor=2</em>, <em>integrate=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.calc.calc_dos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calulate the density of states</p>
+<p>The density of states if given by the following expression</p>
+<div class="math">
+<p><img src="../_images/math/f2661cabaa6aa433018cf8421fa4fab1839504a1.png" alt="D(\epsilon) = \frac{1}{N_{\k}}\sum_{n\k}\delta(\epsilon-\epsilon_{n\k})"/></p>
+</div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<blockquote>
+<div><p>band energies</p>
+</div></blockquote>
+<p><strong>emin: float, optional</strong></p>
+<blockquote>
+<div><p>lower energy bound, min(bands) if not provided</p>
+</div></blockquote>
+<p><strong>emax: float, optional</strong></p>
+<blockquote>
+<div><p>upper energy bound, max(bands) if not provided</p>
+</div></blockquote>
+<p><strong>de: float, optional</strong></p>
+<blockquote>
+<div><p>energy step</p>
+</div></blockquote>
+<p><strong>sigma: float, optional</strong></p>
+<blockquote>
+<div><p>Guassian broadening for the delta function</p>
+</div></blockquote>
+<p><strong>spin_factor: int</strong></p>
+<blockquote class="last">
+<div><p>spin degeneracy factor</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The units of energy for the bands should match that given for the other parameters.
+When the defaults are used, they will have the same energy unit as the band energies.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.calc.calc_fermi_energy">
+<code class="descclassname">cmspy.xtal.calc.</code><code class="descname">calc_fermi_energy</code><span class="sig-paren">(</span><em>bands</em>, <em>nelec</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.calc.calc_fermi_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the Fermi energy using the bisection method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<blockquote>
+<div><p>band energies</p>
+</div></blockquote>
+<p><strong>nelec: int</strong></p>
+<blockquote class="last">
+<div><p>number of electrons in the system</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.calc.compute_deltas">
+<code class="descclassname">cmspy.xtal.calc.</code><code class="descname">compute_deltas</code><span class="sig-paren">(</span><em>bands</em>, <em>kpq=None</em>, <em>efermi=None</em>, <em>emin=None</em>, <em>emax=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.calc.compute_deltas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calulate the joint density of states (JDOS)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<blockquote>
+<div><p>band energies</p>
+</div></blockquote>
+<p><strong>omega: ndarray, shape (nfreq,)</strong></p>
+<blockquote>
+<div><p>energies at which to evaluate the JDOS</p>
+</div></blockquote>
+<p><strong>kpq: ndarray, shape(nkpts):</strong></p>
+<blockquote>
+<div><p>indices of the point ..math:<cite>mathbf{k}+mathbf{q}</cite></p>
+</div></blockquote>
+<p><strong>efermi: float, optional</strong></p>
+<blockquote>
+<div><p>Fermi energy</p>
+</div></blockquote>
+<p><strong>sigma: float, optional</strong></p>
+<blockquote>
+<div><p>Guassian broadening for the delta function</p>
+</div></blockquote>
+<p><strong>spin_factor: int</strong></p>
+<blockquote class="last">
+<div><p>spin degeneracy factor</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The units of energy for the bands should match that given for the other parameters.
+When the defaults are used, they will have the same energy unit as the band energies.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.calc.compute_jdos">
+<code class="descclassname">cmspy.xtal.calc.</code><code class="descname">compute_jdos</code><span class="sig-paren">(</span><em>bands</em>, <em>omega</em>, <em>kweights=None</em>, <em>kpq=None</em>, <em>efermi=None</em>, <em>smearing='gaussian'</em>, <em>sigma=0.1</em>, <em>spin_factor=2</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.calc.compute_jdos" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calulate the joint density of states (JDOS)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<blockquote>
+<div><p>band energies</p>
+</div></blockquote>
+<p><strong>omega: ndarray, shape (nfreq,)</strong></p>
+<blockquote>
+<div><p>energies at which to evaluate the JDOS</p>
+</div></blockquote>
+<p><strong>kpq: ndarray, shape(nkpts):</strong></p>
+<blockquote>
+<div><p>indices of the point ..math:<cite>mathbf{k}+mathbf{q}</cite></p>
+</div></blockquote>
+<p><strong>efermi: float, optional</strong></p>
+<blockquote>
+<div><p>Fermi energy</p>
+</div></blockquote>
+<p><strong>sigma: float, optional</strong></p>
+<blockquote>
+<div><p>Guassian broadening for the delta function</p>
+</div></blockquote>
+<p><strong>spin_factor: int</strong></p>
+<blockquote class="last">
+<div><p>spin degeneracy factor</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The units of energy for the bands should match that given for the other parameters.
+When the defaults are used, they will have the same energy unit as the band energies.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.calc.compute_jdos_eh">
+<code class="descclassname">cmspy.xtal.calc.</code><code class="descname">compute_jdos_eh</code><span class="sig-paren">(</span><em>bands</em>, <em>omega</em>, <em>bins</em>, <em>kweights=None</em>, <em>kpq=None</em>, <em>efermi=None</em>, <em>smearing='gaussian'</em>, <em>sigma=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.calc.compute_jdos_eh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calulate the joint density of states (JDOS)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>bands: ndarray, shape (nkpts, nbnds)</strong></p>
+<blockquote>
+<div><p>band energies</p>
+</div></blockquote>
+<p><strong>omega: ndarray, shape (nfreq,)</strong></p>
+<blockquote>
+<div><p>energies at which to evaluate the JDOS</p>
+</div></blockquote>
+<p><strong>kpq: ndarray, shape(nkpts):</strong></p>
+<blockquote>
+<div><p>indices of the point ..math:<cite>mathbf{k}+mathbf{q}</cite></p>
+</div></blockquote>
+<p><strong>efermi: float, optional</strong></p>
+<blockquote>
+<div><p>Fermi energy</p>
+</div></blockquote>
+<p><strong>sigma: float, optional</strong></p>
+<blockquote>
+<div><p>Guassian broadening for the delta function</p>
+</div></blockquote>
+<p><strong>spin_factor: int</strong></p>
+<blockquote class="last">
+<div><p>spin degeneracy factor</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The units of energy for the bands should match that given for the other parameters.
+When the defaults are used, they will have the same energy unit as the band energies.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.common">
+<span id="cmspy-xtal-common-module"></span><h2>cmspy.xtal.common module<a class="headerlink" href="#module-cmspy.xtal.common" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.xtal.common.BandStructure">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.common.</code><code class="descname">BandStructure</code><span class="sig-paren">(</span><em>input_array</em>, <em>kpoints=None</em>, <em>kpath=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.common.BandStructure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cmspy.xtal.common.WavefunctionDataset" title="cmspy.xtal.common.WavefunctionDataset"><code class="xref py py-class docutils literal"><span class="pre">cmspy.xtal.common.WavefunctionDataset</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.xtal.common.BandStructure.plot_gnuplot">
+<code class="descname">plot_gnuplot</code><span class="sig-paren">(</span><em>ispn=0</em>, <em>gp=None</em>, <em>**plot_kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.common.BandStructure.plot_gnuplot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.common.BandStructure.plot_matplotlib">
+<code class="descname">plot_matplotlib</code><span class="sig-paren">(</span><em>ispn=0</em>, <em>fig=None</em>, <em>*args</em>, <em>**plot_kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.common.BandStructure.plot_matplotlib" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.common.BandStructure.set_eref">
+<code class="descname">set_eref</code><span class="sig-paren">(</span><em>eref</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.common.BandStructure.set_eref" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.xtal.common.WavefunctionDataset">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.common.</code><code class="descname">WavefunctionDataset</code><span class="sig-paren">(</span><em>input_array</em>, <em>kpoints=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.common.WavefunctionDataset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>Base class for representing crystal data</p>
+<p>Most data associated with a crystal comes with indicies indicating the k-point,
+band index, and spin index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a: array_like, shape (nkpts, nbnds, nspns)</strong></p>
+<blockquote>
+<div><p>wavefunction dataset</p>
+</div></blockquote>
+<p><strong>kpoints: array_like, shape (nkpts, 3), optional</strong></p>
+<blockquote class="last">
+<div><p>k-points</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>nkpts: int</td>
+<td>number of k-points</td>
+</tr>
+<tr class="row-even"><td>nbnds: int</td>
+<td>number of bands</td>
+</tr>
+<tr class="row-odd"><td>nspns: int</td>
+<td>number of spins</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="cmspy.xtal.common.WavefunctionDataset.kpoints">
+<code class="descname">kpoints</code><a class="headerlink" href="#cmspy.xtal.common.WavefunctionDataset.kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.xtal.common.WavefunctionDataset.nbnds">
+<code class="descname">nbnds</code><a class="headerlink" href="#cmspy.xtal.common.WavefunctionDataset.nbnds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.xtal.common.WavefunctionDataset.nkpts">
+<code class="descname">nkpts</code><a class="headerlink" href="#cmspy.xtal.common.WavefunctionDataset.nkpts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.xtal.common.WavefunctionDataset.nspns">
+<code class="descname">nspns</code><a class="headerlink" href="#cmspy.xtal.common.WavefunctionDataset.nspns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.crystal">
+<span id="cmspy-xtal-crystal-module"></span><h2>cmspy.xtal.crystal module<a class="headerlink" href="#module-cmspy.xtal.crystal" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.xtal.crystal.Crystal">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.crystal.</code><code class="descname">Crystal</code><span class="sig-paren">(</span><em>lattice_vectors</em>, <em>basis</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.crystal.Crystal" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="cmspy.xtal.crystal.Crystal.basis_vectors">
+<code class="descname">basis_vectors</code><a class="headerlink" href="#cmspy.xtal.crystal.Crystal.basis_vectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.xtal.crystal.Crystal.species">
+<code class="descname">species</code><a class="headerlink" href="#cmspy.xtal.crystal.Crystal.species" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.xtal.crystal.CrystalBasis">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.crystal.</code><code class="descname">CrystalBasis</code><a class="headerlink" href="#cmspy.xtal.crystal.CrystalBasis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">_abcoll.MutableSequence</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.ct">
+<span id="cmspy-xtal-ct-module"></span><h2>cmspy.xtal.ct module<a class="headerlink" href="#module-cmspy.xtal.ct" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.ct.</code><code class="descname">WavefunctionDatasetConvergenceTestPlotter</code><span class="sig-paren">(</span><em>data</em>, <em>xvals</em>, <em>data_ref=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>Class for plotting convergence tests.</p>
+<p>The data is that of a WavefunctionDataset.</p>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>data</td>
+<td>(ndarray or list of ndarray) An array or list of arrays that each have a shape corresponding to (nkpts, nbnds, nspns, nxvals). The last dimension corresponds to the convergence parameter.</td>
+</tr>
+<tr class="row-even"><td>xvals: ndarray</td>
+<td>An array of values corresponding to the convergence parameter.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.data_ref">
+<code class="descname">data_ref</code><a class="headerlink" href="#cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.data_ref" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.get_gnuplot_data_objs_array">
+<code class="descname">get_gnuplot_data_objs_array</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.get_gnuplot_data_objs_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.get_gnuplot_data_objs_list">
+<code class="descname">get_gnuplot_data_objs_list</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.get_gnuplot_data_objs_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.ct.WavefunctionDatasetConvergenceTestPlotter.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.kptutils">
+<span id="cmspy-xtal-kptutils-module"></span><h2>cmspy.xtal.kptutils module<a class="headerlink" href="#module-cmspy.xtal.kptutils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.construct_point_mapping">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">construct_point_mapping</code><span class="sig-paren">(</span><em>pts_from</em>, <em>pts_to</em>, <em>tol=2.2204460492503131e-16</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.construct_point_mapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of points from one array in another array</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pts_from: array_like, shape (npts_from, 3)</strong></p>
+<p><strong>pts_to: array_like, shape (npts_to, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">mapping: ndarray</p>
+<blockquote>
+<div><p>mapping[i] = index of pts_from[i] in pts_to</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><strong>Exception</strong></p>
+<blockquote class="last">
+<div><p>if there is a point in pts_from that does not map to exactly one point in pts_to</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.create_kmap">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">create_kmap</code><span class="sig-paren">(</span><em>k_from</em>, <em>k_to</em>, <em>syms</em>, <em>return_symmetry_index=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.create_kmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a map from one list of k-points to another list</p>
+<p>The k-points and symmetries need to be in the same coordinates</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.find_vector">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">find_vector</code><span class="sig-paren">(</span><em>pt_target</em>, <em>pts_in</em>, <em>idx=None</em>, <em>tol=2.2204460492503131e-16</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.find_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of a point in an array of points</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pt_target: array_like, shape (N,)</strong></p>
+<blockquote>
+<div><p>point to find</p>
+</div></blockquote>
+<p><strong>pts_in: array_like, shape (M,N)</strong></p>
+<blockquote>
+<div><p>array of points in which to find target point</p>
+</div></blockquote>
+<p><strong>idx: ndarray, optional</strong></p>
+<blockquote>
+<div><p>precomputed indices, useful for when this function is called many times</p>
+</div></blockquote>
+<p><strong>tol: float, optional</strong></p>
+<blockquote class="last">
+<div><p>tolerance for matching the point</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.find_vector_int">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">find_vector_int</code><span class="sig-paren">(</span><em>pt_target</em>, <em>pts_in</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.find_vector_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of a point in an array of points</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pt_target: array_like, shape (N,)</strong></p>
+<blockquote>
+<div><p>point to find</p>
+</div></blockquote>
+<p><strong>pts_in: array_like, shape (M,N)</strong></p>
+<blockquote>
+<div><p>array of points in which to find target point</p>
+</div></blockquote>
+<p><strong>idx: ndarray, optional</strong></p>
+<blockquote class="last">
+<div><p>precomputed indices, useful for when this function is called many times</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.get_kpq_index">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">get_kpq_index</code><span class="sig-paren">(</span><em>kpoints_int</em>, <em>qpoint_int</em>, <em>grid_dims=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.get_kpq_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.kgrid">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">kgrid</code><span class="sig-paren">(</span><em>n1</em>, <em>n2</em>, <em>n3</em>, <em>periodic=True</em>, <em>integer=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.kgrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a uniform (Gamma centered) grid of k-points in the primitive
+reciprocal unit cell. The k-points are given in terms of crystal
+coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>n1</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/b28cb42b3d2584fbc5ce9287aa892fb6f66a5ac3.png" alt="\mathbf{b}_1"/></p>
+</div></blockquote>
+<p><strong>n2</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/d789def058c244ff87d376b83c6e79d789eb7a71.png" alt="\mathbf{b}_2"/></p>
+</div></blockquote>
+<p><strong>n3</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/48ea023d6813904b0c224ed2008a620bb803eea9.png" alt="\mathbf{b}_3"/></p>
+</div></blockquote>
+<p><strong>periodic</strong> : boolean, optional</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>True:</dt>
+<dd><p class="first last">DO NOT include redundant boundary points</p>
+</dd>
+<dt>False:</dt>
+<dd><p class="first last">Include redundant boundary points, this is useful for interpolation</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><strong>integer</strong> : boolean, optional</p>
+<blockquote>
+<div><p>kpoints are given in integer form (k1*n1, k2*n2, k3*n3)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>kpoints</strong> : ndarray, shape (nkpts=n1*n2*n3, 3)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.kmap_2periodic">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">kmap_2periodic</code><span class="sig-paren">(</span><em>nk1</em>, <em>nk2</em>, <em>nk3</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.kmap_2periodic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.kmap_grid">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">kmap_grid</code><span class="sig-paren">(</span><em>grid1</em>, <em>grid2</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.kmap_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map k-points from one regular grid to another</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grid1 :</strong></p>
+<blockquote>
+<div><p>coarser grid</p>
+</div></blockquote>
+<p><strong>grid2 :</strong></p>
+<blockquote>
+<div><p>finer grid</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">idx :</p>
+<blockquote class="last">
+<div><p>indices of k-points on grid1 inside grid2</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.kpt_to_unit_cell">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">kpt_to_unit_cell</code><span class="sig-paren">(</span><em>kpt</em>, <em>return_gvec=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.kpt_to_unit_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate k-point to the reciprocal unit cell</p>
+<p>The resulting k-point will have fractional coordinates all in [0,1)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.print_kpoints">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">print_kpoints</code><span class="sig-paren">(</span><em>kpoints</em>, <em>stream=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.print_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.read_kpath">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">read_kpath</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.read_kpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.reduce">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">reduce</code><span class="sig-paren">(</span><em>kpoints</em>, <em>syms</em>, <em>return_kweights=False</em>, <em>return_kmap=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.reduce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.reduce_grid">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">reduce_grid</code><span class="sig-paren">(</span><em>nk1</em>, <em>nk2</em>, <em>nk3</em>, <em>syms</em>, <em>return_kweights=False</em>, <em>return_kmap=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.reduce_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.subgroup">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">subgroup</code><span class="sig-paren">(</span><em>qpt</em>, <em>syms</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.subgroup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.to_bz">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">to_bz</code><span class="sig-paren">(</span><em>kpoints</em>, <em>gbz</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.to_bz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.kptutils.to_unit_cell">
+<code class="descclassname">cmspy.xtal.kptutils.</code><code class="descname">to_unit_cell</code><span class="sig-paren">(</span><em>kpoints</em>, <em>return_gvec=False</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.kptutils.to_unit_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.structure">
+<span id="cmspy-xtal-structure-module"></span><h2>cmspy.xtal.structure module<a class="headerlink" href="#module-cmspy.xtal.structure" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.xtal.structure.EquationOfState">
+<em class="property">class </em><code class="descclassname">cmspy.xtal.structure.</code><code class="descname">EquationOfState</code><span class="sig-paren">(</span><em>volumes</em>, <em>energies</em>, <em>eos_string=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.structure.EquationOfState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.xtal.structure.EquationOfState.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>eos_string='murnaghan'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.structure.EquationOfState.fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.xtal.structure.EquationOfState.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>eos_string='Murnaghan'</em>, <em>interact=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.structure.EquationOfState.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.structure.murnaghan">
+<code class="descclassname">cmspy.xtal.structure.</code><code class="descname">murnaghan</code><span class="sig-paren">(</span><em>V</em>, <em>E0</em>, <em>V0</em>, <em>K0</em>, <em>K0p</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.structure.murnaghan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal.utils">
+<span id="cmspy-xtal-utils-module"></span><h2>cmspy.xtal.utils module<a class="headerlink" href="#module-cmspy.xtal.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.xtal.utils.cartesian2crystal">
+<code class="descclassname">cmspy.xtal.utils.</code><code class="descname">cartesian2crystal</code><span class="sig-paren">(</span><em>coords</em>, <em>lattice_vectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.utils.cartesian2crystal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert vectors expressed in Cartesian coordinates to crystal coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>coords: ndarray, shape (..., npts, 3)</strong></p>
+<p><strong>lattice_vectors: ndarray, shape (3, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.utils.chemical_potential">
+<code class="descclassname">cmspy.xtal.utils.</code><code class="descname">chemical_potential</code><span class="sig-paren">(</span><em>e</em>, <em>esplit</em>, <em>egap</em>, <em>dos</em>, <em>n</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.utils.chemical_potential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the chemical potential for a given amount of doping</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>e</strong> : ndarray</p>
+<blockquote>
+<div><p>energy grid for the density of states</p>
+</div></blockquote>
+<p><strong>esplit</strong> : float</p>
+<blockquote>
+<div><p>the energy that separates the electrons from holes (e.g. the midgap energy)</p>
+</div></blockquote>
+<p><strong>egap</strong> : float</p>
+<blockquote>
+<div><p>energy gap</p>
+</div></blockquote>
+<p><strong>dos</strong> : ndarray</p>
+<blockquote>
+<div><p>density of states (states/cell/energy)</p>
+</div></blockquote>
+<p><strong>n</strong> : float</p>
+<blockquote>
+<div><p>doping concentration in <img class="math" src="../_images/math/c3a1ebbb2b237815049fef47ca464b2376e4e9cb.png" alt="1/cell"/>, negative for electron doping</p>
+</div></blockquote>
+<p><strong>T</strong> : float</p>
+<blockquote class="last">
+<div><p>the temperature</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.utils.coordinate">
+<code class="descclassname">cmspy.xtal.utils.</code><code class="descname">coordinate</code><span class="sig-paren">(</span><em>lattice_vectors</em>, <em>basis_vectors</em>, <em>coordination_numbers</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.utils.coordinate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Coordinate each atom in the basis with a specfic number of neighbors</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>lattice_vectors</strong> : array_like, shape (3, 3)</p>
+<p><strong>basis_vectors</strong> : array_like, shape (natms, 3)</p>
+<blockquote>
+<div><p>basis vectors in crystal coordinates</p>
+</div></blockquote>
+<p class="last"><strong>coordination_numbers: array_like, shape (natms,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.xtal.utils.crystal2cartesian">
+<code class="descclassname">cmspy.xtal.utils.</code><code class="descname">crystal2cartesian</code><span class="sig-paren">(</span><em>coords</em>, <em>lattice_vectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.xtal.utils.crystal2cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert vectors expressed in crystal coordinates to Cartesian coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>coords: ndarray, shape (..., npts, 3)</strong></p>
+<p><strong>lattice_vectors: ndarray, shape (3, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.xtal">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.xtal" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.xtal.core.html" class="btn btn-neutral float-right" title="cmspy.xtal.core package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.xcrysden.io.html" class="btn btn-neutral" title="cmspy.xcrysden.io package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

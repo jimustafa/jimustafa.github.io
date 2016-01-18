@@ -1,0 +1,10 @@
+cmspy.xtal.flib package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xtal.flib
+    :members:
+    :undoc-members:
+    :show-inheritance:

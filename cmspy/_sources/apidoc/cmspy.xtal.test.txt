@@ -1,0 +1,46 @@
+cmspy.xtal.test package
+=======================
+
+Submodules
+----------
+
+cmspy.xtal.test.bz module
+-------------------------
+
+.. automodule:: cmspy.xtal.test.bz
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.test.kptutils module
+-------------------------------
+
+.. automodule:: cmspy.xtal.test.kptutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.test.tet module
+--------------------------
+
+.. automodule:: cmspy.xtal.test.tet
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.test.wfn module
+--------------------------
+
+.. automodule:: cmspy.xtal.test.wfn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xtal.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

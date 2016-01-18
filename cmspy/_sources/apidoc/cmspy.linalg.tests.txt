@@ -1,0 +1,54 @@
+cmspy.linalg.tests package
+==========================
+
+Submodules
+----------
+
+cmspy.linalg.tests.qep module
+-----------------------------
+
+.. automodule:: cmspy.linalg.tests.qep
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.linalg.tests.rotations module
+-----------------------------------
+
+.. automodule:: cmspy.linalg.tests.rotations
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.linalg.tests.test_codiag module
+-------------------------------------
+
+.. automodule:: cmspy.linalg.tests.test_codiag
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.linalg.tests.test_flib module
+-----------------------------------
+
+.. automodule:: cmspy.linalg.tests.test_flib
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.linalg.tests.test_givens module
+-------------------------------------
+
+.. automodule:: cmspy.linalg.tests.test_givens
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.linalg.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

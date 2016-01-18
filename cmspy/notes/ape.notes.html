@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>APE Notes &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="Notes" href="notes.html"/>
+        <link rel="next" title="Conventions" href="conventions.html"/>
+        <link rel="prev" title="Notes" href="notes.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../apidoc/cmspy.html">cmspy package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="notes.html">Notes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">APE Notes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#radial-grid">Radial Grid</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conventions.html">Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bloch.html">Bloch Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts.html">Scripts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="notes.html">Notes</a> &raquo;</li>
+      
+    <li>APE Notes</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/notes/ape.notes.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ape-notes">
+<h1>APE Notes<a class="headerlink" href="#ape-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="radial-grid">
+<h2>Radial Grid<a class="headerlink" href="#radial-grid" title="Permalink to this headline">¶</a></h2>
+<p>There are three different kinds of grids available in APE.</p>
+<p>log1</p>
+<div class="math">
+<p><img src="../_images/math/5cc9072a35632a88c23a6f2863c76feba9c39c53.png" alt="r_{i} = be^{ai}"/></p>
+</div><p>The determination of <img class="math" src="../_images/math/a7bc556f3f2e5fbc834183912597fc23fc0aced7.png" alt="a"/> and <img class="math" src="../_images/math/7f82e6cf43dcb46757688c2503bd67a82e92e9d2.png" alt="b"/> given <img class="math" src="../_images/math/8c0782e427d774820f9a930d0095ef1305ee1688.png" alt="r_{\textrm{min}}"/> and
+<img class="math" src="../_images/math/77bf06873d07ad0da59464297072e3898de11240.png" alt="r_{\textrm{max}}"/> and the number of points <img class="math" src="../_images/math/f1251f484700aa33e70a8bc2af0122babcadd2e6.png" alt="N"/> is as follows:</p>
+<div class="math">
+<p><img src="../_images/math/14f0d2009293db4fba19fc816e3d81c3db3a77b9.png" alt="\frac{r^{N}}{r_{1}} = e^{a(N-1)} \implies a=\frac{\log(\frac{r^{N}}{r_{1}})}{N-1}
+
+b = \frac{r_{1}}{e^{a}}"/></p>
+</div><p>Note that <img class="math" src="../_images/math/7f82e6cf43dcb46757688c2503bd67a82e92e9d2.png" alt="b"/> is defined using <img class="math" src="../_images/math/266d8377ccf40d0089fa7ee7b9bf7ce88f14ec4b.png" alt="r_{1}"/> in particular.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="conventions.html" class="btn btn-neutral float-right" title="Conventions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="notes.html" class="btn btn-neutral" title="Notes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

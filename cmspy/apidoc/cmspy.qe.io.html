@@ -1,0 +1,680 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.qe.io package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy.qe package" href="cmspy.qe.html"/>
+        <link rel="next" title="cmspy.qe.ph package" href="cmspy.qe.ph.html"/>
+        <link rel="prev" title="cmspy.qe package" href="cmspy.qe.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="cmspy.qe.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.html#module-cmspy.qe.upf">cmspy.qe.upf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.html#module-cmspy.qe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+          <li><a href="cmspy.qe.html">cmspy.qe package</a> &raquo;</li>
+      
+    <li>cmspy.qe.io package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.qe.io.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-qe-io-package">
+<h1>cmspy.qe.io package<a class="headerlink" href="#cmspy-qe-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.qe.io.qexml">
+<span id="cmspy-qe-io-qexml-module"></span><h2>cmspy.qe.io.qexml module<a class="headerlink" href="#module-cmspy.qe.io.qexml" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO">
+<em class="property">class </em><code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">PWscfDataIO</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>auto_read=True</em>, <em>units={}</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ElementTree</span></code></p>
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.get_ecutwfc">
+<code class="descname">get_ecutwfc</code><span class="sig-paren">(</span><em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.get_ecutwfc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.read_atomic_positions">
+<code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.read_crystal_basis">
+<code class="descname">read_crystal_basis</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.read_crystal_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.read_dlv">
+<code class="descname">read_dlv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.read_eigenvalues">
+<code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>units='eV'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexml.PWscfDataIO.read_kpoints">
+<code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.PWscfDataIO.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_atomic_positions">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='cartesian'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_crystal_basis">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_crystal_basis</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_crystal_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_dlv">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_dlv</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='bohr'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_eigenvalues">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_fermi_energy">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_fermi_energy</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_fermi_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_fft_grid_dims">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_fft_grid_dims</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_fft_grid_dims" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_kpoints">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read k-points from data-file.xml</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data_file_path: str</strong></p>
+<blockquote>
+<div><p>path of data-file.xml</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">kpoints: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The k-points in data-file.xml are given in Cartesian coordinates in units of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.
+To convert to Cartesian requires multiplication by a factor of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.  This is
+done for units=&#8217;cartesian&#8217;.  To convert to crystal coordinates:</p>
+<div class="math">
+<p><img src="../_images/math/4e364a3cc5a216a2abefdfd5f8e1cbb467bad4d2.png" alt="\frac{2\pi}{a} \mathbf{k}^T
+\left(
+\begin{array}{c}
+\mathbf{b}_1 \\ \mathbf{b}_2 \\ \mathbf{b}_3 \\
+\end{array}
+\right)"/></p>
+</div><p>The array of reciprocal lattice vectors is exactly that which is returned by <a class="reference internal" href="#cmspy.qe.io.qexml.read_rlv" title="cmspy.qe.io.qexml.read_rlv"><code class="xref py py-func docutils literal"><span class="pre">read_rlv</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_lattice_parameter">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_lattice_parameter</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Bohr'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_lattice_parameter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_rlv">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_rlv</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_symmetries">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_symmetries</code><span class="sig-paren">(</span><em>data_file_xml</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_symmetries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexml.read_tetrahedra">
+<code class="descclassname">cmspy.qe.io.qexml.</code><code class="descname">read_tetrahedra</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexml.read_tetrahedra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the tetrahedra from data-file.xml</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data_file_path: str</strong></p>
+<blockquote>
+<div><p>Path of data-file.xml</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">tetrahedra: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.qe.io.qexpt">
+<span id="cmspy-qe-io-qexpt-module"></span><h2>cmspy.qe.io.qexpt module<a class="headerlink" href="#module-cmspy.qe.io.qexpt" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.qe.io.qexpt.ExportIO">
+<em class="property">class </em><code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">ExportIO</code><span class="sig-paren">(</span><em>index_xml</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/xml.etree.elementtree.html#xml.etree.ElementTree.ElementTree" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">xml.etree.ElementTree.ElementTree</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_dlv">
+<code class="descname">read_dlv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_eigenvalues">
+<code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_grid">
+<code class="descname">read_grid</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_kpoints">
+<code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_main_grid">
+<code class="descname">read_main_grid</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_rlv">
+<code class="descname">read_rlv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_symmetries">
+<code class="descname">read_symmetries</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_symmetries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_wfc">
+<code class="descname">read_wfc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_wfc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.read_wfc_main_grid">
+<code class="descname">read_wfc_main_grid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.read_wfc_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt.ExportIO.write_to_hdf5">
+<code class="descname">write_to_hdf5</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.ExportIO.write_to_hdf5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_atomic_positions">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>index</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_cell">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_cell</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_dimensions">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_dimensions</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_dlv">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_dlv</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_eigenvalues">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>index</em>, <em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_grid">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_grid</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em>, <em>return_idx=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_kpoints">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read k-points from QEXPT</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dir:</strong></p>
+<blockquote>
+<div><p>QEXPT directory</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">kpoints: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The k-points from QEXPT are given in Cartesian coordinates in units of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.
+To convert to Cartesian requires multiplication by a factor of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.  This is
+done for units=&#8217;cartesian&#8217;.  To convert to crystal coordinates:</p>
+<div class="math">
+<p><img src="../_images/math/4e364a3cc5a216a2abefdfd5f8e1cbb467bad4d2.png" alt="\frac{2\pi}{a} \mathbf{k}^T
+\left(
+\begin{array}{c}
+\mathbf{b}_1 \\ \mathbf{b}_2 \\ \mathbf{b}_3 \\
+\end{array}
+\right)"/></p>
+</div><p>The array of reciprocal lattice vectors is exactly that which is returned by <a class="reference internal" href="#cmspy.qe.io.qexpt.read_rlv" title="cmspy.qe.io.qexpt.read_rlv"><code class="xref py py-func docutils literal"><span class="pre">read_rlv</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_main_grid">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_main_grid</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_rlv">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_rlv</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_symmetries">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_symmetries</code><span class="sig-paren">(</span><em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_symmetries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_wfc">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_wfc</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_wfc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt.read_wfc_main_grid">
+<code class="descclassname">cmspy.qe.io.qexpt.</code><code class="descname">read_wfc_main_grid</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt.read_wfc_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.qe.io.qexpt1">
+<span id="cmspy-qe-io-qexpt1-module"></span><h2>cmspy.qe.io.qexpt1 module<a class="headerlink" href="#module-cmspy.qe.io.qexpt1" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.qe.io.qexpt1.ExportIO">
+<em class="property">class </em><code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">ExportIO</code><span class="sig-paren">(</span><em>index_xml</em>, <em>auto_read=True</em>, <em>units={}</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/xml.etree.elementtree.html#xml.etree.ElementTree.ElementTree" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">xml.etree.ElementTree.ElementTree</span></code></a></p>
+<dl class="attribute">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.dlv">
+<code class="descname">dlv</code><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.eigenvalues">
+<code class="descname">eigenvalues</code><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.kpoints">
+<code class="descname">kpoints</code><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.read_dlv">
+<code class="descname">read_dlv</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.read_eigenvalues">
+<code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.read_kpoints">
+<code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.read_rlv">
+<code class="descname">read_rlv</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.rlv">
+<code class="descname">rlv</code><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.qe.io.qexpt1.ExportIO.write_to_hdf5">
+<code class="descname">write_to_hdf5</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.ExportIO.write_to_hdf5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.is_single_file">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">is_single_file</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.is_single_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_atomic_positions">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_atoms">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_atoms</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_atoms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_cell">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_cell</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_dimensions">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_dimensions</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_dlv">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_dlv</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_eigenvalues">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>dir</em>, <em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_grid">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_grid</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em>, <em>return_idx=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_kpoints">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read k-points from QEXPT</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dir:</strong></p>
+<blockquote>
+<div><p>QEXPT directory</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">kpoints: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The k-points from QEXPT are given in Cartesian coordinates in units of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.
+To convert to Cartesian requires multiplication by a factor of <img class="math" src="../_images/math/1b20529eb17f60c171d958ac4a78612dc39a0665.png" alt="\frac{2\pi}{a}"/>.  This is
+done for units=&#8217;cartesian&#8217;.  To convert to crystal coordinates:</p>
+<div class="math">
+<p><img src="../_images/math/4e364a3cc5a216a2abefdfd5f8e1cbb467bad4d2.png" alt="\frac{2\pi}{a} \mathbf{k}^T
+\left(
+\begin{array}{c}
+\mathbf{b}_1 \\ \mathbf{b}_2 \\ \mathbf{b}_3 \\
+\end{array}
+\right)"/></p>
+</div><p>The array of reciprocal lattice vectors is exactly that which is returned by <a class="reference internal" href="#cmspy.qe.io.qexpt.read_rlv" title="cmspy.qe.io.qexpt.read_rlv"><code class="xref py py-func docutils literal"><span class="pre">read_rlv</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_main_grid">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_main_grid</code><span class="sig-paren">(</span><em>dir</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_rlv">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_rlv</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_symmetries">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_symmetries</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_symmetries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_wfc">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_wfc</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_wfc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.qe.io.qexpt1.read_wfc_main_grid">
+<code class="descclassname">cmspy.qe.io.qexpt1.</code><code class="descname">read_wfc_main_grid</code><span class="sig-paren">(</span><em>dir</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.qe.io.qexpt1.read_wfc_main_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.qe.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.qe.io" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.qe.ph.html" class="btn btn-neutral float-right" title="cmspy.qe.ph package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.qe.html" class="btn btn-neutral" title="cmspy.qe package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

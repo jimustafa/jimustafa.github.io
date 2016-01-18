@@ -1,0 +1,30 @@
+cmspy.qe.pp package
+===================
+
+Submodules
+----------
+
+cmspy.qe.pp.bands module
+------------------------
+
+.. automodule:: cmspy.qe.pp.bands
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.pp.input module
+------------------------
+
+.. automodule:: cmspy.qe.pp.input
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe.pp
+    :members:
+    :undoc-members:
+    :show-inheritance:

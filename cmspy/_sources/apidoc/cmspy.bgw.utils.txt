@@ -1,0 +1,22 @@
+cmspy.bgw.utils package
+=======================
+
+Submodules
+----------
+
+cmspy.bgw.utils.kgrid module
+----------------------------
+
+.. automodule:: cmspy.bgw.utils.kgrid
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.bgw.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:

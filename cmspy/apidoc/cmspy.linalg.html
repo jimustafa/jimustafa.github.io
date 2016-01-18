@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.linalg package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.linalg.flib package" href="cmspy.linalg.flib.html"/>
+        <link rel="prev" title="cmspy.job package" href="cmspy.job.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.linalg package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.linalg.codiag">cmspy.linalg.codiag module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.linalg.utils">cmspy.linalg.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.linalg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.linalg package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.linalg.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-linalg-package">
+<h1>cmspy.linalg package<a class="headerlink" href="#cmspy-linalg-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.linalg.flib.html">cmspy.linalg.flib package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.flib.html#module-cmspy.linalg.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.linalg.tests.html">cmspy.linalg.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.qep">cmspy.linalg.tests.qep module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.rotations">cmspy.linalg.tests.rotations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_codiag">cmspy.linalg.tests.test_codiag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_flib">cmspy.linalg.tests.test_flib module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_givens">cmspy.linalg.tests.test_givens module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.linalg.codiag">
+<span id="cmspy-linalg-codiag-module"></span><h2>cmspy.linalg.codiag module<a class="headerlink" href="#module-cmspy.linalg.codiag" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.linalg.codiag.diag2">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">diag2</code><span class="sig-paren">(</span><em>a</em>, <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.diag2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the square moduli of the diagonal elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (..., N, N)</p>
+<p><strong>n</strong> : int</p>
+<blockquote class="last">
+<div><p>the <img class="math" src="../_images/math/72b130a379d6970a0e99428c51c30bd73a772b57.png" alt="n \times n"/> sub-block</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.diag2_ii">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">diag2_ii</code><span class="sig-paren">(</span><em>a</em>, <em>i</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.diag2_ii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the square moduli of the diagonal elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (..., N, N)</p>
+<p><strong>i</strong> : int</p>
+<blockquote class="last">
+<div><p>diagonal component</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.diag2_ii_Abc">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">diag2_ii_Abc</code><span class="sig-paren">(</span><em>a</em>, <em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.diag2_ii_Abc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.diag2_iijj">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">diag2_iijj</code><span class="sig-paren">(</span><em>a</em>, <em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.diag2_iijj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the square moduli of the diagonal elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (..., N, N)</p>
+<p><strong>i</strong> : int</p>
+<blockquote class="last">
+<div><p>diagonal component</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.diag2_iijj_Abc">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">diag2_iijj_Abc</code><span class="sig-paren">(</span><em>a</em>, <em>i</em>, <em>j</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.diag2_iijj_Abc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.offdiag2">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">offdiag2</code><span class="sig-paren">(</span><em>a</em>, <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.offdiag2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the square moduli of the off-diagonal elements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (..., N, N)</p>
+<p><strong>n</strong> : int</p>
+<blockquote class="last">
+<div><p>the <img class="math" src="../_images/math/72b130a379d6970a0e99428c51c30bd73a772b57.png" alt="n \times n"/> sub-block</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.codiag.v2cs">
+<code class="descclassname">cmspy.linalg.codiag.</code><code class="descname">v2cs</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.codiag.v2cs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.linalg.utils">
+<span id="cmspy-linalg-utils-module"></span><h2>cmspy.linalg.utils module<a class="headerlink" href="#module-cmspy.linalg.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.linalg.utils.unitarize">
+<code class="descclassname">cmspy.linalg.utils.</code><code class="descname">unitarize</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.utils.unitarize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.linalg">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.linalg" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.linalg.change_basis">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">change_basis</code><span class="sig-paren">(</span><em>a</em>, <em>u</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.change_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.find_canonical_basis_vectors">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">find_canonical_basis_vectors</code><span class="sig-paren">(</span><em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.find_canonical_basis_vectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.pauli_decomposition">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">pauli_decomposition</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.pauli_decomposition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.rotation_matrix">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">rotation_matrix</code><span class="sig-paren">(</span><em>theta</em>, <em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the rotation matrix corresponding to rotation by angle <img class="math" src="../_images/math/391420ad1f6804af7c117ef55c301cd931cd9313.png" alt="\theta"/>
+about the axis given by <img class="math" src="../_images/math/6f254e817f7672577e37140cf3412c886ee0f9d2.png" alt="\hat{\mathbf{n}}"/></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.rotation_matrix_uv">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">rotation_matrix_uv</code><span class="sig-paren">(</span><em>u</em>, <em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.rotation_matrix_uv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the rotation matrix that rotates <img class="math" src="../_images/math/22c1781ab0317bf8447c0e9fd73c05a73c9e7496.png" alt="\mathbf{u}"/> to be aligned
+with <img class="math" src="../_images/math/9f72a19b31b94858ca4cfe3b0938b596543760b3.png" alt="\mathbf{v}"/></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.linalg.rotation_matrix_xyz">
+<code class="descclassname">cmspy.linalg.</code><code class="descname">rotation_matrix_xyz</code><span class="sig-paren">(</span><em>xyz</em>, <em>uvw</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.linalg.rotation_matrix_xyz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the rotation matrix that rotates the coordinate system defined by
+<img class="math" src="../_images/math/43978a2b6d9227484dee7f2adbb18b4ba445ca64.png" alt="\hat{\mathbf{x}},\hat{\mathbf{y}},\hat{\mathbf{z}}"/>
+into the coordinate system defined by
+<img class="math" src="../_images/math/cebd9f1faac836f909e513ad0ac515c2ecec088a.png" alt="\hat{\mathbf{u}},\hat{\mathbf{v}},\hat{\mathbf{w}}"/></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.linalg.flib.html" class="btn btn-neutral float-right" title="cmspy.linalg.flib package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.job.html" class="btn btn-neutral" title="cmspy.job package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

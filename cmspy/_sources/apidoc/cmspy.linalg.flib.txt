@@ -1,0 +1,10 @@
+cmspy.linalg.flib package
+=========================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.linalg.flib
+    :members:
+    :undoc-members:
+    :show-inheritance:

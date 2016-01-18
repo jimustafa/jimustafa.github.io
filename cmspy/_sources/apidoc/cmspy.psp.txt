@@ -1,0 +1,37 @@
+cmspy.psp package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.psp.test
+
+Submodules
+----------
+
+cmspy.psp.kb module
+-------------------
+
+.. automodule:: cmspy.psp.kb
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.psp.sl module
+-------------------
+
+.. automodule:: cmspy.psp.sl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.psp
+    :members:
+    :undoc-members:
+    :show-inheritance:

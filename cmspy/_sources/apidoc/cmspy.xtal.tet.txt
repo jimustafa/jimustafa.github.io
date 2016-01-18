@@ -1,0 +1,10 @@
+cmspy.xtal.tet package
+======================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xtal.tet
+    :members:
+    :undoc-members:
+    :show-inheritance:

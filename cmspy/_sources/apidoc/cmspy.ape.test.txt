@@ -1,0 +1,30 @@
+cmspy.ape.test package
+======================
+
+Submodules
+----------
+
+cmspy.ape.test.ape2lspp module
+------------------------------
+
+.. automodule:: cmspy.ape.test.ape2lspp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.ape.test.test_ape2lsppy module
+------------------------------------
+
+.. automodule:: cmspy.ape.test.test_ape2lsppy
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.ape.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

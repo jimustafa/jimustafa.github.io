@@ -1,0 +1,22 @@
+cmspy.optimize.test package
+===========================
+
+Submodules
+----------
+
+cmspy.optimize.test.qpqc module
+-------------------------------
+
+.. automodule:: cmspy.optimize.test.qpqc
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.optimize.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

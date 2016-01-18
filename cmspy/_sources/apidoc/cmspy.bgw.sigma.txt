@@ -1,0 +1,46 @@
+cmspy.bgw.sigma package
+=======================
+
+Submodules
+----------
+
+cmspy.bgw.sigma.ct module
+-------------------------
+
+.. automodule:: cmspy.bgw.sigma.ct
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.bgw.sigma.log module
+--------------------------
+
+.. automodule:: cmspy.bgw.sigma.log
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.bgw.sigma.output module
+-----------------------------
+
+.. automodule:: cmspy.bgw.sigma.output
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.bgw.sigma.spectrum module
+-------------------------------
+
+.. automodule:: cmspy.bgw.sigma.spectrum
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.bgw.sigma
+    :members:
+    :undoc-members:
+    :show-inheritance:

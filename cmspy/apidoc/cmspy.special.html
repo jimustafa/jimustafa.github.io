@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.special package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.special.test package" href="cmspy.special.test.html"/>
+        <link rel="prev" title="cmspy.qe.test package" href="cmspy.qe.test.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.special package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.special.bessel">cmspy.special.bessel module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.special.hydrogen">cmspy.special.hydrogen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.special.jellium">cmspy.special.jellium module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.special.shirley">cmspy.special.shirley module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.special">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.special package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.special.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-special-package">
+<h1>cmspy.special package<a class="headerlink" href="#cmspy-special-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.special.test.html">cmspy.special.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test.bessel">cmspy.special.test.bessel module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test.hydrogen">cmspy.special.test.hydrogen module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#cmspy-special-test-jellium-module">cmspy.special.test.jellium module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#cmspy-special-test-shirley-module">cmspy.special.test.shirley module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.special.bessel">
+<span id="cmspy-special-bessel-module"></span><h2>cmspy.special.bessel module<a class="headerlink" href="#module-cmspy.special.bessel" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.special.bessel.compute_planewave_component">
+<code class="descclassname">cmspy.special.bessel.</code><code class="descname">compute_planewave_component</code><span class="sig-paren">(</span><em>fr</em>, <em>r</em>, <em>k</em>, <em>l</em>, <em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.bessel.compute_planewave_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute <img class="math" src="../_images/math/cbcc4b517e3c18e2dbe7c673e306eed7b5a600e6.png" alt="\braket{e^{i\k\cdot\r}}{f(r)Y_{l}^{m}}"/></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.bessel.sbt">
+<code class="descclassname">cmspy.special.bessel.</code><code class="descname">sbt</code><span class="sig-paren">(</span><em>fr</em>, <em>r</em>, <em>k</em>, <em>l</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.bessel.sbt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spherical Bessel transform (SBT) of a radial function</p>
+<div class="math">
+<p><img src="../_images/math/700a0521d7420b39d47b6640fcd70abb5a8ed5df.png" alt="\hat{f}(k) = \int_{0}^{\infty} \! f(r) j_{l}(kr) r^{2} \, \textrm{d}r"/></p>
+</div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fr: ndarray, shape (N,)</strong></p>
+<blockquote>
+<div><p>radial function</p>
+</div></blockquote>
+<p><strong>r: ndarray, shape (N,)</strong></p>
+<blockquote>
+<div><p>radial grid</p>
+</div></blockquote>
+<p><strong>k: ndarray, shape (nkpts, 3) or (nkpts,)</strong></p>
+<blockquote>
+<div><p>k-points or k-point norms</p>
+</div></blockquote>
+<p><strong>l: int</strong></p>
+<blockquote class="last">
+<div><p>order of the transform</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.special.hydrogen">
+<span id="cmspy-special-hydrogen-module"></span><h2>cmspy.special.hydrogen module<a class="headerlink" href="#module-cmspy.special.hydrogen" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R10">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R10</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R10" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R20">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R20</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R20" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R21">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R21</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R21" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R30">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R30</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R30" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R31">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R31</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R31" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R32">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R32</code><span class="sig-paren">(</span><em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.R_nl">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">R_nl</code><span class="sig-paren">(</span><em>n</em>, <em>l</em>, <em>r</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.R_nl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.hydrogen.psi_nlm">
+<code class="descclassname">cmspy.special.hydrogen.</code><code class="descname">psi_nlm</code><span class="sig-paren">(</span><em>n</em>, <em>l</em>, <em>m</em>, <em>r</em>, <em>theta</em>, <em>phi</em>, <em>Z=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.hydrogen.psi_nlm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.special.jellium">
+<span id="cmspy-special-jellium-module"></span><h2>cmspy.special.jellium module<a class="headerlink" href="#module-cmspy.special.jellium" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.special.jellium.JelliumModel">
+<em class="property">class </em><code class="descclassname">cmspy.special.jellium.</code><code class="descname">JelliumModel</code><span class="sig-paren">(</span><em>rs</em>, <em>zeta=None</em>, <em>lattice=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.JelliumModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.special.jellium.JelliumModel.compute_bandstructure">
+<code class="descname">compute_bandstructure</code><span class="sig-paren">(</span><em>kpoints</em>, <em>ecut=None</em>, <em>eunit='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.JelliumModel.compute_bandstructure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.special.jellium.JelliumModel.efermi">
+<code class="descname">efermi</code><a class="headerlink" href="#cmspy.special.jellium.JelliumModel.efermi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.special.jellium.JelliumModel.exchange_energy">
+<code class="descname">exchange_energy</code><a class="headerlink" href="#cmspy.special.jellium.JelliumModel.exchange_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.special.jellium.JelliumModel.kfermi">
+<code class="descname">kfermi</code><a class="headerlink" href="#cmspy.special.jellium.JelliumModel.kfermi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.special.jellium.JelliumModel.kinetic_energy">
+<code class="descname">kinetic_energy</code><a class="headerlink" href="#cmspy.special.jellium.JelliumModel.kinetic_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.efermi">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">efermi</code><span class="sig-paren">(</span><em>rs</em>, <em>zeta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.efermi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.empty_lattice_bands">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">empty_lattice_bands</code><span class="sig-paren">(</span><em>lattice</em>, <em>kpoints</em>, <em>ecut</em>, <em>eunit='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.empty_lattice_bands" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>lattice: BravaisLattice</strong></p>
+<p><strong>kpoints: ndarray, shape (nkpts,3)</strong></p>
+<blockquote>
+<div><p>k-points in crystal coordinates</p>
+</div></blockquote>
+<p><strong>ecut: float</strong></p>
+<blockquote>
+<div><p>cutoff energy in Rydberg</p>
+</div></blockquote>
+<p><strong>eunit: {&#8216;Ha&#8217;, &#8216;Ry&#8217;}</strong></p>
+<blockquote>
+<div><p>units for band energies</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">energies: ndarray, shape (nkpts,ngmax)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The number of bands returned is determined by the kpoint with the largest
+number of G-vectors for the given cutoff energy</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.exchange_energy">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">exchange_energy</code><span class="sig-paren">(</span><em>rs</em>, <em>zeta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.exchange_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.kfermi">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">kfermi</code><span class="sig-paren">(</span><em>rs</em>, <em>zeta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.kfermi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fermi wavevector</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>rs</strong> : array_like</p>
+<blockquote>
+<div><p>electron parameter</p>
+</div></blockquote>
+<p><strong>zeta: array_like</strong></p>
+<blockquote class="last">
+<div><p>polarization</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.kinetic_energy">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">kinetic_energy</code><span class="sig-paren">(</span><em>rs</em>, <em>zeta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.kinetic_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.lifetime">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">lifetime</code><span class="sig-paren">(</span><em>rs</em>, <em>e</em>, <em>units='fs'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.lifetime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the Quinn and Ferrell result for the lifetime within Fermi liquid theory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>rs</strong> : float</p>
+<blockquote>
+<div><p>electron parameter</p>
+</div></blockquote>
+<p><strong>e</strong> : array_like</p>
+<blockquote>
+<div><p>evaluation energy, in eV, referenced to the Fermi energy</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">float:</p>
+<blockquote class="last">
+<div><p>lifetime in femtoseconds</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The lifetime is infinite at the Fermi energy, so <cite>e</cite> should be strictly greater than 0.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.jellium.n2rs">
+<code class="descclassname">cmspy.special.jellium.</code><code class="descname">n2rs</code><span class="sig-paren">(</span><em>n</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.jellium.n2rs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.special.shirley">
+<span id="cmspy-special-shirley-module"></span><h2>cmspy.special.shirley module<a class="headerlink" href="#module-cmspy.special.shirley" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://link.aps.org/doi/10.1103/PhysRevB.80.235126">PhysRevB.80.235126</a></p>
+<dl class="function">
+<dt id="cmspy.special.shirley.compute_K0">
+<code class="descclassname">cmspy.special.shirley.</code><code class="descname">compute_K0</code><span class="sig-paren">(</span><em>wfcs</em>, <em>gvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.shirley.compute_K0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.shirley.compute_K1">
+<code class="descclassname">cmspy.special.shirley.</code><code class="descname">compute_K1</code><span class="sig-paren">(</span><em>wfcs</em>, <em>gvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.shirley.compute_K1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.shirley.compute_Vnl">
+<code class="descclassname">cmspy.special.shirley.</code><code class="descname">compute_Vnl</code><span class="sig-paren">(</span><em>wfcs</em>, <em>dij</em>, <em>beta</em>, <em>r</em>, <em>beta_has_r_factor</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.shirley.compute_Vnl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.shirley.construct_optimal_basis">
+<code class="descclassname">cmspy.special.shirley.</code><code class="descname">construct_optimal_basis</code><span class="sig-paren">(</span><em>wfcs</em>, <em>epsilon=0.1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.shirley.construct_optimal_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.special.shirley.construct_overlap_matrix">
+<code class="descclassname">cmspy.special.shirley.</code><code class="descname">construct_overlap_matrix</code><span class="sig-paren">(</span><em>wfcs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.special.shirley.construct_overlap_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.special">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.special" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.special.test.html" class="btn btn-neutral float-right" title="cmspy.special.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.qe.test.html" class="btn btn-neutral" title="cmspy.qe.test package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

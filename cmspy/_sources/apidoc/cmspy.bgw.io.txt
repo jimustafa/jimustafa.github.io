@@ -1,0 +1,11 @@
+cmspy.bgw.io package
+====================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.bgw.io
+    :members:
+    :undoc-members:
+    :show-inheritance:
+    :imported-members:

@@ -1,0 +1,20 @@
+cmspy.bgw package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.bgw.io
+    cmspy.bgw.sigma
+    cmspy.bgw.test
+    cmspy.bgw.utils
+
+Module contents
+---------------
+
+.. automodule:: cmspy.bgw
+    :members:
+    :undoc-members:
+    :show-inheritance:

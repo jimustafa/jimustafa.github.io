@@ -1,0 +1,22 @@
+cmspy.xtal.lattice package
+==========================
+
+Submodules
+----------
+
+cmspy.xtal.lattice.utils module
+-------------------------------
+
+.. automodule:: cmspy.xtal.lattice.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xtal.lattice
+    :members:
+    :undoc-members:
+    :show-inheritance:

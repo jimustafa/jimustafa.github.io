@@ -1,0 +1,10 @@
+cmspy.xcrysden.io package
+=========================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xcrysden.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,30 @@
+cmspy.bgw.test package
+======================
+
+Submodules
+----------
+
+cmspy.bgw.test.kgrid module
+---------------------------
+
+.. automodule:: cmspy.bgw.test.kgrid
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.bgw.test.sigma_log module
+-------------------------------
+
+.. automodule:: cmspy.bgw.test.sigma_log
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.bgw.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

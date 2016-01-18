@@ -1,0 +1,77 @@
+cmspy.common package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.common.test
+
+Submodules
+----------
+
+cmspy.common.cli module
+-----------------------
+
+.. automodule:: cmspy.common.cli
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.constants module
+-----------------------------
+
+.. automodule:: cmspy.common.constants
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.ct module
+----------------------
+
+.. automodule:: cmspy.common.ct
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.fftutils module
+----------------------------
+
+.. automodule:: cmspy.common.fftutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.fns module
+-----------------------
+
+.. automodule:: cmspy.common.fns
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.regex module
+-------------------------
+
+.. automodule:: cmspy.common.regex
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.common.utils module
+-------------------------
+
+.. automodule:: cmspy.common.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.common
+    :members:
+    :undoc-members:
+    :show-inheritance:

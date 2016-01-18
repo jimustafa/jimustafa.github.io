@@ -1,0 +1,89 @@
+cmspy.xtal package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.xtal.core
+    cmspy.xtal.flib
+    cmspy.xtal.lattice
+    cmspy.xtal.test
+    cmspy.xtal.tet
+
+Submodules
+----------
+
+cmspy.xtal.bands module
+-----------------------
+
+.. automodule:: cmspy.xtal.bands
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.calc module
+----------------------
+
+.. automodule:: cmspy.xtal.calc
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.common module
+------------------------
+
+.. automodule:: cmspy.xtal.common
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.crystal module
+-------------------------
+
+.. automodule:: cmspy.xtal.crystal
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.ct module
+--------------------
+
+.. automodule:: cmspy.xtal.ct
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.kptutils module
+--------------------------
+
+.. automodule:: cmspy.xtal.kptutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.structure module
+---------------------------
+
+.. automodule:: cmspy.xtal.structure
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.xtal.utils module
+-----------------------
+
+.. automodule:: cmspy.xtal.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xtal
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,6 @@
+Scripts
+=======
+
+Indicies that are given as arguments to scripts will be 1-based as this seems
+more natural. These 1-based indices given by the user are immediately converted
+to 0-based internally.

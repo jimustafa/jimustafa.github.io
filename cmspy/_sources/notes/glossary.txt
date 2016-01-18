@@ -1,0 +1,18 @@
+Glossary
+===========
+
+The following table closely follows the notation given in Martin.
+
+.. csv-table:: Table
+   :header: physics, internal, description
+   :widths: 15, 15, 30
+   :stub-columns: 1
+
+   :math:`\mathbf{a}_1` , a1      , first direct lattice vector
+   :math:`\mathbf{a}_2` , a2      , second direct lattice vector
+   :math:`\mathbf{a}_3` , a3      , third direct lattice vector
+   :math:`\mathbf{b}_1` , b1      , first reciprocal lattice vector
+   :math:`\mathbf{b}_2` , b2      , second reciprocal lattice vector
+   :math:`\mathbf{b}_3` , b3      , third reciprocal lattice vector
+   :math:`\kk`-points   , kpoints , an array of :math:`\kk`-points in reciprocal space
+   :math:`\kk`-grid     , kgrid   , a regular grid of :math:`\kk`-points in reciprocal space

@@ -1,0 +1,37 @@
+cmspy.ape package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.ape.test
+
+Submodules
+----------
+
+cmspy.ape.io module
+-------------------
+
+.. automodule:: cmspy.ape.io
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.ape.utils module
+----------------------
+
+.. automodule:: cmspy.ape.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.ape
+    :members:
+    :undoc-members:
+    :show-inheritance:

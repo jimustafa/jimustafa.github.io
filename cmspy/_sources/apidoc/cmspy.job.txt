@@ -1,0 +1,22 @@
+cmspy.job package
+=================
+
+Submodules
+----------
+
+cmspy.job.batch module
+----------------------
+
+.. automodule:: cmspy.job.batch
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.job
+    :members:
+    :undoc-members:
+    :show-inheritance:

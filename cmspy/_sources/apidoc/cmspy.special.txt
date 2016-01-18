@@ -1,0 +1,53 @@
+cmspy.special package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.special.test
+
+Submodules
+----------
+
+cmspy.special.bessel module
+---------------------------
+
+.. automodule:: cmspy.special.bessel
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.special.hydrogen module
+-----------------------------
+
+.. automodule:: cmspy.special.hydrogen
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.special.jellium module
+----------------------------
+
+.. automodule:: cmspy.special.jellium
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.special.shirley module
+----------------------------
+
+.. automodule:: cmspy.special.shirley
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.special
+    :members:
+    :undoc-members:
+    :show-inheritance:

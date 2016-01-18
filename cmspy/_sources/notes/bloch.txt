@@ -1,0 +1,29 @@
+Bloch Functions
+===============
+
+.. math::
+
+   \psi_{\nk}(\r) = e^{i\k\cdot\r}u_{\nk}(\r)
+
+with :math:`u_{\nk}(\r)` periodic with respect to lattice translations.
+
+
+Plane Waves
+-----------
+
+.. math::
+
+   \psi_{\nk} = e^{i\k\cdot\r}\sum_{\G}u_{\nk}(\G)e^{i\G\cdot\r}
+
+Bloch functions differing by a reciprocal lattice vector :math:`\G_0` are, by
+definition, equal.
+
+.. math::
+
+   \psi_{\k+\G_0} = \psi_{\k}
+
+This gives a relation among the coefficients of the plane waves.
+
+.. math::
+
+   u_{n\k+\G_{0}}(\G) = u_{n\k}(\G+\G_{0})

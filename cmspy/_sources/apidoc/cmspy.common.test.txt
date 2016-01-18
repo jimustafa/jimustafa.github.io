@@ -1,0 +1,22 @@
+cmspy.common.test package
+=========================
+
+Submodules
+----------
+
+cmspy.common.test.fftutils module
+---------------------------------
+
+.. automodule:: cmspy.common.test.fftutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.common.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

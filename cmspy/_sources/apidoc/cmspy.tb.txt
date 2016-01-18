@@ -1,0 +1,10 @@
+cmspy.tb package
+================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.tb
+    :members:
+    :undoc-members:
+    :show-inheritance:

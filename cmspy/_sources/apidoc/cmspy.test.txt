@@ -1,0 +1,22 @@
+cmspy.test package
+==================
+
+Submodules
+----------
+
+cmspy.test.benchmarks module
+----------------------------
+
+.. automodule:: cmspy.test.benchmarks
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

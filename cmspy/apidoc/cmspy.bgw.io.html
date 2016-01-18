@@ -1,0 +1,508 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.bgw.io package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy.bgw package" href="cmspy.bgw.html"/>
+        <link rel="next" title="cmspy.bgw.sigma package" href="cmspy.bgw.sigma.html"/>
+        <link rel="prev" title="cmspy.bgw package" href="cmspy.bgw.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="cmspy.bgw.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.html#module-cmspy.bgw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+          <li><a href="cmspy.bgw.html">cmspy.bgw package</a> &raquo;</li>
+      
+    <li>cmspy.bgw.io package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.bgw.io.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-bgw-io-package">
+<h1>cmspy.bgw.io package<a class="headerlink" href="#cmspy-bgw-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-cmspy.bgw.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.bgw.io" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.bgw.io.EpsilonInput">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.io.</code><code class="descname">EpsilonInput</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.EpsilonInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">cmspy.bgw.io._common.InputFile</span></code></p>
+<p>EpsilonInput class</p>
+<p>Abstracts the input file for the Epsilon portion of the BerkeleyGW package.
+This allows for easier manipulation of the input parameters and simplifies
+tasks such as splitting a single run into several runs, setting up convergence
+tests with different sets of parameters, etc.</p>
+<dl class="docutils">
+<dt>Methods:</dt>
+<dd><dl class="first last docutils">
+<dt>split:</dt>
+<dd>Split a single SigmaInput into several files to allow for
+parallel execution of groups of k-points.</dd>
+</dl>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="cmspy.bgw.io.EpsilonInput.qpoints">
+<code class="descname">qpoints</code><a class="headerlink" href="#cmspy.bgw.io.EpsilonInput.qpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.EpsilonInput.split">
+<code class="descname">split</code><span class="sig-paren">(</span><em>idx_sets=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.EpsilonInput.split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.io.EpsilonMatrixHDF5">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.io.</code><code class="descname">EpsilonMatrixHDF5</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.EpsilonMatrixHDF5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="attribute">
+<dt id="cmspy.bgw.io.EpsilonMatrixHDF5.head">
+<code class="descname">head</code><a class="headerlink" href="#cmspy.bgw.io.EpsilonMatrixHDF5.head" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.bgw.io.EpsilonMatrixHDF5.qpoints">
+<code class="descname">qpoints</code><a class="headerlink" href="#cmspy.bgw.io.EpsilonMatrixHDF5.qpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.EpsilonMatrixHDF5.write_epsmat">
+<code class="descname">write_epsmat</code><span class="sig-paren">(</span><em>fname</em>, <em>qpoints_idx</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.EpsilonMatrixHDF5.write_epsmat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.io.InputFile">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.io.</code><code class="descname">InputFile</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.InputFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/collections.html#collections.OrderedDict" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">collections.OrderedDict</span></code></a></p>
+<p>EpsilonInput class</p>
+<p>Base class for abstracting the input file for various portions of the
+BerkeleyGW package. This allows for easier manipulation of the input
+parameters.</p>
+<dl class="docutils">
+<dt>Methods:</dt>
+<dd><dl class="first last docutils">
+<dt>from_file:</dt>
+<dd>Called automatically when a filename is provided to the
+constructor.  Creates an instance of InputFile based on
+the provided file.</dd>
+<dt>write_to_file:</dt>
+<dd>Write InputFile to a file.</dd>
+</dl>
+</dd>
+</dl>
+<dl class="method">
+<dt id="cmspy.bgw.io.InputFile.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.InputFile.from_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initiate InputFile from an existing .inp file</p>
+<p>This routine is modeled after the various inread.f90 in the
+BerkeleyGW package.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="cmspy.bgw.io.InputFile.split">
+<em class="property">classmethod </em><code class="descname">split</code><span class="sig-paren">(</span><em>input_file</em>, <em>idx_sets=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.InputFile.split" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split a single InputFile object into multiple InputFile objects, each with
+a subset of the points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>idx_sets: sequence of sequences</strong></p>
+<blockquote class="last">
+<div><p>each item in indices is a sequence of k-point or q-point indices</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.InputFile.write_to_file">
+<code class="descname">write_to_file</code><span class="sig-paren">(</span><em>fout</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.InputFile.write_to_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.io.SigmaInput">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.io.</code><code class="descname">SigmaInput</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.SigmaInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">cmspy.bgw.io._common.InputFile</span></code></p>
+<p>SigmaInput class</p>
+<p>Abstracts the input file for the Sigma portion of the BerkeleyGW package.
+This allows for easier manipulation of the input parameters and simplifies
+tasks such as splitting a single run into several runs, setting up convergence
+tests with different sets of parameters, etc.</p>
+<dl class="docutils">
+<dt>Methods:</dt>
+<dd><dl class="first last docutils">
+<dt>split:</dt>
+<dd>Split a single SigmaInput into several files to allow for
+parallel execution of groups of k-points.</dd>
+</dl>
+</dd>
+</dl>
+<dl class="attribute">
+<dt id="cmspy.bgw.io.SigmaInput.kpoints">
+<code class="descname">kpoints</code><a class="headerlink" href="#cmspy.bgw.io.SigmaInput.kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.bgw.io.SigmaInput.q0_idx">
+<code class="descname">q0_idx</code><a class="headerlink" href="#cmspy.bgw.io.SigmaInput.q0_idx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.bgw.io.SigmaInput.qpoints">
+<code class="descname">qpoints</code><a class="headerlink" href="#cmspy.bgw.io.SigmaInput.qpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.SigmaInput.split">
+<code class="descname">split</code><span class="sig-paren">(</span><em>idx_sets=None</em>, <em>band_index_max_sets=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.SigmaInput.split" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.io.WavefunctionInfoFile">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.io.</code><code class="descname">WavefunctionInfoFile</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.WavefunctionInfoFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fname: str</strong></p>
+<p class="last"><strong>auto_read: bool</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>nkpts: int</td>
+<td>number of k-points</td>
+</tr>
+<tr class="row-even"><td>nbnds: int</td>
+<td>number of bands</td>
+</tr>
+<tr class="row-odd"><td>nspns: int</td>
+<td>number of bands</td>
+</tr>
+<tr class="row-even"><td>energies: ndarray, shape(nkpts, nbnds, nspns)</td>
+<td>array of energy eigenvalues (Ry)</td>
+</tr>
+<tr class="row-odd"><td>occupations: ndarray, shape(nkpts, nbnds, nspns)</td>
+<td>array of occupations</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="cmspy.bgw.io.WavefunctionInfoFile.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.WavefunctionInfoFile.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.WavefunctionInfoFile.get_acceptable_band_numbers">
+<code class="descname">get_acceptable_band_numbers</code><span class="sig-paren">(</span><em>kpoints=None</em>, <em>ispn=0</em>, <em>ibmax=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.WavefunctionInfoFile.get_acceptable_band_numbers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.WavefunctionInfoFile.get_energies">
+<code class="descname">get_energies</code><span class="sig-paren">(</span><em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.WavefunctionInfoFile.get_energies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.io.WavefunctionInfoFile.get_full_freq_params">
+<code class="descname">get_full_freq_params</code><span class="sig-paren">(</span><em>band_range</em>, <em>delta_omega</em>, <em>efermi</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.WavefunctionInfoFile.get_full_freq_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_ch_converge">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_ch_converge</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_ch_converge" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_epsdyn">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_epsdyn</code><span class="sig-paren">(</span><em>fname</em>, <em>nqpts</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_epsdyn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_sigma_log_data_array">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_sigma_log_data_array</code><span class="sig-paren">(</span><em>fname</em>, <em>key</em>, <em>exact_static_ch=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_sigma_log_data_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_sigma_log_data_blocks">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_sigma_log_data_blocks</code><span class="sig-paren">(</span><em>fname</em>, <em>exact_static_ch=False</em>, <em>key=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_sigma_log_data_blocks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_sigma_log_info">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_sigma_log_info</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_sigma_log_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_spectrum_data_array">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_spectrum_data_array</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_spectrum_data_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_spectrum_data_blocks">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_spectrum_data_blocks</code><span class="sig-paren">(</span><em>fname</em>, <em>key=None</em>, <em>ibnd=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_spectrum_data_blocks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read data from the spectrum file produced by the Sigma code</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fname: str</strong></p>
+<blockquote>
+<div><p>spectrum file name</p>
+</div></blockquote>
+<p><strong>key: str, optional</strong></p>
+<blockquote>
+<div><p>data key</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of dict if key==None, otherwise return list of ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_vxc">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_vxc</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_vxc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.io.read_wfn_bgw_h5">
+<code class="descclassname">cmspy.bgw.io.</code><code class="descname">read_wfn_bgw_h5</code><span class="sig-paren">(</span><em>wfn_file='WFN.h5'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.io.read_wfn_bgw_h5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.bgw.sigma.html" class="btn btn-neutral float-right" title="cmspy.bgw.sigma package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.bgw.html" class="btn btn-neutral" title="cmspy.bgw package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

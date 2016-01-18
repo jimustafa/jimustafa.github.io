@@ -1,0 +1,46 @@
+cmspy package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.ape
+    cmspy.atomic
+    cmspy.bgw
+    cmspy.common
+    cmspy.core
+    cmspy.io
+    cmspy.job
+    cmspy.linalg
+    cmspy.mpi
+    cmspy.optimize
+    cmspy.psp
+    cmspy.qe
+    cmspy.special
+    cmspy.tb
+    cmspy.test
+    cmspy.w90
+    cmspy.xcrysden
+    cmspy.xtal
+
+Submodules
+----------
+
+cmspy.config module
+-------------------
+
+.. automodule:: cmspy.config
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy
+    :members:
+    :undoc-members:
+    :show-inheritance:

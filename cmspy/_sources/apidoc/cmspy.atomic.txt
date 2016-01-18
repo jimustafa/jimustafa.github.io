@@ -1,0 +1,10 @@
+cmspy.atomic package
+====================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.atomic
+    :members:
+    :undoc-members:
+    :show-inheritance:

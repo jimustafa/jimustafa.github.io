@@ -1,0 +1,103 @@
+cmspy.w90 package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.w90.flib
+    cmspy.w90.io
+    cmspy.w90.test
+
+Submodules
+----------
+
+cmspy.w90.amn module
+--------------------
+
+.. automodule:: cmspy.w90.amn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.ct module
+-------------------
+
+.. automodule:: cmspy.w90.ct
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.dis module
+--------------------
+
+.. automodule:: cmspy.w90.dis
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.eig module
+--------------------
+
+.. automodule:: cmspy.w90.eig
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.mmn module
+--------------------
+
+.. automodule:: cmspy.w90.mmn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.nnkp module
+---------------------
+
+.. automodule:: cmspy.w90.nnkp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.orbitals module
+-------------------------
+
+.. automodule:: cmspy.w90.orbitals
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.setup module
+----------------------
+
+.. automodule:: cmspy.w90.setup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.utils module
+----------------------
+
+.. automodule:: cmspy.w90.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.vme module
+--------------------
+
+.. automodule:: cmspy.w90.vme
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.w90
+    :members:
+    :undoc-members:
+    :show-inheritance:

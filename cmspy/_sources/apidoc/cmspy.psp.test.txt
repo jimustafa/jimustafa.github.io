@@ -1,0 +1,30 @@
+cmspy.psp.test package
+======================
+
+Submodules
+----------
+
+cmspy.psp.test.javg module
+--------------------------
+
+.. automodule:: cmspy.psp.test.javg
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.psp.test.psp module
+-------------------------
+
+.. automodule:: cmspy.psp.test.psp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.psp.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

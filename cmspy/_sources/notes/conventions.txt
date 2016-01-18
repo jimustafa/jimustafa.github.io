@@ -1,0 +1,12 @@
+Conventions
+===========
+
+The conventions used throughout the code are summarized in the following.
+
+
+Spherical coordinates
+---------------------
+
+Spherical coordinates (:math:`r`, :math:`\theta`, :math:`\phi`) as commonly used
+in physics: radial distance r, polar angle :math:`\theta` (theta), and azimuthal
+angle :math:`\phi` (phi).

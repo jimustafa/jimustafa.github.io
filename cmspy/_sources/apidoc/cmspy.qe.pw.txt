@@ -1,0 +1,46 @@
+cmspy.qe.pw package
+===================
+
+Submodules
+----------
+
+cmspy.qe.pw.cards module
+------------------------
+
+.. automodule:: cmspy.qe.pw.cards
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.pw.ct module
+---------------------
+
+.. automodule:: cmspy.qe.pw.ct
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.pw.input module
+------------------------
+
+.. automodule:: cmspy.qe.pw.input
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.pw.output module
+-------------------------
+
+.. automodule:: cmspy.qe.pw.output
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe.pw
+    :members:
+    :undoc-members:
+    :show-inheritance:

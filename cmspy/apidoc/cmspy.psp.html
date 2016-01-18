@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.psp package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy package" href="cmspy.html"/>
+        <link rel="next" title="cmspy.psp.test package" href="cmspy.psp.test.html"/>
+        <link rel="prev" title="cmspy.optimize.test package" href="cmspy.optimize.test.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">cmspy.psp package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.psp.kb">cmspy.psp.kb module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.psp.sl">cmspy.psp.sl module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-cmspy.psp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+    <li>cmspy.psp package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.psp.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-psp-package">
+<h1>cmspy.psp package<a class="headerlink" href="#cmspy-psp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.psp.test.html">cmspy.psp.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test.javg">cmspy.psp.test.javg module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test.psp">cmspy.psp.test.psp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.psp.kb">
+<span id="cmspy-psp-kb-module"></span><h2>cmspy.psp.kb module<a class="headerlink" href="#module-cmspy.psp.kb" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.psp.kb.calc_javg">
+<code class="descclassname">cmspy.psp.kb.</code><code class="descname">calc_javg</code><span class="sig-paren">(</span><em>beta</em>, <em>dij</em>, <em>r</em>, <em>beta_has_r_factor=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.psp.kb.calc_javg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Separate the fully-relativistic Kleinman-Bylander potential into
+scalar relativistic and spin-orbit parts according to the procedure
+given in <a class="reference external" href="http://link.aps.org/doi/10.1103/PhysRevB.47.4238">PhysRevB.47.4238</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>beta</strong> : dict</p>
+<blockquote>
+<div><p>Projectors for each angular momentum component. The dict keys are the
+angular momentum components. beta[l][0] gives the <img class="math" src="../_images/math/cbfd6f9db82dba783e16c1ed2bf073ba81af5eac.png" alt="l-1/2"/>
+component, while beta[l][1] gives the <img class="math" src="../_images/math/5253c6d4929ccf6bcd9b64b48ffa9018cc6b4aad.png" alt="l+1/2"/> component</p>
+</div></blockquote>
+<p><strong>dij</strong> : dict</p>
+<blockquote>
+<div><p>Kleinman-Bylander energies for each angular momentum component. The
+layout matches that of <cite>beta</cite></p>
+</div></blockquote>
+<p><strong>r</strong> : ndarray</p>
+<blockquote>
+<div><p>radial grid</p>
+</div></blockquote>
+<p><strong>beta_has_r_factor</strong> : bool</p>
+<blockquote>
+<div><p>indicate whether or not the beta functions include the factor of r</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>V_ion</strong> : dict</p>
+<blockquote>
+<div><p>Projectors for the scalar-relativistic part of the pseudopotential. The
+dict keys are the angular momentum components.</p>
+</div></blockquote>
+<p><strong>V_so</strong> : dict</p>
+<blockquote class="last">
+<div><p>Projectors for the spin-orbit part of the pseudopotential. The
+dict keys are the angular momentum components.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.psp.kb.compute_beta_SBT">
+<code class="descclassname">cmspy.psp.kb.</code><code class="descname">compute_beta_SBT</code><span class="sig-paren">(</span><em>beta</em>, <em>r</em>, <em>Kvectors</em>, <em>beta_has_r_factor=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.psp.kb.compute_beta_SBT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spherical Bessel transform (SBT) of the radial part of a projector</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.psp.kb.compute_beta_planewave_matrix_elements">
+<code class="descclassname">cmspy.psp.kb.</code><code class="descname">compute_beta_planewave_matrix_elements</code><span class="sig-paren">(</span><em>beta</em>, <em>r</em>, <em>Gvectors</em>, <em>kpoint=None</em>, <em>beta_has_r_factor=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.psp.kb.compute_beta_planewave_matrix_elements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the inner product of a projector and a planewave</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.psp.sl">
+<span id="cmspy-psp-sl-module"></span><h2>cmspy.psp.sl module<a class="headerlink" href="#module-cmspy.psp.sl" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.psp.sl.calc_javg">
+<code class="descclassname">cmspy.psp.sl.</code><code class="descname">calc_javg</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.psp.sl.calc_javg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.psp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.psp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.psp.test.html" class="btn btn-neutral float-right" title="cmspy.psp.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.optimize.test.html" class="btn btn-neutral" title="cmspy.optimize.test package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

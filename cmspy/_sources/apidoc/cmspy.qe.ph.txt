@@ -1,0 +1,38 @@
+cmspy.qe.ph package
+===================
+
+Submodules
+----------
+
+cmspy.qe.ph.dyn module
+----------------------
+
+.. automodule:: cmspy.qe.ph.dyn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.ph.io module
+---------------------
+
+.. automodule:: cmspy.qe.ph.io
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.ph.phsave module
+-------------------------
+
+.. automodule:: cmspy.qe.ph.phsave
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe.ph
+    :members:
+    :undoc-members:
+    :show-inheritance:

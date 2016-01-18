@@ -1,0 +1,508 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.bgw.sigma package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy.bgw package" href="cmspy.bgw.html"/>
+        <link rel="next" title="cmspy.bgw.test package" href="cmspy.bgw.test.html"/>
+        <link rel="prev" title="cmspy.bgw.io package" href="cmspy.bgw.io.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="cmspy.bgw.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.html#module-cmspy.bgw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+          <li><a href="cmspy.bgw.html">cmspy.bgw package</a> &raquo;</li>
+      
+    <li>cmspy.bgw.sigma package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.bgw.sigma.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-bgw-sigma-package">
+<h1>cmspy.bgw.sigma package<a class="headerlink" href="#cmspy-bgw-sigma-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.bgw.sigma.ct">
+<span id="cmspy-bgw-sigma-ct-module"></span><h2>cmspy.bgw.sigma.ct module<a class="headerlink" href="#module-cmspy.bgw.sigma.ct" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.ct.</code><code class="descname">CoulombHoleConvergenceTest</code><span class="sig-paren">(</span><em>test_files</em>, <em>xvals</em>, <em>ref_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="cmspy.common.html#cmspy.common.ct.ConvergenceTest" title="cmspy.common.ct.ConvergenceTest"><code class="xref py py-class docutils literal"><span class="pre">cmspy.common.ct.ConvergenceTest</span></code></a></p>
+<dl class="classmethod">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest.from_kwargs">
+<em class="property">classmethod </em><code class="descname">from_kwargs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest.from_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest.plot_band_conv">
+<code class="descname">plot_band_conv</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleConvergenceTest.plot_band_conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.ct.</code><code class="descname">CoulombHoleMultiConvergenceTest</code><span class="sig-paren">(</span><em>cfg_file=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="cmspy.common.html#cmspy.common.ct.ConvergenceTest" title="cmspy.common.ct.ConvergenceTest"><code class="xref py py-class docutils literal"><span class="pre">cmspy.common.ct.ConvergenceTest</span></code></a></p>
+<p>Encapsulates data used in analyzing the convergence of the CH term with
+resoect to a variety of different parameters. The band convergence can be
+analyzed for self-energy calculations for a variety of dielectric cutoffs or
+wavefunction cutoffs, for example.</p>
+<dl class="method">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest.from_cfg">
+<code class="descname">from_cfg</code><span class="sig-paren">(</span><em>cfg_file</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest.from_cfg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest.plot_ecut_conv">
+<code class="descname">plot_ecut_conv</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.CoulombHoleMultiConvergenceTest.plot_ecut_conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.sigma.ct.LogDataConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.ct.</code><code class="descname">LogDataConvergenceTest</code><span class="sig-paren">(</span><em>test_files</em>, <em>xvals</em>, <em>ref_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.LogDataConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="cmspy.common.html#cmspy.common.ct.ConvergenceTest" title="cmspy.common.ct.ConvergenceTest"><code class="xref py py-class docutils literal"><span class="pre">cmspy.common.ct.ConvergenceTest</span></code></a></p>
+<dl class="classmethod">
+<dt id="cmspy.bgw.sigma.ct.LogDataConvergenceTest.from_kwargs">
+<em class="property">classmethod </em><code class="descname">from_kwargs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.LogDataConvergenceTest.from_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.ct.LogDataConvergenceTest.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>data_label='eqp1'</em>, <em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.LogDataConvergenceTest.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.ct.</code><code class="descname">StaticRemainderConvergenceTest</code><span class="sig-paren">(</span><em>test_files</em>, <em>xvals</em>, <em>ref_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="cmspy.common.html#cmspy.common.ct.ConvergenceTest" title="cmspy.common.ct.ConvergenceTest"><code class="xref py py-class docutils literal"><span class="pre">cmspy.common.ct.ConvergenceTest</span></code></a></p>
+<p>Encapsulates data used in analyzing the convergence of the CH term with
+respect to the number of bands included in the partial sum with and without
+the inclusion of the static remainder <a class="reference internal" href="#r1" id="id1">[R1]</a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>cfg_file</strong> : str</p>
+<blockquote class="last">
+<div><p>Filename of the configuration file. This file can be generated using
+the <code class="xref py py-meth docutils literal"><span class="pre">gen_cfg_file()</span></code>.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">References</p>
+<table class="docutils citation" frame="void" id="r1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[R1]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id2">2</a>)</em> <a class="reference external" href="http://link.aps.org/doi/10.1103/PhysRevB.87.165124">PhysRevB.87.165124</a></td></tr>
+</tbody>
+</table>
+<dl class="classmethod">
+<dt id="cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest.from_kwargs">
+<em class="property">classmethod </em><code class="descname">from_kwargs</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest.from_kwargs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest.plot_band_conv">
+<code class="descname">plot_band_conv</code><span class="sig-paren">(</span><em>**plot_args</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.ct.StaticRemainderConvergenceTest.plot_band_conv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.bgw.sigma.log">
+<span id="cmspy-bgw-sigma-log-module"></span><h2>cmspy.bgw.sigma.log module<a class="headerlink" href="#module-cmspy.bgw.sigma.log" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.bgw.sigma.log.LogFile">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.log.</code><code class="descname">LogFile</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em>, <em>exact_static_ch=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="cmspy.bgw.sigma.log.LogFile.from_array">
+<code class="descname">from_array</code><span class="sig-paren">(</span><em>a</em>, <em>data_key</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.from_array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.log.LogFile.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em>, <em>exact_static_ch=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="cmspy.bgw.sigma.log.LogFile.from_pickle">
+<em class="property">classmethod </em><code class="descname">from_pickle</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.from_pickle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.log.LogFile.prep_w90interp">
+<code class="descname">prep_w90interp</code><span class="sig-paren">(</span><em>setup_file</em>, <em>data_key</em>, <em>nbnds</em>, <em>ispn</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.prep_w90interp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.log.LogFile.write_to_eig">
+<code class="descname">write_to_eig</code><span class="sig-paren">(</span><em>spin</em>, <em>eqpn</em>, <em>nnkp_file</em>, <em>fname</em>, <em>nbnds</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.write_to_eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.log.LogFile.write_to_file">
+<code class="descname">write_to_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.log.LogFile.write_to_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.bgw.sigma.output">
+<span id="cmspy-bgw-sigma-output-module"></span><h2>cmspy.bgw.sigma.output module<a class="headerlink" href="#module-cmspy.bgw.sigma.output" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.bgw.sigma.output.CHConvergence">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.output.</code><code class="descname">CHConvergence</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.output.CHConvergence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.bgw.sigma.output.CHConvergence.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.output.CHConvergence.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.output.CHConvergence.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>plot_type='abs'</em>, <em>interact=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.output.CHConvergence.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.bgw.sigma.spectrum">
+<span id="cmspy-bgw-sigma-spectrum-module"></span><h2>cmspy.bgw.sigma.spectrum module<a class="headerlink" href="#module-cmspy.bgw.sigma.spectrum" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum">
+<em class="property">class </em><code class="descclassname">cmspy.bgw.sigma.spectrum.</code><code class="descname">Spectrum</code><span class="sig-paren">(</span><em>fname=None</em>, <em>log_file=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.calc_all">
+<code class="descname">calc_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.calc_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculaties all the quantities assocated with the spectrum data</p>
+<p>Calculated quantities include:
+quasiparticle energies
+quasiparticle lifetimes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.calc_eqp">
+<code class="descname">calc_eqp</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.calc_eqp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.calc_lifetimes">
+<code class="descname">calc_lifetimes</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.calc_lifetimes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.from_pickle">
+<em class="property">classmethod </em><code class="descname">from_pickle</code><span class="sig-paren">(</span><em>fname</em>, <em>log_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.from_pickle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.interp_lifetimes">
+<code class="descname">interp_lifetimes</code><span class="sig-paren">(</span><em>from_grid_size</em>, <em>to_kpt_list=None</em>, <em>to_grid_size=None</em>, <em>ibnd=None</em>, <em>order=1</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.interp_lifetimes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.plot_gnu">
+<code class="descname">plot_gnu</code><span class="sig-paren">(</span><em>ikpt</em>, <em>ibnd</em>, <em>ispn=1</em>, <em>interactive=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.plot_gnu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a graphical solution to Dyson&#8217;s equation with gnuplot</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.plot_mpl">
+<code class="descname">plot_mpl</code><span class="sig-paren">(</span><em>ik</em>, <em>ispin</em>, <em>iband</em>, <em>interactive=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.plot_mpl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot a graphical solution to Dyson&#8217;s equation with matplotlib</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.plot_spectral_gnu">
+<code class="descname">plot_spectral_gnu</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.plot_spectral_gnu" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="cmspy.bgw.sigma.spectrum.Spectrum.prep_w90interp">
+<code class="descname">prep_w90interp</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.Spectrum.prep_w90interp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.sigma.spectrum.combine">
+<code class="descclassname">cmspy.bgw.sigma.spectrum.</code><code class="descname">combine</code><span class="sig-paren">(</span><em>objs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.combine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combines a list of Log objects into a single LogFile object</p>
+<p>Presumably the seperate Spectrum objects are a result of separate Sigma
+runs that were split up into different groups of k-points.  So, combining
+two Spectrum objects should give a Spectrum object that has the k-points of
+both and the spectrum data of both.  In the case that the two runs have a
+different number of bands due to degeneracy concerns, only the smallest number
+of bands between the two is included.  The number of spins must be the same.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.sigma.spectrum.eqp">
+<code class="descclassname">cmspy.bgw.sigma.spectrum.</code><code class="descname">eqp</code><span class="sig-paren">(</span><em>sigma</em>, <em>w</em>, <em>vxc</em>, <em>e0</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.eqp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Solve Dyson&#8217;s equation to obtain quasiparticle energies</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>sigma</strong> : ndarray, shape (nkpts, nbnds, nspns, nfrqs)</p>
+<blockquote>
+<div><p>real part of the self energy</p>
+</div></blockquote>
+<p><strong>w</strong> : ndarray, shape (nkpts, nbnds, nspns, nfrqs)</p>
+<blockquote>
+<div><p>frequencies</p>
+</div></blockquote>
+<p><strong>vxc</strong> : ndarray, shape (nkpts, nbnds, nspns)</p>
+<blockquote>
+<div><p>matrix elements of exchange-correlation potential</p>
+</div></blockquote>
+<p><strong>e0</strong> : ndarray, shape (nkpts, nbnds, nspns)</p>
+<blockquote class="last">
+<div><p>mean-field energies</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.sigma.spectrum.lorentzian">
+<code class="descclassname">cmspy.bgw.sigma.spectrum.</code><code class="descname">lorentzian</code><span class="sig-paren">(</span><em>x</em>, <em>p</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.lorentzian" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.bgw.sigma.spectrum.residuals">
+<code class="descclassname">cmspy.bgw.sigma.spectrum.</code><code class="descname">residuals</code><span class="sig-paren">(</span><em>p</em>, <em>y</em>, <em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.bgw.sigma.spectrum.residuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.bgw.sigma">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.bgw.sigma" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.bgw.test.html" class="btn btn-neutral float-right" title="cmspy.bgw.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.bgw.io.html" class="btn btn-neutral" title="cmspy.bgw.io package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

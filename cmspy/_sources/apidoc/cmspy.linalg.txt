@@ -1,0 +1,38 @@
+cmspy.linalg package
+====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.linalg.flib
+    cmspy.linalg.tests
+
+Submodules
+----------
+
+cmspy.linalg.codiag module
+--------------------------
+
+.. automodule:: cmspy.linalg.codiag
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.linalg.utils module
+-------------------------
+
+.. automodule:: cmspy.linalg.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.linalg
+    :members:
+    :undoc-members:
+    :show-inheritance:

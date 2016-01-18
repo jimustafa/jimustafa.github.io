@@ -1,0 +1,62 @@
+cmspy.w90.test package
+======================
+
+Submodules
+----------
+
+cmspy.w90.test.copper module
+----------------------------
+
+.. automodule:: cmspy.w90.test.copper
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.test.dis module
+-------------------------
+
+.. automodule:: cmspy.w90.test.dis
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.test.flib module
+--------------------------
+
+.. automodule:: cmspy.w90.test.flib
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.test.io module
+------------------------
+
+.. automodule:: cmspy.w90.test.io
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.test.opf module
+-------------------------
+
+.. automodule:: cmspy.w90.test.opf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.w90.test.utils module
+---------------------------
+
+.. automodule:: cmspy.w90.test.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.w90.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

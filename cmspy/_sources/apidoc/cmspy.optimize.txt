@@ -1,0 +1,17 @@
+cmspy.optimize package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.optimize.test
+
+Module contents
+---------------
+
+.. automodule:: cmspy.optimize
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,624 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="next" title="cmspy.ape package" href="cmspy.ape.html"/>
+        <link rel="prev" title="Welcome to cmspy’s documentation!" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">cmspy package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>cmspy package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-package">
+<h1>cmspy package<a class="headerlink" href="#cmspy-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.ape.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.test.html">cmspy.ape.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.ape.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.ape.test.html#module-cmspy.ape.test.ape2lspp">cmspy.ape.test.ape2lspp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.ape.test.html#module-cmspy.ape.test.test_ape2lsppy">cmspy.ape.test.test_ape2lsppy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.ape.test.html#module-cmspy.ape.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.ape.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.ape.html#module-cmspy.ape.io">cmspy.ape.io module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.ape.html#module-cmspy.ape.utils">cmspy.ape.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.ape.html#module-cmspy.ape">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.atomic.html#module-cmspy.atomic">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.bgw.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.io.html">cmspy.bgw.io package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.io.html#module-cmspy.bgw.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.sigma.html">cmspy.bgw.sigma package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#module-cmspy.bgw.sigma.ct">cmspy.bgw.sigma.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#module-cmspy.bgw.sigma.log">cmspy.bgw.sigma.log module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#module-cmspy.bgw.sigma.output">cmspy.bgw.sigma.output module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#module-cmspy.bgw.sigma.spectrum">cmspy.bgw.sigma.spectrum module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.sigma.html#module-cmspy.bgw.sigma">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.test.html">cmspy.bgw.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.test.html#module-cmspy.bgw.test.kgrid">cmspy.bgw.test.kgrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.test.html#module-cmspy.bgw.test.sigma_log">cmspy.bgw.test.sigma_log module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.test.html#module-cmspy.bgw.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.utils.html">cmspy.bgw.utils package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.utils.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.utils.html#module-cmspy.bgw.utils.kgrid">cmspy.bgw.utils.kgrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.bgw.utils.html#module-cmspy.bgw.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.bgw.html#module-cmspy.bgw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.test.html">cmspy.common.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.common.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.common.test.html#module-cmspy.common.test.fftutils">cmspy.common.test.fftutils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.common.test.html#module-cmspy.common.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.cli">cmspy.common.cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.constants">cmspy.common.constants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.ct">cmspy.common.ct module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.fftutils">cmspy.common.fftutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.fns">cmspy.common.fns module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.regex">cmspy.common.regex module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common.utils">cmspy.common.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.common.html#module-cmspy.common">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.core.html#module-cmspy.core.pw">cmspy.core.pw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.core.html#module-cmspy.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.io.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.test.html">cmspy.io.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.io.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.io.test.html#module-cmspy.io.test.fnml">cmspy.io.test.fnml module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.io.test.html#module-cmspy.io.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.io.html#module-cmspy.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.job.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.job.html#module-cmspy.job.batch">cmspy.job.batch module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.job.html#module-cmspy.job">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.flib.html">cmspy.linalg.flib package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.flib.html#module-cmspy.linalg.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.tests.html">cmspy.linalg.tests package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.qep">cmspy.linalg.tests.qep module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.rotations">cmspy.linalg.tests.rotations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_codiag">cmspy.linalg.tests.test_codiag module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_flib">cmspy.linalg.tests.test_flib module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests.test_givens">cmspy.linalg.tests.test_givens module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.linalg.tests.html#module-cmspy.linalg.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.html#module-cmspy.linalg.codiag">cmspy.linalg.codiag module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.html#module-cmspy.linalg.utils">cmspy.linalg.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.linalg.html#module-cmspy.linalg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.mpi.html#module-cmspy.mpi">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.optimize.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.test.html">cmspy.optimize.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.optimize.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.optimize.test.html#module-cmspy.optimize.test.qpqc">cmspy.optimize.test.qpqc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.optimize.test.html#module-cmspy.optimize.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.optimize.html#module-cmspy.optimize">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.test.html">cmspy.psp.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.psp.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test.javg">cmspy.psp.test.javg module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test.psp">cmspy.psp.test.psp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.psp.test.html#module-cmspy.psp.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.html#module-cmspy.psp.kb">cmspy.psp.kb module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.html#module-cmspy.psp.sl">cmspy.psp.sl module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.psp.html#module-cmspy.psp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.qe.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.io.html">cmspy.qe.io package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.io.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.io.html#module-cmspy.qe.io.qexml">cmspy.qe.io.qexml module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.io.html#module-cmspy.qe.io.qexpt">cmspy.qe.io.qexpt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.io.html#module-cmspy.qe.io.qexpt1">cmspy.qe.io.qexpt1 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.io.html#module-cmspy.qe.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.ph.html">cmspy.qe.ph package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.ph.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.ph.html#cmspy-qe-ph-dyn-module">cmspy.qe.ph.dyn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.ph.html#cmspy-qe-ph-io-module">cmspy.qe.ph.io module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.ph.html#cmspy-qe-ph-phsave-module">cmspy.qe.ph.phsave module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.ph.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.pp.html">cmspy.qe.pp package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pp.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pp.html#module-cmspy.qe.pp.bands">cmspy.qe.pp.bands module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pp.html#cmspy-qe-pp-input-module">cmspy.qe.pp.input module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pp.html#module-cmspy.qe.pp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.pw.html">cmspy.qe.pw package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#module-cmspy.qe.pw.cards">cmspy.qe.pw.cards module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#module-cmspy.qe.pw.ct">cmspy.qe.pw.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#module-cmspy.qe.pw.input">cmspy.qe.pw.input module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#module-cmspy.qe.pw.output">cmspy.qe.pw.output module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.pw.html#module-cmspy.qe.pw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.test.html">cmspy.qe.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.test.html#module-cmspy.qe.test.pwinp">cmspy.qe.test.pwinp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.test.html#module-cmspy.qe.test.qexpt">cmspy.qe.test.qexpt module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.test.html#module-cmspy.qe.test.qexpt2w90">cmspy.qe.test.qexpt2w90 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.qe.test.html#module-cmspy.qe.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.qe.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.qe.html#module-cmspy.qe.upf">cmspy.qe.upf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.qe.html#module-cmspy.qe">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.test.html">cmspy.special.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test.bessel">cmspy.special.test.bessel module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test.hydrogen">cmspy.special.test.hydrogen module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#cmspy-special-test-jellium-module">cmspy.special.test.jellium module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#cmspy-special-test-shirley-module">cmspy.special.test.shirley module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.special.test.html#module-cmspy.special.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#module-cmspy.special.bessel">cmspy.special.bessel module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#module-cmspy.special.hydrogen">cmspy.special.hydrogen module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#module-cmspy.special.jellium">cmspy.special.jellium module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#module-cmspy.special.shirley">cmspy.special.shirley module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.special.html#module-cmspy.special">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.tb.html#module-cmspy.tb">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.test.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.test.html#module-cmspy.test.benchmarks">cmspy.test.benchmarks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.test.html#module-cmspy.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.flib.html">cmspy.w90.flib package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.flib.html#module-cmspy.w90.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.io.html">cmspy.w90.io package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.io.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.io.html#module-cmspy.w90.io.utils">cmspy.w90.io.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.io.html#module-cmspy.w90.io">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.w90.test.html">cmspy.w90.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#module-cmspy.w90.test.copper">cmspy.w90.test.copper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-dis-module">cmspy.w90.test.dis module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-flib-module">cmspy.w90.test.flib module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-io-module">cmspy.w90.test.io module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-opf-module">cmspy.w90.test.opf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#cmspy-w90-test-utils-module">cmspy.w90.test.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.test.html#module-cmspy.w90.test">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.amn">cmspy.w90.amn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.ct">cmspy.w90.ct module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.dis">cmspy.w90.dis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.eig">cmspy.w90.eig module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.mmn">cmspy.w90.mmn module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.nnkp">cmspy.w90.nnkp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.orbitals">cmspy.w90.orbitals module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.setup">cmspy.w90.setup module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.utils">cmspy.w90.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.vme">cmspy.w90.vme module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xcrysden.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.io.html">cmspy.xcrysden.io package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xcrysden.io.html#module-cmspy.xcrysden.io">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xcrysden.html#module-cmspy.xcrysden">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.core.html">cmspy.xtal.core package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.core.html#module-cmspy.xtal.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.flib.html">cmspy.xtal.flib package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.flib.html#module-cmspy.xtal.flib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.lattice.html">cmspy.xtal.lattice package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.lattice.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.lattice.html#module-cmspy.xtal.lattice.utils">cmspy.xtal.lattice.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.lattice.html#module-cmspy.xtal.lattice">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.test.html">cmspy.xtal.test package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.bz">cmspy.xtal.test.bz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.kptutils">cmspy.xtal.test.kptutils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#cmspy-xtal-test-tet-module">cmspy.xtal.test.tet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test.wfn">cmspy.xtal.test.wfn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.test.html#module-cmspy.xtal.test">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.tet.html">cmspy.xtal.tet package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.xtal.tet.html#module-cmspy.xtal.tet">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.bands">cmspy.xtal.bands module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.calc">cmspy.xtal.calc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.common">cmspy.xtal.common module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.crystal">cmspy.xtal.crystal module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.ct">cmspy.xtal.ct module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.kptutils">cmspy.xtal.kptutils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.structure">cmspy.xtal.structure module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal.utils">cmspy.xtal.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.xtal.html#module-cmspy.xtal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.config">
+<span id="cmspy-config-module"></span><h2>cmspy.config module<a class="headerlink" href="#module-cmspy.config" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="cmspy.config.examples">
+<em class="property">class </em><code class="descclassname">cmspy.config.</code><code class="descname">examples</code><a class="headerlink" href="#cmspy.config.examples" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="cmspy.config.examples.root_dir">
+<code class="descname">root_dir</code><em class="property"> = '/global/homes/j/jmustafa/pythondev/cmsPy/examples'</em><a class="headerlink" href="#cmspy.config.examples.root_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.config.external">
+<em class="property">class </em><code class="descclassname">cmspy.config.</code><code class="descname">external</code><a class="headerlink" href="#cmspy.config.external" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="cmspy.config.external.ape_bindir">
+<code class="descname">ape_bindir</code><em class="property"> = '/global/homes/j/jmustafa/ape/bin'</em><a class="headerlink" href="#cmspy.config.external.ape_bindir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.config.external.bgw_bindir">
+<code class="descname">bgw_bindir</code><em class="property"> = '/global/homes/j/jmustafa/berkeleygw/bin'</em><a class="headerlink" href="#cmspy.config.external.bgw_bindir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.config.external.bgw_dir">
+<code class="descname">bgw_dir</code><em class="property"> = '/global/homes/j/jmustafa/edison/codes/berkeleygw/trunk'</em><a class="headerlink" href="#cmspy.config.external.bgw_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.config.external.qe_bindir">
+<code class="descname">qe_bindir</code><em class="property"> = '/global/homes/j/jmustafa/espresso/bin/'</em><a class="headerlink" href="#cmspy.config.external.qe_bindir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.config.external.w90_bindir">
+<code class="descname">w90_bindir</code><em class="property"> = '/global/homes/j/jmustafa/wannier90/'</em><a class="headerlink" href="#cmspy.config.external.w90_bindir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.config.testing">
+<em class="property">class </em><code class="descclassname">cmspy.config.</code><code class="descname">testing</code><a class="headerlink" href="#cmspy.config.testing" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="cmspy.config.testing.skip_externally_dependent">
+<code class="descname">skip_externally_dependent</code><em class="property"> = False</em><a class="headerlink" href="#cmspy.config.testing.skip_externally_dependent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-cmspy">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy" title="Permalink to this headline">¶</a></h2>
+<p>cmsPy</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.ape.html" class="btn btn-neutral float-right" title="cmspy.ape package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome to cmspy’s documentation!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

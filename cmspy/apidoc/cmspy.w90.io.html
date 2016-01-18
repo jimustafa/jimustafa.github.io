@@ -1,0 +1,712 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>cmspy.w90.io package &mdash; cmspy  documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="cmspy  documentation" href="../index.html"/>
+        <link rel="up" title="cmspy.w90 package" href="cmspy.w90.html"/>
+        <link rel="next" title="cmspy.w90.test package" href="cmspy.w90.test.html"/>
+        <link rel="prev" title="cmspy.w90.flib package" href="cmspy.w90.flib.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> cmspy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cmspy.html">cmspy package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cmspy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cmspy.ape.html">cmspy.ape package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.atomic.html">cmspy.atomic package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.bgw.html">cmspy.bgw package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.common.html">cmspy.common package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.core.html">cmspy.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.io.html">cmspy.io package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.job.html">cmspy.job package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.linalg.html">cmspy.linalg package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.mpi.html">cmspy.mpi package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.optimize.html">cmspy.optimize package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.psp.html">cmspy.psp package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.qe.html">cmspy.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.special.html">cmspy.special package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.tb.html">cmspy.tb package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.test.html">cmspy.test package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="cmspy.w90.html">cmspy.w90 package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="cmspy.w90.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.amn">cmspy.w90.amn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.ct">cmspy.w90.ct module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.dis">cmspy.w90.dis module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.eig">cmspy.w90.eig module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.mmn">cmspy.w90.mmn module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.nnkp">cmspy.w90.nnkp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.orbitals">cmspy.w90.orbitals module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.setup">cmspy.w90.setup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.utils">cmspy.w90.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90.vme">cmspy.w90.vme module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cmspy.w90.html#module-cmspy.w90">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xcrysden.html">cmspy.xcrysden package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cmspy.xtal.html">cmspy.xtal package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy.config">cmspy.config module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmspy.html#module-cmspy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">cmspy</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cmspy.html">cmspy package</a> &raquo;</li>
+      
+          <li><a href="cmspy.w90.html">cmspy.w90 package</a> &raquo;</li>
+      
+    <li>cmspy.w90.io package</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/apidoc/cmspy.w90.io.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cmspy-w90-io-package">
+<h1>cmspy.w90.io package<a class="headerlink" href="#cmspy-w90-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-cmspy.w90.io.utils">
+<span id="cmspy-w90-io-utils-module"></span><h2>cmspy.w90.io.utils module<a class="headerlink" href="#module-cmspy.w90.io.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="cmspy.w90.io.utils.unk_get_ikpt_ispn">
+<code class="descclassname">cmspy.w90.io.utils.</code><code class="descname">unk_get_ikpt_ispn</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.utils.unk_get_ikpt_ispn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-cmspy.w90.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cmspy.w90.io" title="Permalink to this headline">¶</a></h2>
+<p>Wannier90 I/O</p>
+<dl class="class">
+<dt id="cmspy.w90.io.CheckpointIO">
+<em class="property">class </em><code class="descclassname">cmspy.w90.io.</code><code class="descname">CheckpointIO</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.CheckpointIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="cmspy.w90.io.CheckpointIO.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.CheckpointIO.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.w90.io.FortranFile">
+<em class="property">class </em><code class="descclassname">cmspy.w90.io.</code><code class="descname">FortranFile</code><span class="sig-paren">(</span><em>filename</em>, <em>mode='r'</em>, <em>header_dtype=&lt;type 'numpy.uint32'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="http://docs.python.org/2.7/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>A file object for unformatted sequential files from Fortran code.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>filename</strong> : file or str</p>
+<blockquote>
+<div><p>Open file object or filename.</p>
+</div></blockquote>
+<p><strong>mode</strong> : {&#8216;r&#8217;, &#8216;w&#8217;}, optional</p>
+<blockquote>
+<div><p>Read-write mode, default is &#8216;r&#8217;.</p>
+</div></blockquote>
+<p><strong>header_dtype</strong> : dtype, optional</p>
+<blockquote class="last">
+<div><p>Data type of the header. Size and endiness must match the input/output file.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>These files are broken up into records of unspecified types. The size of
+each record is given at the start (although the size of this header is not
+standard) and the data is written onto disk without any formatting. Fortran
+compilers supporting the BACKSPACE statement will write a second copy of
+the size to facilitate backwards seeking.</p>
+<p>This class only supports files written with both sizes for the record.
+It also does not support the subrecords used in Intel and gfortran compilers
+for records which are greater than 2GB with a 4-byte header.</p>
+<p>An example of an unformatted sequential file in Fortran would be written as:</p>
+<div class="highlight-python"><div class="highlight"><pre>OPEN(1, FILE=myfilename, FORM=&#39;unformatted&#39;)
+
+WRITE(1) myvariable
+</pre></div>
+</div>
+<p>Since this is a non-standard file format, whose contents depend on the
+compiler and the endianness of the machine, caution is advised. Files from
+gfortran 4.8.0 and gfortran 4.1.2 on x86_64 are known to work.</p>
+<p>Consider using Fortran direct-access files or files from the newer Stream
+I/O, which can be easily read by <cite>numpy.fromfile</cite>.</p>
+<p class="rubric">Examples</p>
+<p>To create an unformatted sequential Fortran file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">FortranFile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">FortranFile</span><span class="p">(</span><span class="s">&#39;test.unf&#39;</span><span class="p">,</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write_record</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">write_record</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To read this file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">scipy.io</span> <span class="kn">import</span> <span class="n">FortranFile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">FortranFile</span><span class="p">(</span><span class="s">&#39;test.unf&#39;</span><span class="p">,</span> <span class="s">&#39;r&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read_ints</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">))</span>
+<span class="go">[1 2 3 4 5]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read_reals</span><span class="p">(</span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)))</span>
+<span class="go">[[ 0.          0.05263158  0.10526316  0.15789474]</span>
+<span class="go"> [ 0.21052632  0.26315789  0.31578947  0.36842105]</span>
+<span class="go"> [ 0.42105263  0.47368421  0.52631579  0.57894737]</span>
+<span class="go"> [ 0.63157895  0.68421053  0.73684211  0.78947368]</span>
+<span class="go"> [ 0.84210526  0.89473684  0.94736842  1.        ]]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="cmspy.w90.io.FortranFile.close">
+<code class="descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile.close" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the file. It is unsupported to call any other methods off this
+object after closing it. Note that this class supports the &#8216;with&#8217;
+statement in modern versions of Python, to call this automatically</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.io.FortranFile.read_ints">
+<code class="descname">read_ints</code><span class="sig-paren">(</span><em>dtype='i4'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile.read_ints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a record of a given type from the file, defaulting to an integer
+type (INTEGER*4 in Fortran)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dtype</strong> : dtype, optional</p>
+<blockquote>
+<div><p>Data type specifying the size and endiness of the data.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> : ndarray</p>
+<blockquote class="last">
+<div><p>A one-dimensional array object.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#cmspy.w90.io.FortranFile.read_reals" title="cmspy.w90.io.FortranFile.read_reals"><code class="xref py py-obj docutils literal"><span class="pre">read_reals</span></code></a>, <a class="reference internal" href="#cmspy.w90.io.FortranFile.read_record" title="cmspy.w90.io.FortranFile.read_record"><code class="xref py py-obj docutils literal"><span class="pre">read_record</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.io.FortranFile.read_reals">
+<code class="descname">read_reals</code><span class="sig-paren">(</span><em>dtype='f8'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile.read_reals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a record of a given type from the file, defaulting to a floating
+point number (real*8 in Fortran)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dtype</strong> : dtype, optional</p>
+<blockquote>
+<div><p>Data type specifying the size and endiness of the data.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> : ndarray</p>
+<blockquote class="last">
+<div><p>A one-dimensional array object.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#cmspy.w90.io.FortranFile.read_ints" title="cmspy.w90.io.FortranFile.read_ints"><code class="xref py py-obj docutils literal"><span class="pre">read_ints</span></code></a>, <a class="reference internal" href="#cmspy.w90.io.FortranFile.read_record" title="cmspy.w90.io.FortranFile.read_record"><code class="xref py py-obj docutils literal"><span class="pre">read_record</span></code></a></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.io.FortranFile.read_record">
+<code class="descname">read_record</code><span class="sig-paren">(</span><em>dtype=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile.read_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a record of a given type from the file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>dtype</strong> : dtype, optional</p>
+<blockquote>
+<div><p>Data type specifying the size and endiness of the data.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>data</strong> : ndarray</p>
+<blockquote class="last">
+<div><p>A one-dimensional array object.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#cmspy.w90.io.FortranFile.read_reals" title="cmspy.w90.io.FortranFile.read_reals"><code class="xref py py-obj docutils literal"><span class="pre">read_reals</span></code></a>, <a class="reference internal" href="#cmspy.w90.io.FortranFile.read_ints" title="cmspy.w90.io.FortranFile.read_ints"><code class="xref py py-obj docutils literal"><span class="pre">read_ints</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>If the record contains a multi-dimensional array, calling reshape or
+resize will restructure the array to the correct size.
+Since Fortran multidimensional arrays are stored in column-major format,
+this may have some non-intuitive consequences. If the variable was
+declared as &#8216;INTEGER var(5,4)&#8217;, for example, var could be read with
+&#8216;read_record(dtype=np.integer).reshape( (4,5) )&#8217; since Python uses
+row-major ordering of indices.</p>
+<p>One can transpose to obtain the indices in the same order as in Fortran.</p>
+<p>For records that contain several variables or mixed types (as opposed
+to single scalar or array types), it is possible to specify a dtype
+with mixed types:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">record</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read_record</span><span class="p">([(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;&lt;f4&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;&lt;i4&#39;</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">record</span><span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">]</span>  <span class="c"># access the variable &#39;a&#39;</span>
+<span class="go">5.6</span>
+</pre></div>
+</div>
+<p>and if any of the variables are arrays, the shape can be specified as
+the third item in the relevant tuple:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">record</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read_record</span><span class="p">([(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;&lt;f4&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;&lt;i4&#39;</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))])</span>
+</pre></div>
+</div>
+<p>Numpy also supports a short syntax for this kind of type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">record</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read_record</span><span class="p">(</span><span class="s">&#39;&lt;f4,(3,3)&lt;i4&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">record</span><span class="p">[</span><span class="s">&#39;f0&#39;</span><span class="p">]</span>  <span class="c"># variables are called f0, f1, ...</span>
+<span class="go">5.6</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="cmspy.w90.io.FortranFile.write_record">
+<code class="descname">write_record</code><span class="sig-paren">(</span><em>s</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.FortranFile.write_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a record (including sizes) to the file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>s</strong> : array_like</p>
+<blockquote class="last">
+<div><p>The data to write.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cmspy.w90.io.Wannier90Data">
+<em class="property">class </em><code class="descclassname">cmspy.w90.io.</code><code class="descname">Wannier90Data</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">tuple</span></code></p>
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.amn">
+<code class="descname">amn</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.amn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.bv">
+<code class="descname">bv</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.bv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 7</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.bw">
+<code class="descname">bw</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.bw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 8</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.dlv">
+<code class="descname">dlv</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.dlv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.eig">
+<code class="descname">eig</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.eig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.energy_unit">
+<code class="descname">energy_unit</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.energy_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 10</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.kpb_kidx">
+<code class="descname">kpb_kidx</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.kpb_kidx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 6</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.kpoints">
+<code class="descname">kpoints</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.kpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.length_unit">
+<code class="descname">length_unit</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.length_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 9</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.mmn">
+<code class="descname">mmn</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.mmn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="cmspy.w90.io.Wannier90Data.rlv">
+<code class="descname">rlv</code><a class="headerlink" href="#cmspy.w90.io.Wannier90Data.rlv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.namedtuple">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">namedtuple</code><span class="sig-paren">(</span><em>typename</em>, <em>field_names</em>, <em>verbose=False</em>, <em>rename=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.namedtuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new subclass of tuple with named fields.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Point</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s">&#39;Point&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;x&#39;</span><span class="p">,</span> <span class="s">&#39;y&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Point</span><span class="o">.</span><span class="n">__doc__</span>                   <span class="c"># docstring for the new class</span>
+<span class="go">&#39;Point(x, y)&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">22</span><span class="p">)</span>             <span class="c"># instantiate with positional args or keywords</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>                     <span class="c"># indexable like a plain tuple</span>
+<span class="go">33</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">p</span>                        <span class="c"># unpack like a regular tuple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+<span class="go">(11, 22)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">p</span><span class="o">.</span><span class="n">y</span>                       <span class="c"># fields also accessable by name</span>
+<span class="go">33</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">_asdict</span><span class="p">()</span>                 <span class="c"># convert to a dictionary</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">d</span><span class="p">[</span><span class="s">&#39;x&#39;</span><span class="p">]</span>
+<span class="go">11</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Point</span><span class="p">(</span><span class="o">**</span><span class="n">d</span><span class="p">)</span>                      <span class="c"># convert from a dictionary</span>
+<span class="go">Point(x=11, y=22)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">p</span><span class="o">.</span><span class="n">_replace</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>               <span class="c"># _replace() is like str.replace() but targets named fields</span>
+<span class="go">Point(x=100, y=22)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_Rvectors">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_Rvectors</code><span class="sig-paren">(</span><em>fname</em>, <em>return_Rweights=True</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_Rvectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_amn">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_amn</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_amn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a Wannier90 AMN file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fname</strong> : str</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>amn</strong> : ndarray, shape (nkpts, nbnds, nproj)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_bands">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_bands</code><span class="sig-paren">(</span><em>fname</em>, <em>nkpts</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_bands" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_chkpt">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_chkpt</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_chkpt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_data">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_data</code><span class="sig-paren">(</span><em>seedname='wannier'</em>, <em>length_unit='angstrom'</em>, <em>energy_unit='eV'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_eig">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_eig</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_hamiltonian">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_hamiltonian</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_hamiltonian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read an EIG file and return the k-dependent Hamiltonian matrix</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fname: str</strong></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Hk: ndarray, shape (nkpts, nbnds, nbnds)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_hr">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_hr</code><span class="sig-paren">(</span><em>fname</em>, <em>return_Rvectors=False</em>, <em>return_Rweights=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_hr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_kpoints">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_mmn">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_mmn</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_mmn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the Wannier90 MMN file into a <cite>ndarray</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fname</strong> : str</p>
+<blockquote>
+<div><p>Name of the MMN file to read.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>out</strong> : ndarray</p>
+<blockquote class="last">
+<div><p>Data read from the MMN file. The returned array will have dimensions
+(<cite>nkpts</cite>, <cite>nntot</cite>, <cite>nbnds</cite>, <cite>nbnds</cite>)</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><code class="xref py py-obj docutils literal"><span class="pre">cmspy.w90.amn.read_amn</span></code></p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.read_unk">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">read_unk</code><span class="sig-paren">(</span><em>fname</em>, <em>gspace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.read_unk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.write_amn">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">write_amn</code><span class="sig-paren">(</span><em>fname</em>, <em>amn</em>, <em>header='HEADER'</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.write_amn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write AMN matrix data to a file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>fname</strong> : str</p>
+<p class="last"><strong>amn</strong> : ndarray, shape (nkpts, nbnds, nproj)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.write_eig">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">write_eig</code><span class="sig-paren">(</span><em>fname</em>, <em>energies</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.write_eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.write_mmn">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">write_mmn</code><span class="sig-paren">(</span><em>fname</em>, <em>mmn</em>, <em>setup_file</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.write_mmn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="cmspy.w90.io.write_unk">
+<code class="descclassname">cmspy.w90.io.</code><code class="descname">write_unk</code><span class="sig-paren">(</span><em>fname</em>, <em>unk</em>, <em>ikpt</em><span class="sig-paren">)</span><a class="headerlink" href="#cmspy.w90.io.write_unk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cmspy.w90.test.html" class="btn btn-neutral float-right" title="cmspy.w90.test package" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cmspy.w90.flib.html" class="btn btn-neutral" title="cmspy.w90.flib package" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Author.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

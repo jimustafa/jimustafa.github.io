@@ -1,0 +1,10 @@
+cmspy.mpi package
+=================
+
+Module contents
+---------------
+
+.. automodule:: cmspy.mpi
+    :members:
+    :undoc-members:
+    :show-inheritance:

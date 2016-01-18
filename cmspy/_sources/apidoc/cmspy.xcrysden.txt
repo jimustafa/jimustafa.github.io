@@ -1,0 +1,17 @@
+cmspy.xcrysden package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.xcrysden.io
+
+Module contents
+---------------
+
+.. automodule:: cmspy.xcrysden
+    :members:
+    :undoc-members:
+    :show-inheritance:

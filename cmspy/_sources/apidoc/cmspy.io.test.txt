@@ -1,0 +1,22 @@
+cmspy.io.test package
+=====================
+
+Submodules
+----------
+
+cmspy.io.test.fnml module
+-------------------------
+
+.. automodule:: cmspy.io.test.fnml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.io.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

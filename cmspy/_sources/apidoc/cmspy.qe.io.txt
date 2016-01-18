@@ -1,0 +1,38 @@
+cmspy.qe.io package
+===================
+
+Submodules
+----------
+
+cmspy.qe.io.qexml module
+------------------------
+
+.. automodule:: cmspy.qe.io.qexml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.io.qexpt module
+------------------------
+
+.. automodule:: cmspy.qe.io.qexpt
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.io.qexpt1 module
+-------------------------
+
+.. automodule:: cmspy.qe.io.qexpt1
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

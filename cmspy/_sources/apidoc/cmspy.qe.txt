@@ -1,0 +1,33 @@
+cmspy.qe package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    cmspy.qe.io
+    cmspy.qe.ph
+    cmspy.qe.pp
+    cmspy.qe.pw
+    cmspy.qe.test
+
+Submodules
+----------
+
+cmspy.qe.upf module
+-------------------
+
+.. automodule:: cmspy.qe.upf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe
+    :members:
+    :undoc-members:
+    :show-inheritance:

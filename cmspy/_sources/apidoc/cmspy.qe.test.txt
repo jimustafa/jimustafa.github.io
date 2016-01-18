@@ -1,0 +1,38 @@
+cmspy.qe.test package
+=====================
+
+Submodules
+----------
+
+cmspy.qe.test.pwinp module
+--------------------------
+
+.. automodule:: cmspy.qe.test.pwinp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.test.qexpt module
+--------------------------
+
+.. automodule:: cmspy.qe.test.qexpt
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+cmspy.qe.test.qexpt2w90 module
+------------------------------
+
+.. automodule:: cmspy.qe.test.qexpt2w90
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: cmspy.qe.test
+    :members:
+    :undoc-members:
+    :show-inheritance:
