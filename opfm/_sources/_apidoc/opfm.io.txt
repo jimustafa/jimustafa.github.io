@@ -1,0 +1,29 @@
+opfm.io package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    opfm.io.tests
+
+Submodules
+----------
+
+opfm.io.fnml module
+-------------------
+
+.. automodule:: opfm.io.fnml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

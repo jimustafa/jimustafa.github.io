@@ -1,0 +1,29 @@
+opfm.optimize package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    opfm.optimize.tests
+
+Submodules
+----------
+
+opfm.optimize.qpqc module
+-------------------------
+
+.. automodule:: opfm.optimize.qpqc
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.optimize
+    :members:
+    :undoc-members:
+    :show-inheritance:

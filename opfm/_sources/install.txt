@@ -1,0 +1,50 @@
+============
+Installation
+============
+
+OPFm.py requires a working Python and the following additional packages:
+
+- numpy
+- scipy
+
+OPFm.py has been tested with the following versions of numpy and scipy:
+
+===== ======= =======
+----- ------- -------
+numpy 1.8.2   1.9.3
+scipy 0.15.0  0.16.0
+===== ======= =======
+
+
+Python
+======
+
+Unix/Linux or OS X
+------------------
+Python is available on almost all Unix/Linux systems. To check if Python is
+already installed on your system, execute the following in the terminal
+
+::
+
+   python -V
+
+The package has been tested Python versions 2.6.x and 2.7.x, while support for
+Python 3.x is planned for the near future.
+
+Windows
+-------
+
+Pyhton can be obtained for Windows through a variety releases or as part of the
+SciPy Stack.
+
+
+numpy and scipy
+===============
+
+
+Additional software
+===================
+
+Optional packages needed for features of the package are listed below:
+
+- matplotlib

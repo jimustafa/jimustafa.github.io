@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>opfm.scripts package &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="../index.html" />
+    <link rel="up" title="opfm package" href="opfm.html" />
+    <link rel="next" title="opfm.w90 package" href="opfm.w90.html" />
+    <link rel="prev" title="opfm.qe.io package" href="opfm.qe.io.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.html" title="opfm.w90 package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="opfm.qe.io.html" title="opfm.qe.io package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" accesskey="U">opfm package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="opfm-scripts-package">
+<h1>opfm.scripts package<a class="headerlink" href="#opfm-scripts-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opfm.scripts.opfm">
+<span id="opfm-scripts-opfm-module"></span><h2>opfm.scripts.opfm module<a class="headerlink" href="#module-opfm.scripts.opfm" title="Permalink to this headline">¶</a></h2>
+<p>Alternative Wannier Function Constructor</p>
+<dl class="class">
+<dt id="opfm.scripts.opfm.MyConfigParser">
+<em class="property">class </em><code class="descclassname">opfm.scripts.opfm.</code><code class="descname">MyConfigParser</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="opfm.io.html#opfm.io.CrystalConfigParser" title="opfm.io.CrystalConfigParser"><code class="xref py py-class docutils literal"><span class="pre">opfm.io.CrystalConfigParser</span></code></a>, <a class="reference internal" href="opfm.io.html#opfm.io.KpointsConfigParser" title="opfm.io.KpointsConfigParser"><code class="xref py py-class docutils literal"><span class="pre">opfm.io.KpointsConfigParser</span></code></a></p>
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.atomic_orbitals">
+<code class="descname">atomic_orbitals</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.atomic_orbitals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.atomic_orbtial_pattern">
+<code class="descname">atomic_orbtial_pattern</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.atomic_orbtial_pattern" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.band_ranges">
+<code class="descname">band_ranges</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.band_ranges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.conv_tol">
+<code class="descname">conv_tol</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.conv_tol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.coordination_number_pattern">
+<code class="descname">coordination_number_pattern</code><em class="property"> = &lt;_sre.SRE_Pattern object&gt;</em><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.coordination_number_pattern" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.coordination_numbers">
+<code class="descname">coordination_numbers</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.coordination_numbers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.exclude_bands">
+<code class="descname">exclude_bands</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.exclude_bands" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.kgrid">
+<code class="descname">kgrid</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.kgrid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.lagrange_multiplier">
+<code class="descname">lagrange_multiplier</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.lagrange_multiplier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.max_iter">
+<code class="descname">max_iter</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.max_iter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.nproj">
+<code class="descname">nproj</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.nproj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.nproj_atom">
+<code class="descname">nproj_atom</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.nproj_atom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.nspns">
+<code class="descname">nspns</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.nspns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.restart">
+<code class="descname">restart</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.restart" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="opfm.scripts.opfm.MyConfigParser.spinor_orbitals">
+<code class="descname">spinor_orbitals</code><a class="headerlink" href="#opfm.scripts.opfm.MyConfigParser.spinor_orbitals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.create_cfg_qe">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">create_cfg_qe</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.create_cfg_qe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.expand_projections">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">expand_projections</code><span class="sig-paren">(</span><em>args</em>, <em>a</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.expand_projections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.opfm2w90">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">opfm2w90</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.opfm2w90" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.optimize">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">optimize</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.optimize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct optimal projection functions (OPFs)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.plot_wmat">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">plot_wmat</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.plot_wmat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.print_iter_info">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">print_iter_info</code><span class="sig-paren">(</span><em>m_bloch</em>, <em>setup_file</em>, <em>a_bloch</em>, <em>m_proj</em>, <em>w_codiag</em>, <em>iter_info</em>, <em>lwaaw</em>, <em>initial=False</em>, <em>final=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.print_iter_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.print_wmat">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">print_wmat</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.print_wmat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.read_config">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">read_config</code><span class="sig-paren">(</span><em>cfg_file='opfm.cfg'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.read_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.read_input">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">read_input</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.read_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.setup_opfm">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">setup_opfm</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.setup_opfm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.scripts.opfm.unitarize_aw">
+<code class="descclassname">opfm.scripts.opfm.</code><code class="descname">unitarize_aw</code><span class="sig-paren">(</span><em>a_bloch</em>, <em>w_codiag</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.scripts.opfm.unitarize_aw" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-opfm.scripts">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opfm.scripts" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">opfm.scripts package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-opfm.scripts.opfm">opfm.scripts.opfm module</a></li>
+<li><a class="reference internal" href="#module-opfm.scripts">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="opfm.qe.io.html"
+                        title="previous chapter">opfm.qe.io package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="opfm.w90.html"
+                        title="next chapter">opfm.w90 package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_apidoc/opfm.scripts.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.html" title="opfm.w90 package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="opfm.qe.io.html" title="opfm.qe.io package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" >opfm package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

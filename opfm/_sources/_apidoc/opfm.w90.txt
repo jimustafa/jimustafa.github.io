@@ -1,0 +1,61 @@
+opfm.w90 package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    opfm.w90.io
+
+Submodules
+----------
+
+opfm.w90.amn module
+-------------------
+
+.. automodule:: opfm.w90.amn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.w90.mmn module
+-------------------
+
+.. automodule:: opfm.w90.mmn
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.w90.nnkp module
+--------------------
+
+.. automodule:: opfm.w90.nnkp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.w90.orbitals module
+------------------------
+
+.. automodule:: opfm.w90.orbitals
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.w90.setup module
+---------------------
+
+.. automodule:: opfm.w90.setup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.w90
+    :members:
+    :undoc-members:
+    :show-inheritance:

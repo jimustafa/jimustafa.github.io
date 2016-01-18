@@ -1,0 +1,10 @@
+opfm.linalg.flib package
+========================
+
+Module contents
+---------------
+
+.. automodule:: opfm.linalg.flib
+    :members:
+    :undoc-members:
+    :show-inheritance:

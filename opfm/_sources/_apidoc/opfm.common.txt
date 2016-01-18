@@ -1,0 +1,38 @@
+opfm.common package
+===================
+
+Submodules
+----------
+
+opfm.common.cli module
+----------------------
+
+.. automodule:: opfm.common.cli
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.common.constants module
+----------------------------
+
+.. automodule:: opfm.common.constants
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.common.regex module
+------------------------
+
+.. automodule:: opfm.common.regex
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.common
+    :members:
+    :undoc-members:
+    :show-inheritance:

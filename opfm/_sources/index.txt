@@ -6,14 +6,14 @@
 Welcome to OPFm.py's documentation!
 ===================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 1
 
+   about
+   install
    input
-
-
+   examples
+   apidocs
 
 Indices and tables
 ==================
@@ -21,4 +21,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

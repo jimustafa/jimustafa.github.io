@@ -1,0 +1,22 @@
+opfm.qe.io package
+==================
+
+Submodules
+----------
+
+opfm.qe.io.qexml module
+-----------------------
+
+.. automodule:: opfm.qe.io.qexml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.qe.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

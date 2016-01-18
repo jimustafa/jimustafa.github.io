@@ -1,0 +1,30 @@
+opfm.w90.io package
+===================
+
+Submodules
+----------
+
+opfm.w90.io.nnkp module
+-----------------------
+
+.. automodule:: opfm.w90.io.nnkp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.w90.io.win module
+----------------------
+
+.. automodule:: opfm.w90.io.win
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.w90.io
+    :members:
+    :undoc-members:
+    :show-inheritance:

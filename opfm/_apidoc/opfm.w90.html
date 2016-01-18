@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>opfm.w90 package &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="../index.html" />
+    <link rel="up" title="opfm package" href="opfm.html" />
+    <link rel="next" title="opfm.w90.io package" href="opfm.w90.io.html" />
+    <link rel="prev" title="opfm.scripts package" href="opfm.scripts.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.io.html" title="opfm.w90.io package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="opfm.scripts.html" title="opfm.scripts package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" accesskey="U">opfm package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="opfm-w90-package">
+<h1>opfm.w90 package<a class="headerlink" href="#opfm-w90-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="opfm.w90.io.html">opfm.w90.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="opfm.w90.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opfm.w90.io.html#module-opfm.w90.io.nnkp">opfm.w90.io.nnkp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opfm.w90.io.html#module-opfm.w90.io.win">opfm.w90.io.win module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="opfm.w90.io.html#module-opfm.w90.io">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opfm.w90.amn">
+<span id="opfm-w90-amn-module"></span><h2>opfm.w90.amn module<a class="headerlink" href="#module-opfm.w90.amn" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="opfm.w90.amn.expand">
+<code class="descclassname">opfm.w90.amn.</code><code class="descname">expand</code><span class="sig-paren">(</span><em>a</em>, <em>kpoints</em>, <em>idx</em>, <em>Rvectors</em>, <em>nproj_atom=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.amn.expand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expand the projections matrix by translations of the orbitals</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>a</strong> : ndarray, shape (nkpts, nbnds, nproj)</p>
+<p><strong>kpoints</strong> : ndarray, shape (nkpts, 3)</p>
+<p><strong>idx</strong> : ndarray</p>
+<blockquote>
+<div><p>indices of translated orbitals</p>
+</div></blockquote>
+<p><strong>Rvectors: ndarray</strong></p>
+<blockquote>
+<div><p>translations of the orbitals</p>
+</div></blockquote>
+<p><strong>nproj_atom: ndarray, optional</strong></p>
+<blockquote class="last">
+<div><p>number of projections on each atom, with idx and Rvectors now describing
+atoms instead of orbitals</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opfm.w90.mmn">
+<span id="opfm-w90-mmn-module"></span><h2>opfm.w90.mmn module<a class="headerlink" href="#module-opfm.w90.mmn" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="opfm.w90.mmn.calc_wannier_centers_1D">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">calc_wannier_centers_1D</code><span class="sig-paren">(</span><em>m</em>, <em>mp_grid</em>, <em>kpb</em>, <em>bvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.calc_wannier_centers_1D" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.calc_wannier_centers_1D_1">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">calc_wannier_centers_1D_1</code><span class="sig-paren">(</span><em>m</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.calc_wannier_centers_1D_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.change_gauge">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">change_gauge</code><span class="sig-paren">(</span><em>mmn</em>, <em>umn</em>, <em>kpb_kidx</em>, <em>inside_window=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.change_gauge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change of the gauge of the overlaps matrix according to
+<img class="math" src="../_images/math/f9349c6211f75e9eea49b6d2adcc71fa7c896320.png" alt="U^{(\mathbf{k})\dagger}M^{(\mathbf{k},\mathbf{b})}U^{(\mathbf{k}+\mathbf{b})}"/></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.change_gauge_k">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">change_gauge_k</code><span class="sig-paren">(</span><em>m</em>, <em>u</em>, <em>setup_file</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.change_gauge_k" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.change_gauge_kpb">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">change_gauge_kpb</code><span class="sig-paren">(</span><em>m</em>, <em>u</em>, <em>setup_file</em>, <em>kpb_kidx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.change_gauge_kpb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega_d">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega_d</code><span class="sig-paren">(</span><em>m</em>, <em>bvectors</em>, <em>bweights</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega_d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>m: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega_d_od">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega_d_od</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega_d_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p><strong>bvectors: ndarray, shape (nkpts, nntot, 3)</strong></p>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega_i">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega_i</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega_i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the invariant and off-diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega_i_od">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega_i_od</code><span class="sig-paren">(</span><em>m</em>, <em>bweights</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega_i_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the sum of the invariant and off-diagonal contribution to the spread
+functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>m: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.compute_omega_od">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">compute_omega_od</code><span class="sig-paren">(</span><em>Mmn</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.compute_omega_od" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the off-diagonal contribution to the spread functional</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Mmn: ndarray, shape (nkpts, nntot, nbnds, nbnds)</strong></p>
+<blockquote>
+<div><p>the overlap matrix</p>
+</div></blockquote>
+<p class="last"><strong>bweights: ndarray, shape (nntot,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.project_overlaps">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">project_overlaps</code><span class="sig-paren">(</span><em>m</em>, <em>a</em>, <em>kpb_kidx</em>, <em>return_Uproj=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.project_overlaps" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.w90.mmn.wannier_centers">
+<code class="descclassname">opfm.w90.mmn.</code><code class="descname">wannier_centers</code><span class="sig-paren">(</span><em>m</em>, <em>bvectors</em>, <em>bweights</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.mmn.wannier_centers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-opfm.w90.nnkp">
+<span id="opfm-w90-nnkp-module"></span><h2>opfm.w90.nnkp module<a class="headerlink" href="#module-opfm.w90.nnkp" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="opfm.w90.nnkp.bweights">
+<code class="descclassname">opfm.w90.nnkp.</code><code class="descname">bweights</code><span class="sig-paren">(</span><em>bvectors</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.nnkp.bweights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-opfm.w90.orbitals">
+<span id="opfm-w90-orbitals-module"></span><h2>opfm.w90.orbitals module<a class="headerlink" href="#module-opfm.w90.orbitals" title="Permalink to this headline">¶</a></h2>
+<p>Predefined trial orbitals</p>
+</div>
+<div class="section" id="module-opfm.w90.setup">
+<span id="opfm-w90-setup-module"></span><h2>opfm.w90.setup module<a class="headerlink" href="#module-opfm.w90.setup" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opfm.w90.setup.SetupFile">
+<em class="property">class </em><code class="descclassname">opfm.w90.setup.</code><code class="descname">SetupFile</code><span class="sig-paren">(</span><em>fname=None</em>, <em>auto_read=True</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.setup.SetupFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/library/functions.html#object" title="(in Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="opfm.w90.setup.SetupFile.from_file">
+<code class="descname">from_file</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.setup.SetupFile.from_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.w90.setup.SetupFile.get_bvectors">
+<code class="descname">get_bvectors</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opfm.w90.setup.SetupFile.get_bvectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-opfm.w90">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opfm.w90" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">opfm.w90 package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-opfm.w90.amn">opfm.w90.amn module</a></li>
+<li><a class="reference internal" href="#module-opfm.w90.mmn">opfm.w90.mmn module</a></li>
+<li><a class="reference internal" href="#module-opfm.w90.nnkp">opfm.w90.nnkp module</a></li>
+<li><a class="reference internal" href="#module-opfm.w90.orbitals">opfm.w90.orbitals module</a></li>
+<li><a class="reference internal" href="#module-opfm.w90.setup">opfm.w90.setup module</a></li>
+<li><a class="reference internal" href="#module-opfm.w90">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="opfm.scripts.html"
+                        title="previous chapter">opfm.scripts package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="opfm.w90.io.html"
+                        title="next chapter">opfm.w90.io package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_apidoc/opfm.w90.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.io.html" title="opfm.w90.io package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="opfm.scripts.html" title="opfm.scripts package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" >opfm package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

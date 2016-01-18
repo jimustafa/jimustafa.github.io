@@ -1,0 +1,13 @@
+=====
+About
+=====
+
+OPFm.py is an open-source Python library implementing the Optimized Projection
+Functions Method.
+
+Development
+===========
+
+The primary development of the package was carried out by Jamal I. Mustafa with
+the help of Sinisa Coh at UC Berkeley. At the time, Jamal was a graduate student
+in the group of Steven G. Louie and Sinisa was a postdoc.

@@ -6,9 +6,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Input Files &mdash; OPFm.py 0.0.0 documentation</title>
+    <title>Input File &mdash; OPFm.py 0.0.0 documentation</title>
     
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -23,109 +23,350 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
     <link rel="top" title="OPFm.py 0.0.0 documentation" href="index.html" />
-    <link rel="prev" title="Welcome to OPFm’s documentation!" href="index.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
-
+    <link rel="next" title="Examples" href="examples.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
   </head>
-  <body role="document">  
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Installation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="input-files">
-<h1>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h1>
-<p>The input files are formatted according to rules dictated by Python&#8217;s
+  <div class="section" id="input-file">
+<h1>Input File<a class="headerlink" href="#input-file" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>The OPFm.py input file is formatted according to the rules dictated by Python&#8217;s
 <a class="reference external" href="https://docs.python.org/library/configparser.html#module-ConfigParser" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">ConfigParser</span></code></a>. Briefly, the format is similar to Microsoft Windows INI
 files, being composed of sections starting with a <code class="docutils literal"><span class="pre">[section]</span></code> header and
-followed by <code class="docutils literal"><span class="pre">option:</span> <span class="pre">value</span></code> entries.</p>
-<p>OPFm.py makes use of two input files, the first contains runtime parameters for
-setting up and running the calculations, while the second provides the necessary
-crystal information.</p>
-<div class="section" id="opfm-cfg">
-<h2>opfm.cfg<a class="headerlink" href="#opfm-cfg" title="Permalink to this headline">¶</a></h2>
-<p>This file provides the runtime parameters. It is composed of a single section
-<code class="docutils literal"><span class="pre">[Input]</span></code> with some required <code class="docutils literal"><span class="pre">option:</span> <span class="pre">value</span></code> entries, while others are
-optional.</p>
-<div class="section" id="input-options">
-<h3><code class="docutils literal"><span class="pre">[Input]</span></code> options<a class="headerlink" href="#input-options" title="Permalink to this headline">¶</a></h3>
-<dl class="docutils">
-<dt>crystal_info_src</dt>
-<dd>Specify where OPFm.py will retrieve crystallographic information about the
-system. Possible values are &#8216;CFG&#8217; and &#8216;QE&#8217;.</dd>
-<dt>crystal_cfg</dt>
-<dd>Path of the crystal.cfg file. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'CFG'</span></code></dd>
-<dt>qe_outdir</dt>
-<dd>The QuantumESPRESSO output directory. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'QE'</span></code></dd>
-<dt>qe_outdir</dt>
-<dd>The QuantumESPRESSO run prefix. Required if <code class="docutils literal"><span class="pre">crystal_info_src</span> <span class="pre">==</span> <span class="pre">'QE'</span></code></dd>
-<dt>kgrid</dt>
-<dd>Dimensions of the k point grid. Must be consistent with the k points
-specified in crystal.cfg</dd>
-</dl>
-<p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre>[Input]
-crystal_info_src: {&#39;QE&#39;, &#39;CFG&#39;}  # specify source for reading crystal information
-crystal_cfg:  path         # path to &quot;crystal.cfg&quot;
-qe_outdir:  path           # path to QE output directory
-qe_prefix:  str            # prefix used in QE calculations
-kgrid:  nk1  nk2  nk3      # dimensions of the k point grid
+followed by <code class="docutils literal"><span class="pre">option=value</span></code> (or <code class="docutils literal"><span class="pre">option:value</span></code>) entries.</p>
+<p>OPFm.py requires the input file <code class="docutils literal"><span class="pre">opfm.cfg</span></code> in the working directory. This file
+contains runtime parameters for setting up and running the calculations and also
+the necessary crystallographic information.</p>
+<p>In addition to the parsing option values and converting to types supported using
+<a class="reference external" href="https://docs.python.org/library/configparser.html#module-ConfigParser" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">ConfigParser</span></code></a> (<code class="docutils literal"><span class="pre">int</span></code>, <code class="docutils literal"><span class="pre">float</span></code>, and <code class="docutils literal"><span class="pre">bool</span></code>), we define some
+additional parsable types.</p>
+<div class="section" id="simple-dict">
+<span id="dict"></span><h3>simple_dict<a class="headerlink" href="#simple-dict" title="Permalink to this headline">¶</a></h3>
+<p>The following format defines a option format for specifying a simple dictionary.
+The strings following the <code class="docutils literal"><span class="pre">simple_dict</span></code> option are the keys for the dictionary, while
+the subsequent lines give the key-value pairs that make up the dictionary.</p>
+<div class="highlight-python"><div class="highlight"><pre>simple_dict:  key1 key2 key3 ...
+  key1:  value1
+  key2:  value2
+  key3:  value3
+    .       .
+    .       .
+    .       .
+</pre></div>
+</div>
+</div>
+<div class="section" id="array">
+<span id="id1"></span><h3>array<a class="headerlink" href="#array" title="Permalink to this headline">¶</a></h3>
+<p>A 2d array with shape (n, 3)</p>
+<div class="highlight-python"><div class="highlight"><pre>array:  n
+   a_11  a_12  a_13
+   a_21  a_22  a_23
+    .     .     .
+    .     .     .
+    .     .     .
+   a_n1  a_n2  a_n3
+</pre></div>
+</div>
+</div>
+<div class="section" id="basis">
+<span id="id2"></span><h3>basis<a class="headerlink" href="#basis" title="Permalink to this headline">¶</a></h3>
+<p>While the format for the options with <code class="docutils literal"><span class="pre">simple_dict</span></code> or <code class="docutils literal"><span class="pre">array</span></code> types are
+somewhat general, we define also a particular type for parsing an option that
+specifies the crystal basis.</p>
+<div class="highlight-python"><div class="highlight"><pre>basis:  natms
+  symbol1  tau1_b1  tau1_b2  tau1_b3
+  symbol2  tau2_b1  tau2_b2  tau2_b3
+      .        .        .        .
+      .        .        .        .
+      .        .        .        .
 </pre></div>
 </div>
 </div>
 </div>
-<div class="section" id="crystal-cfg">
-<h2>crystal.cfg<a class="headerlink" href="#crystal-cfg" title="Permalink to this headline">¶</a></h2>
-<p>This file provides the necessary crystal information. The file contains two
-sections, labeled <code class="docutils literal"><span class="pre">[Crystal]</span></code> and <code class="docutils literal"><span class="pre">[Kpoints]</span></code>. The <code class="docutils literal"><span class="pre">[Crystal]</span></code> section
-specifies the lattice vectors with the options <code class="docutils literal"><span class="pre">a1</span></code>, <code class="docutils literal"><span class="pre">a2</span></code>, and <code class="docutils literal"><span class="pre">a3</span></code> and
-the basis vectors with the <code class="docutils literal"><span class="pre">basis</span></code> option. The <code class="docutils literal"><span class="pre">[Kpoints]</span></code> section specifies
-the <strong>k</strong> points using the <code class="docutils literal"><span class="pre">kpoints</span></code> option.</p>
+<div class="section" id="opfm-cfg">
+<h2>opfm.cfg<a class="headerlink" href="#opfm-cfg" title="Permalink to this headline">¶</a></h2>
+<p>The input file is composed of three sections: <code class="docutils literal"><span class="pre">[opfm]</span></code>, <code class="docutils literal"><span class="pre">[crystal]</span></code>, and
+<code class="docutils literal"><span class="pre">[kpoints]</span></code>. The options available in each of the sections are given below.
+All options are required, unless explicitly stated otherwise.</p>
+<div class="section" id="opfm-options">
+<h3><code class="docutils literal"><span class="pre">[opfm]</span></code> options<a class="headerlink" href="#opfm-options" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="restart">
+<h4>restart<a class="headerlink" href="#restart" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">False</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Flag to restart from a previous <em>W</em> matrix. The file
+<code class="docutils literal"><span class="pre">w_restart.npy</span></code> must be in the current directory.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="max-iter">
+<h4>max_iter<a class="headerlink" href="#max-iter" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">integer</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Maximum number of iterations.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conv-tol">
+<h4>conv_tol<a class="headerlink" href="#conv-tol" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Convergence tolerance on the total spread.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lagrange-multiplier">
+<h4>lagrange_multiplier<a class="headerlink" href="#lagrange-multiplier" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">float</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Value for the parameter <img class="math" src="_images/math/1ab0134b6e0837594649c75a2ed83cfd85a2d03d.png" alt="\lambda"/>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="band-ranges">
+<h4>band_ranges<a class="headerlink" href="#band-ranges" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">TYPE</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">all bands</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Bands for which OPFs are constructed.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spinor-orbitals">
+<h4>spinor_orbitals<a class="headerlink" href="#spinor-orbitals" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">bool</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">False</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Flag to indicate that orbitals carry spin.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="atomic-orbitals">
+<h4>atomic_orbitals<a class="headerlink" href="#atomic-orbitals" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#dict">dict</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">s;p;d on all atoms</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Atomic orbitals on which to compute projections. The specification
+of the atomic orbitals is similar to specifying the projections in
+the WIN file for Wannier90.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="coordination-numbers">
+<h4>coordination_numbers<a class="headerlink" href="#coordination-numbers" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#dict">dict</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">No</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">do not coordinate</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">DESCRIPTION.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="kgrid">
+<h4>kgrid<a class="headerlink" href="#kgrid" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Dimensions of the <strong>k</strong> point grid. Must be consistent with the
+<strong>k</strong> points specified in <code class="docutils literal"><span class="pre">[kpoints]</span></code>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="crystal-options">
+<h3><code class="docutils literal"><span class="pre">[crystal]</span></code> options<a class="headerlink" href="#crystal-options" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">[crystal]</span></code> section specifies the lattice vectors with the options <code class="docutils literal"><span class="pre">a1</span></code>,
+<code class="docutils literal"><span class="pre">a2</span></code>, and <code class="docutils literal"><span class="pre">a3</span></code> and the basis atoms with the <code class="docutils literal"><span class="pre">basis</span></code> option.</p>
+<div class="section" id="a1-a2-a3">
+<h4>a1, a2, a3<a class="headerlink" href="#a1-a2-a3" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Cartesian components of the lattice vectors.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h4>basis<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#basis">basis</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">Atomic species and positions in crystal coordinates.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="kpoints-options">
+<h3><code class="docutils literal"><span class="pre">[kpoints]</span></code> options<a class="headerlink" href="#kpoints-options" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">[kpoints]</span></code> section specifies the <strong>k</strong> points using the <code class="docutils literal"><span class="pre">kpoints</span></code>
+option.</p>
+<div class="section" id="kpoints">
+<h4>kpoints<a class="headerlink" href="#kpoints" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body"><a class="reference internal" href="#array">array</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Required:</th><td class="field-body">Yes</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Default:</th><td class="field-body">None</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Description:</th><td class="field-body">The <strong>k</strong> points in crystal coordinates.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>The format of these options can best be understood by examining the example
 below. The ellipses for the <code class="docutils literal"><span class="pre">basis</span></code> and <code class="docutils literal"><span class="pre">kpoints</span></code> options indicate that
 these options must have <code class="docutils literal"><span class="pre">natms</span></code> and <code class="docutils literal"><span class="pre">nkpts</span></code> lines, respectively.</p>
-<div class="section" id="crystal-options">
-<h3><code class="docutils literal"><span class="pre">[Crystal]</span></code> options<a class="headerlink" href="#crystal-options" title="Permalink to this headline">¶</a></h3>
-<dl class="docutils">
-<dt>a1, a2, a3</dt>
-<dd>Bravais lattice vectors in atomic units.</dd>
-<dt>basis</dt>
-<dd>List of atomic species and positions.</dd>
-</dl>
-</div>
-<div class="section" id="kpoints-options">
-<h3><code class="docutils literal"><span class="pre">[Kpoints]</span></code> options<a class="headerlink" href="#kpoints-options" title="Permalink to this headline">¶</a></h3>
-<dl class="docutils">
-<dt>kpoints</dt>
-<dd>An integer specifying the number of <strong>k</strong> points, followed by a line for each
-<strong>k</strong> point giving the crystal coordinates of the <strong>k</strong> point</dd>
-</dl>
-<p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre>[Crystal]
-a1:  a1_x  a1_y  a1_z      # x, y, and z components of a1
-a2:  a2_x  a2_y  a2_z      # x, y, and z components of a2
-a3:  a3_x  a3_y  a3_z      # x, y, and z components of a3
-basis:  natms              # natms is the number of atoms in the basis
-   symbol_1  tau_1_x  tau_1_y  tau_1_z
-   symbol_2  tau_2_x  tau_2_y  tau_2_z
-      .         .        .        .
-      .         .        .        .
-      .         .        .        .
+<div class="highlight-python"><div class="highlight"><pre>[opfm]
+kgrid:  nk1  nk2  nk3      # dimensions of the k point grid
+atomic_orbitals:  Si O     # atoms for which atomic orbitals are specified
+  Si:  s;p                 # s and p (px, py, and pz) orbitals on Si
+   O:  s;p                 # s and p (px, py, and pz) orbitals on O
 
+[crystal]
+a1:  a1_x  a1_y  a1_z      # Cartesian components of a1
+a2:  a2_x  a2_y  a2_z      # Cartesian components of a2
+a3:  a3_x  a3_y  a3_z      # Cartesian components of a3
+basis:  natms              # the number of basis atoms
+  symbol1  tau1_b1  tau1_b2  tau1_b3      # crystal coordinates tau1 of atom with symbol1
+  symbol2  tau2_b1  tau2_b2  tau2_b3      # crystal coordinates tau2 of atom with symbol2
+      .        .        .        .
+      .        .        .        .
+      .        .        .        .
 
-[Kpoints]
-kpoints:  nkpts                  # nkpts is the number of k points in the grid
-   kpt1_b1  kpt1_b2  kpt1_b3     # crystal coordinates of k point #1
-   kpt2_b1  kpt2_b2  kpt2_b3     # crystal coordinates of k point #2
+[kpoints]
+kpoints:  nkpts                  # the number of k points in the grid
+  kpt1_b1  kpt1_b2  kpt1_b3      # crystal coordinates of k point #1
+  kpt2_b1  kpt2_b2  kpt2_b3      # crystal coordinates of k point #2
       .        .        .
       .        .        .
       .        .        .
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -138,27 +379,48 @@ kpoints:  nkpts                  # nkpts is the number of k points in the grid
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Input Files</a><ul>
+<li><a class="reference internal" href="#">Input File</a><ul>
+<li><a class="reference internal" href="#description">Description</a><ul>
+<li><a class="reference internal" href="#simple-dict">simple_dict</a></li>
+<li><a class="reference internal" href="#array">array</a></li>
+<li><a class="reference internal" href="#basis">basis</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#opfm-cfg">opfm.cfg</a><ul>
-<li><a class="reference internal" href="#input-options"><code class="docutils literal"><span class="pre">[Input]</span></code> options</a></li>
+<li><a class="reference internal" href="#opfm-options"><code class="docutils literal"><span class="pre">[opfm]</span></code> options</a><ul>
+<li><a class="reference internal" href="#restart">restart</a></li>
+<li><a class="reference internal" href="#max-iter">max_iter</a></li>
+<li><a class="reference internal" href="#conv-tol">conv_tol</a></li>
+<li><a class="reference internal" href="#lagrange-multiplier">lagrange_multiplier</a></li>
+<li><a class="reference internal" href="#band-ranges">band_ranges</a></li>
+<li><a class="reference internal" href="#spinor-orbitals">spinor_orbitals</a></li>
+<li><a class="reference internal" href="#atomic-orbitals">atomic_orbitals</a></li>
+<li><a class="reference internal" href="#coordination-numbers">coordination_numbers</a></li>
+<li><a class="reference internal" href="#kgrid">kgrid</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#crystal-cfg">crystal.cfg</a><ul>
-<li><a class="reference internal" href="#crystal-options"><code class="docutils literal"><span class="pre">[Crystal]</span></code> options</a></li>
-<li><a class="reference internal" href="#kpoints-options"><code class="docutils literal"><span class="pre">[Kpoints]</span></code> options</a></li>
+<li><a class="reference internal" href="#crystal-options"><code class="docutils literal"><span class="pre">[crystal]</span></code> options</a><ul>
+<li><a class="reference internal" href="#a1-a2-a3">a1, a2, a3</a></li>
+<li><a class="reference internal" href="#id3">basis</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kpoints-options"><code class="docutils literal"><span class="pre">[kpoints]</span></code> options</a><ul>
+<li><a class="reference internal" href="#kpoints">kpoints</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li><a class="reference internal" href="#example">Example</a></li>
 </ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="index.html" title="previous chapter">Welcome to OPFm&#8217;s documentation!</a></li>
-  </ul></li>
+</li>
 </ul>
-</div>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="install.html"
+                        title="previous chapter">Installation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="examples.html"
+                        title="next chapter">Examples</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -183,20 +445,27 @@ kpoints:  nkpts                  # nkpts is the number of k points in the grid
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2015, Jamal I. Mustafa.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.3</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
-      
-      |
-      <a href="_sources/input.txt"
-          rel="nofollow">Page source</a>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="install.html" title="Installation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
     </div>
-
-    
-
-    
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
   </body>
 </html>

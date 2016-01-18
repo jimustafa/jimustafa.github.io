@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>opfm.py &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="opfm-py">
+<h1>opfm.py<a class="headerlink" href="#opfm-py" title="Permalink to this headline">¶</a></h1>
+<p>Optimized Projection Functions Method</p>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-h">
+<span id="cmdoption-opfm.py--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<div class="section" id="opfm-py-create-cfg-qe">
+<h2>opfm.py create-cfg-qe<a class="headerlink" href="#opfm-py-create-cfg-qe" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe-h">
+<span id="cmdoption-opfm.py-create-cfg-qe--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe-v">
+<span id="cmdoption-opfm.py-create-cfg-qe--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe-q">
+<span id="cmdoption-opfm.py-create-cfg-qe--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe--force">
+<code class="descname">--force</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe--force" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe--outdir">
+<code class="descname">--outdir</code><code class="descclassname"> &lt;outdir&gt;</code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe--outdir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-create-cfg-qe--prefix">
+<code class="descname">--prefix</code><code class="descclassname"> &lt;prefix&gt;</code><a class="headerlink" href="#cmdoption-opfm.py-create-cfg-qe--prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="opfm-py-opfm2w90">
+<h2>opfm.py opfm2w90<a class="headerlink" href="#opfm-py-opfm2w90" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-opfm2w90-h">
+<span id="cmdoption-opfm.py-opfm2w90--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-opfm2w90-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-opfm2w90-v">
+<span id="cmdoption-opfm.py-opfm2w90--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-opfm2w90-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-opfm2w90-q">
+<span id="cmdoption-opfm.py-opfm2w90--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-opfm2w90-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-opfm2w90--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-opfm2w90--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="opfm-py-optimize">
+<h2>opfm.py optimize<a class="headerlink" href="#opfm-py-optimize" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-optimize-h">
+<span id="cmdoption-opfm.py-optimize--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-optimize-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-optimize-v">
+<span id="cmdoption-opfm.py-optimize--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-optimize-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-optimize-q">
+<span id="cmdoption-opfm.py-optimize--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-optimize-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-optimize--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-optimize--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="opfm-py-plot-wmat">
+<h2>opfm.py plot-wmat<a class="headerlink" href="#opfm-py-plot-wmat" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat-arg-w_codiag">
+<code class="descname">w_codiag</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat-arg-w_codiag" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat-arg-nnkp">
+<code class="descname">nnkp</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat-arg-nnkp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat-h">
+<span id="cmdoption-opfm.py-plot-wmat--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat-v">
+<span id="cmdoption-opfm.py-plot-wmat--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat-q">
+<span id="cmdoption-opfm.py-plot-wmat--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-plot-wmat--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-plot-wmat--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="opfm-py-print-wmat">
+<h2>opfm.py print-wmat<a class="headerlink" href="#opfm-py-print-wmat" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat-arg-nnkp">
+<code class="descname">nnkp</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat-arg-nnkp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat-h">
+<span id="cmdoption-opfm.py-print-wmat--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat-v">
+<span id="cmdoption-opfm.py-print-wmat--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat-q">
+<span id="cmdoption-opfm.py-print-wmat--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat--cutoff">
+<code class="descname">--cutoff</code><code class="descclassname"> &lt;cutoff&gt;</code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat--cutoff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat--precision">
+<code class="descname">--precision</code><code class="descclassname"> &lt;precision&gt;</code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat--precision" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-print-wmat--expand-projections">
+<code class="descname">--expand-projections</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-print-wmat--expand-projections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="opfm-py-setup">
+<h2>opfm.py setup<a class="headerlink" href="#opfm-py-setup" title="Permalink to this headline">¶</a></h2>
+<p>usage: opfm.py [-h]
+               {opfm2w90,setup,create-cfg-qe,optimize,plot-wmat,print-wmat}
+               ...</p>
+<dl class="option">
+<dt id="cmdoption-opfm.py-setup-h">
+<span id="cmdoption-opfm.py-setup--help"></span><code class="descname">-h</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--help</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-setup-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>show this help message and exit</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-setup-v">
+<span id="cmdoption-opfm.py-setup--verbose"></span><code class="descname">-v</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--verbose</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-setup-v" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-setup-q">
+<span id="cmdoption-opfm.py-setup--quiet"></span><code class="descname">-q</code><code class="descclassname"></code><code class="descclassname">, </code><code class="descname">--quiet</code><code class="descclassname"></code><a class="headerlink" href="#cmdoption-opfm.py-setup-q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-opfm.py-setup--log-level">
+<code class="descname">--log-level</code><code class="descclassname"> {notset,debug,info,warning,error,critical}</code><a class="headerlink" href="#cmdoption-opfm.py-setup--log-level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">opfm.py</a><ul>
+<li><a class="reference internal" href="#opfm-py-create-cfg-qe">opfm.py create-cfg-qe</a></li>
+<li><a class="reference internal" href="#opfm-py-opfm2w90">opfm.py opfm2w90</a></li>
+<li><a class="reference internal" href="#opfm-py-optimize">opfm.py optimize</a></li>
+<li><a class="reference internal" href="#opfm-py-plot-wmat">opfm.py plot-wmat</a></li>
+<li><a class="reference internal" href="#opfm-py-print-wmat">opfm.py print-wmat</a></li>
+<li><a class="reference internal" href="#opfm-py-setup">opfm.py setup</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/scripts.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

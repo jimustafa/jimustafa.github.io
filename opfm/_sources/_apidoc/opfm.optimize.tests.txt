@@ -1,0 +1,22 @@
+opfm.optimize.tests package
+===========================
+
+Submodules
+----------
+
+opfm.optimize.tests.test_qpqc module
+------------------------------------
+
+.. automodule:: opfm.optimize.tests.test_qpqc
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.optimize.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

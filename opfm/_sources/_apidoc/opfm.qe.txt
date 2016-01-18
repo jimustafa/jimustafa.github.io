@@ -1,0 +1,17 @@
+opfm.qe package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    opfm.qe.io
+
+Module contents
+---------------
+
+.. automodule:: opfm.qe
+    :members:
+    :undoc-members:
+    :show-inheritance:

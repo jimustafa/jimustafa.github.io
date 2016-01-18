@@ -1,0 +1,22 @@
+opfm.scripts package
+====================
+
+Submodules
+----------
+
+opfm.scripts.opfm module
+------------------------
+
+.. automodule:: opfm.scripts.opfm
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.scripts
+    :members:
+    :undoc-members:
+    :show-inheritance:

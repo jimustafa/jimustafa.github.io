@@ -1,0 +1,22 @@
+opfm.io.tests package
+=====================
+
+Submodules
+----------
+
+opfm.io.tests.test_fnml module
+------------------------------
+
+.. automodule:: opfm.io.tests.test_fnml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.io.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

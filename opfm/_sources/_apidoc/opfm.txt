@@ -1,0 +1,36 @@
+opfm package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    opfm.common
+    opfm.io
+    opfm.linalg
+    opfm.optimize
+    opfm.qe
+    opfm.scripts
+    opfm.w90
+    opfm.xtal
+
+Submodules
+----------
+
+opfm.utils module
+-----------------
+
+.. automodule:: opfm.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm
+    :members:
+    :undoc-members:
+    :show-inheritance:

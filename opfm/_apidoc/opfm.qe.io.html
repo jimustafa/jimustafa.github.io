@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>opfm.qe.io package &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="../index.html" />
+    <link rel="up" title="opfm.qe package" href="opfm.qe.html" />
+    <link rel="next" title="opfm.scripts package" href="opfm.scripts.html" />
+    <link rel="prev" title="opfm.qe package" href="opfm.qe.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.scripts.html" title="opfm.scripts package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="opfm.qe.html" title="opfm.qe package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" >opfm package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="opfm.qe.html" accesskey="U">opfm.qe package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="opfm-qe-io-package">
+<h1>opfm.qe.io package<a class="headerlink" href="#opfm-qe-io-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opfm.qe.io.qexml">
+<span id="opfm-qe-io-qexml-module"></span><h2>opfm.qe.io.qexml module<a class="headerlink" href="#module-opfm.qe.io.qexml" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="opfm.qe.io.qexml.PWscfDataIO">
+<em class="property">class </em><code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">PWscfDataIO</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>auto_read=True</em>, <em>units={}</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">ElementTree</span></code></p>
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.get_ecutwfc">
+<code class="descname">get_ecutwfc</code><span class="sig-paren">(</span><em>units='Ry'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.get_ecutwfc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.read_atomic_positions">
+<code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.read_crystal_basis">
+<code class="descname">read_crystal_basis</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.read_crystal_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.read_dlv">
+<code class="descname">read_dlv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.read_eigenvalues">
+<code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>units='eV'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="opfm.qe.io.qexml.PWscfDataIO.read_kpoints">
+<code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.PWscfDataIO.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_atomic_positions">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_atomic_positions</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='cartesian'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_atomic_positions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_crystal_basis">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_crystal_basis</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_crystal_basis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_dlv">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_dlv</code><span class="sig-paren">(</span><em>data_file_xml</em>, <em>units='bohr'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_dlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_eigenvalues">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_eigenvalues</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_eigenvalues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_fermi_energy">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_fermi_energy</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Ha'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_fermi_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_fft_grid_dims">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_fft_grid_dims</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_fft_grid_dims" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_kpoints">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_kpoints</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='crystal'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read k-points from data-file.xml</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data_file_path: str</strong></p>
+<blockquote>
+<div><p>path of data-file.xml</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">kpoints: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The k-points in data-file.xml are given in Cartesian coordinates in units of <img class="math" src="../_images/math/688eb86d03319520d2a0293349e4f2dc800fc362.png" alt="\frac{2\pi}{a}"/>.
+To convert to Cartesian requires multiplication by a factor of <img class="math" src="../_images/math/688eb86d03319520d2a0293349e4f2dc800fc362.png" alt="\frac{2\pi}{a}"/>.  This is
+done for units=&#8217;cartesian&#8217;.  To convert to crystal coordinates:</p>
+<div class="math">
+<p><img src="../_images/math/8bdcc829bf762e9730d5dc6a6f4f2a1068e0729b.png" alt="\frac{2\pi}{a} \mathbf{k}^T
+\left(
+\begin{array}{c}
+\mathbf{b}_1 \\ \mathbf{b}_2 \\ \mathbf{b}_3 \\
+\end{array}
+\right)"/></p>
+</div><p>The array of reciprocal lattice vectors is exactly that which is returned by <a class="reference internal" href="#opfm.qe.io.qexml.read_rlv" title="opfm.qe.io.qexml.read_rlv"><code class="xref py py-func docutils literal"><span class="pre">read_rlv</span></code></a></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_lattice_parameter">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_lattice_parameter</code><span class="sig-paren">(</span><em>data_file_path</em>, <em>units='Bohr'</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_lattice_parameter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_rlv">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_rlv</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_rlv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_symmetries">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_symmetries</code><span class="sig-paren">(</span><em>data_file_xml</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_symmetries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.qe.io.qexml.read_tetrahedra">
+<code class="descclassname">opfm.qe.io.qexml.</code><code class="descname">read_tetrahedra</code><span class="sig-paren">(</span><em>data_file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.qe.io.qexml.read_tetrahedra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the tetrahedra from data-file.xml</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>data_file_path: str</strong></p>
+<blockquote>
+<div><p>Path of data-file.xml</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">tetrahedra: ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opfm.qe.io">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opfm.qe.io" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">opfm.qe.io package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-opfm.qe.io.qexml">opfm.qe.io.qexml module</a></li>
+<li><a class="reference internal" href="#module-opfm.qe.io">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="opfm.qe.html"
+                        title="previous chapter">opfm.qe package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="opfm.scripts.html"
+                        title="next chapter">opfm.scripts package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_apidoc/opfm.qe.io.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.scripts.html" title="opfm.scripts package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="opfm.qe.html" title="opfm.qe package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" >opfm package</a> &raquo;</li>
+          <li class="nav-item nav-item-3"><a href="opfm.qe.html" >opfm.qe package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

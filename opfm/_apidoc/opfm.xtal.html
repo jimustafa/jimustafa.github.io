@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>opfm.xtal package &mdash; OPFm.py 0.0.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="top" title="OPFm.py 0.0.0 documentation" href="../index.html" />
+    <link rel="up" title="opfm package" href="opfm.html" />
+    <link rel="prev" title="opfm.w90.io package" href="opfm.w90.io.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.io.html" title="opfm.w90.io package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" accesskey="U">opfm package</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="opfm-xtal-package">
+<h1>opfm.xtal package<a class="headerlink" href="#opfm-xtal-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-opfm.xtal.kptutils">
+<span id="opfm-xtal-kptutils-module"></span><h2>opfm.xtal.kptutils module<a class="headerlink" href="#module-opfm.xtal.kptutils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="opfm.xtal.kptutils.construct_point_mapping">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">construct_point_mapping</code><span class="sig-paren">(</span><em>pts_from</em>, <em>pts_to</em>, <em>tol=2.2204460492503131e-16</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.construct_point_mapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of points from one array in another array</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pts_from: array_like, shape (npts_from, 3)</strong></p>
+<p><strong>pts_to: array_like, shape (npts_to, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">mapping: ndarray</p>
+<blockquote>
+<div><p>mapping[i] = index of pts_from[i] in pts_to</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first"><strong>Exception</strong></p>
+<blockquote class="last">
+<div><p>if there is a point in pts_from that does not map to exactly one point in pts_to</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.create_kmap">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">create_kmap</code><span class="sig-paren">(</span><em>k_from</em>, <em>k_to</em>, <em>syms</em>, <em>return_symmetry_index=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.create_kmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a map from one list of k-points to another list</p>
+<p>The k-points and symmetries need to be in the same coordinates</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.find_vector">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">find_vector</code><span class="sig-paren">(</span><em>pt_target</em>, <em>pts_in</em>, <em>idx=None</em>, <em>tol=2.2204460492503131e-16</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.find_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of a point in an array of points</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pt_target: array_like, shape (N,)</strong></p>
+<blockquote>
+<div><p>point to find</p>
+</div></blockquote>
+<p><strong>pts_in: array_like, shape (M,N)</strong></p>
+<blockquote>
+<div><p>array of points in which to find target point</p>
+</div></blockquote>
+<p><strong>idx: ndarray, optional</strong></p>
+<blockquote>
+<div><p>precomputed indices, useful for when this function is called many times</p>
+</div></blockquote>
+<p><strong>tol: float, optional</strong></p>
+<blockquote class="last">
+<div><p>tolerance for matching the point</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.find_vector_int">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">find_vector_int</code><span class="sig-paren">(</span><em>pt_target</em>, <em>pts_in</em>, <em>idx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.find_vector_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the index of a point in an array of points</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>pt_target: array_like, shape (N,)</strong></p>
+<blockquote>
+<div><p>point to find</p>
+</div></blockquote>
+<p><strong>pts_in: array_like, shape (M,N)</strong></p>
+<blockquote>
+<div><p>array of points in which to find target point</p>
+</div></blockquote>
+<p><strong>idx: ndarray, optional</strong></p>
+<blockquote class="last">
+<div><p>precomputed indices, useful for when this function is called many times</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.get_kpq_index">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">get_kpq_index</code><span class="sig-paren">(</span><em>kpoints_int</em>, <em>qpoint_int</em>, <em>grid_dims=None</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.get_kpq_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.kgrid">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">kgrid</code><span class="sig-paren">(</span><em>n1</em>, <em>n2</em>, <em>n3</em>, <em>periodic=True</em>, <em>integer=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.kgrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a uniform (Gamma centered) grid of k-points in the primitive
+reciprocal unit cell. The k-points are given in terms of crystal
+coordinates.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>n1</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/b85d9be156c902f7f15efec2b0ec86026d98f586.png" alt="\mathbf{b}_1"/></p>
+</div></blockquote>
+<p><strong>n2</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/a6714541c7aa862f7d9c4af92dfe73fb275e682d.png" alt="\mathbf{b}_2"/></p>
+</div></blockquote>
+<p><strong>n3</strong> : int</p>
+<blockquote>
+<div><p>number of k-points along <img class="math" src="../_images/math/5e0d839d4dd6812d8f379eaa460d7576ab7770bd.png" alt="\mathbf{b}_3"/></p>
+</div></blockquote>
+<p><strong>periodic</strong> : boolean, optional</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>True:</dt>
+<dd><p class="first last">DO NOT include redundant boundary points</p>
+</dd>
+<dt>False:</dt>
+<dd><p class="first last">Include redundant boundary points, this is useful for interpolation</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><strong>integer</strong> : boolean, optional</p>
+<blockquote>
+<div><p>kpoints are given in integer form (k1*n1, k2*n2, k3*n3)</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>kpoints</strong> : ndarray, shape (nkpts=n1*n2*n3, 3)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.kmap_2periodic">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">kmap_2periodic</code><span class="sig-paren">(</span><em>nk1</em>, <em>nk2</em>, <em>nk3</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.kmap_2periodic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.kmap_grid">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">kmap_grid</code><span class="sig-paren">(</span><em>grid1</em>, <em>grid2</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.kmap_grid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map k-points from one regular grid to another</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>grid1 :</strong></p>
+<blockquote>
+<div><p>coarser grid</p>
+</div></blockquote>
+<p><strong>grid2 :</strong></p>
+<blockquote>
+<div><p>finer grid</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">idx :</p>
+<blockquote class="last">
+<div><p>indices of k-points on grid1 inside grid2</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.kpt_to_unit_cell">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">kpt_to_unit_cell</code><span class="sig-paren">(</span><em>kpt</em>, <em>return_gvec=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.kpt_to_unit_cell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate k-point to the reciprocal unit cell</p>
+<p>The resulting k-point will have fractional coordinates all in [0,1)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.print_kpoints">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">print_kpoints</code><span class="sig-paren">(</span><em>kpoints</em>, <em>stream=&lt;open file '&lt;stdout&gt;'</em>, <em>mode 'w'&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.print_kpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.read_kpath">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">read_kpath</code><span class="sig-paren">(</span><em>fname</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.read_kpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.reduce">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">reduce</code><span class="sig-paren">(</span><em>kpoints</em>, <em>syms</em>, <em>return_kweights=False</em>, <em>return_kmap=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.reduce" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.reduce_grid">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">reduce_grid</code><span class="sig-paren">(</span><em>nk1</em>, <em>nk2</em>, <em>nk3</em>, <em>syms</em>, <em>return_kweights=False</em>, <em>return_kmap=False</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.reduce_grid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.subgroup">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">subgroup</code><span class="sig-paren">(</span><em>qpt</em>, <em>syms</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.subgroup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.to_bz">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">to_bz</code><span class="sig-paren">(</span><em>kpoints</em>, <em>gbz</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.to_bz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.kptutils.to_unit_cell">
+<code class="descclassname">opfm.xtal.kptutils.</code><code class="descname">to_unit_cell</code><span class="sig-paren">(</span><em>kpoints</em>, <em>return_gvec=False</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.kptutils.to_unit_cell" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-opfm.xtal.utils">
+<span id="opfm-xtal-utils-module"></span><h2>opfm.xtal.utils module<a class="headerlink" href="#module-opfm.xtal.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="opfm.xtal.utils.cartesian2crystal">
+<code class="descclassname">opfm.xtal.utils.</code><code class="descname">cartesian2crystal</code><span class="sig-paren">(</span><em>coords</em>, <em>lattice_vectors</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.utils.cartesian2crystal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert vectors expressed in Cartesian coordinates to crystal coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>coords: ndarray, shape (..., npts, 3)</strong></p>
+<p><strong>lattice_vectors: ndarray, shape (3, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.utils.chemical_potential">
+<code class="descclassname">opfm.xtal.utils.</code><code class="descname">chemical_potential</code><span class="sig-paren">(</span><em>e</em>, <em>esplit</em>, <em>egap</em>, <em>dos</em>, <em>n</em>, <em>T</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.utils.chemical_potential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the chemical potential for a given amount of doping</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>e</strong> : ndarray</p>
+<blockquote>
+<div><p>energy grid for the density of states</p>
+</div></blockquote>
+<p><strong>esplit</strong> : float</p>
+<blockquote>
+<div><p>the energy that separates the electrons from holes (e.g. the midgap energy)</p>
+</div></blockquote>
+<p><strong>egap</strong> : float</p>
+<blockquote>
+<div><p>energy gap</p>
+</div></blockquote>
+<p><strong>dos</strong> : ndarray</p>
+<blockquote>
+<div><p>density of states (states/cell/energy)</p>
+</div></blockquote>
+<p><strong>n</strong> : float</p>
+<blockquote>
+<div><p>doping concentration in <img class="math" src="../_images/math/e237378122e216b2b5676d47d4c41223507e5043.png" alt="1/cell"/>, negative for electron doping</p>
+</div></blockquote>
+<p><strong>T</strong> : float</p>
+<blockquote class="last">
+<div><p>the temperature</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.utils.coordinate">
+<code class="descclassname">opfm.xtal.utils.</code><code class="descname">coordinate</code><span class="sig-paren">(</span><em>lattice_vectors</em>, <em>basis_vectors</em>, <em>coordination_numbers</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.utils.coordinate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Coordinate each atom in the basis with a specfic number of neighbors</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>lattice_vectors</strong> : array_like, shape (3, 3)</p>
+<p><strong>basis_vectors</strong> : array_like, shape (natms, 3)</p>
+<blockquote>
+<div><p>basis vectors in crystal coordinates</p>
+</div></blockquote>
+<p class="last"><strong>coordination_numbers: array_like, shape (natms,)</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="opfm.xtal.utils.crystal2cartesian">
+<code class="descclassname">opfm.xtal.utils.</code><code class="descname">crystal2cartesian</code><span class="sig-paren">(</span><em>coords</em>, <em>lattice_vectors</em><span class="sig-paren">)</span><a class="headerlink" href="#opfm.xtal.utils.crystal2cartesian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert vectors expressed in crystal coordinates to Cartesian coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>coords: ndarray, shape (..., npts, 3)</strong></p>
+<p><strong>lattice_vectors: ndarray, shape (3, 3)</strong></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">ndarray</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-opfm.xtal">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-opfm.xtal" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">opfm.xtal package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-opfm.xtal.kptutils">opfm.xtal.kptutils module</a></li>
+<li><a class="reference internal" href="#module-opfm.xtal.utils">opfm.xtal.utils module</a></li>
+<li><a class="reference internal" href="#module-opfm.xtal">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="opfm.w90.io.html"
+                        title="previous chapter">opfm.w90.io package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_apidoc/opfm.xtal.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="opfm.w90.io.html" title="opfm.w90.io package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">OPFm.py 0.0.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../apidocs.html" >API Documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-2"><a href="opfm.html" >opfm package</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Jamal I. Mustafa.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+opfm.linalg.tests package
+=========================
+
+Submodules
+----------
+
+opfm.linalg.tests.test_codiag module
+------------------------------------
+
+.. automodule:: opfm.linalg.tests.test_codiag
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.linalg.tests.test_flib module
+----------------------------------
+
+.. automodule:: opfm.linalg.tests.test_flib
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.linalg.tests.test_givens module
+------------------------------------
+
+.. automodule:: opfm.linalg.tests.test_givens
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.linalg.tests.test_qep module
+---------------------------------
+
+.. automodule:: opfm.linalg.tests.test_qep
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.linalg.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

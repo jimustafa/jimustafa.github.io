@@ -1,0 +1,13 @@
+Examples
+========
+
+Silicon
+-------
+
+Cristobalite
+------------
+
+This example demonstrates some of the more advanced features, including the use
+of ``band_ranges``.
+
+The band structure is shown below.

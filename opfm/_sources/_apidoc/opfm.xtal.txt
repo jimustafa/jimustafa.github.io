@@ -1,0 +1,30 @@
+opfm.xtal package
+=================
+
+Submodules
+----------
+
+opfm.xtal.kptutils module
+-------------------------
+
+.. automodule:: opfm.xtal.kptutils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+opfm.xtal.utils module
+----------------------
+
+.. automodule:: opfm.xtal.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: opfm.xtal
+    :members:
+    :undoc-members:
+    :show-inheritance:

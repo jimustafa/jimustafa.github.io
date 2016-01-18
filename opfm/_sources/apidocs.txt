@@ -1,0 +1,8 @@
+=================
+API Documentation
+=================
+
+.. toctree::
+   :maxdepth: 6
+
+   ./_apidoc/opfm
